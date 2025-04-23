@@ -31,4 +31,10 @@ class WebController extends Controller
   {
     return view('enlimonado.pages.blog.index');
   }
+
+  public function successes()
+  {
+    return view('enlimonado.pages.exitos.index');
+  }
+
 }
