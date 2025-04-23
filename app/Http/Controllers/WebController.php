@@ -31,4 +31,12 @@ class WebController extends Controller
   {
     return view('enlimonado.pages.blog.index');
   }
+
+  public function proyectos() {
+    return view('enlimonado.pages.Proyectos.index');
+  }
+
+  public function proximos() {
+    return view('enlimonado.pages.Proximos.index');
+  }
 }

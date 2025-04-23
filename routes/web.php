@@ -185,6 +185,10 @@ Route::get('/contact', [WebController::class, 'contact'])->name('contact');
 //Route::get('/blog', [WebController::class, 'blog'])->name('blog');
 
 
+Route::get('/projects', [WebController::class, 'proyectos'])->name('proyects');
+
+Route::get('/upcoming', [WebController::class, 'proximos'])->name('upcoming');
+
 Route::get('/blog', [BlogController::class, 'mainBlogView'])->name('blog.main');
 Route::get('/blog/{id}', [BlogController::class, 'showBlog'])->name('blog.show');
 

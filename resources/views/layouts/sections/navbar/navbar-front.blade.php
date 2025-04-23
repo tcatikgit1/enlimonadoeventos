@@ -47,7 +47,7 @@ $navbarDetached = ($navbarDetached ?? '');
         <li class="nav-item"><a class="nav-link" href="/upcoming">Próximos</a></li>
         <li class="nav-item"><a class="nav-link" href="/contact">Contacto</a></li>
         <li class="nav-item ms-lg-3">
-          <a href="/contact" class="btn btn-outline-lime px-4 py-2 rounded-pill">Contáctanos</a>
+          <a href="/contact" class="btn btn-outline-lime px-4 py-2 rounded">Contáctanos</a>
         </li>
       </ul>
     </div>
