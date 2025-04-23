@@ -15,6 +15,9 @@ $navbarDetached = ($navbarDetached ?? '');
   transition: background 0.3s ease;
   z-index: 1030;
 }
+body {
+  background-color: #000000; /* Asegura que el fondo no sea blanco */
+}
 
 .btn-outline-lime {
   border: 1px solid #B9FF38;
@@ -39,7 +42,7 @@ $navbarDetached = ($navbarDetached ?? '');
     </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarMain">
-      <ul class="navbar-nav align-items-center">
+      <ul class="navbar-nav align-items-center gap-7">
         <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="/about-us">Nosotros</a></li>
         <li class="nav-item"><a class="nav-link" href="/projects">Proyectos</a></li>

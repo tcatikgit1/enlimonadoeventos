@@ -14,7 +14,7 @@ class WebController extends Controller
 
   public function aboutus()
   {
-    return view('enlimonado.pages.aboutus.index');
+    return view('enlimonado.pages.Nosotros.index');
   }
 
   public function contact()
