@@ -181,9 +181,8 @@ Route::post('/newsletter', [NewsletterController::class, 'store'])->name('newsle
 Route::get('/', [WebController::class, 'index'])->name('app');
 Route::get('/about-us', [WebController::class, 'aboutus'])->name('aboutus');
 Route::get('/contact', [WebController::class, 'contact'])->name('contact');
-Route::get('/successes', [WebController::class, 'successes'])->name('successes');
-//Route::get('/services', [WebController::class, 'services'])->name('services');
-//Route::get('/blog', [WebController::class, 'blog'])->name('blog');
+Route::get('/success', [WebController::class, 'successes'])->name('successes');
+
 
 
 Route::get('/projects', [WebController::class, 'proyectos'])->name('proyects');
