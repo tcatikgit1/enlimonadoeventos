@@ -19,7 +19,7 @@ class WebController extends Controller
 
   public function contact()
   {
-    return view('enlimonado.pages.contact.index');
+    return view('enlimonado.pages.Contacto.index');
   }
 
   public function services()
