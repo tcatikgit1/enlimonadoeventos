@@ -22,14 +22,10 @@ class WebController extends Controller
     return view('enlimonado.pages.Contacto.index');
   }
 
-  public function services()
-  {
-    return view('enlimonado.pages.services.index');
-  }
 
-  public function blog()
+  public function successes()
   {
-    return view('enlimonado.pages.blog.index');
+    return view('enlimonado.pages.exitos.index');
   }
 
   public function proyectos() {
