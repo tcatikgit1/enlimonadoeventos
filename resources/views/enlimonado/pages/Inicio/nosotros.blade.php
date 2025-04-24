@@ -10,34 +10,51 @@
     </p>
 
     <div class="row justify-content-center g-5" style="margin-top: 3rem">
-      @php
+    @php
 $valores = [
   [
     'icono' => '"',
-    'titulo' => 'Eventos Corporativos',
-    'texto' => 'Transformamos tus convenciones aburridas en experiencias memorables que impulsan tu marca.',
-    'color' => '#ff4dd6'
+    'titulo' => 'Nuestra convención pasó de aburrida a icónica en 24h.',
+    'color' => '#B5F613',
+    'usuario' => 'María Lopez',
+    'cargo' => 'Directora de Marketing',
   ],
   [
-    'icono' => '✨',
-    'titulo' => 'Retail & Activaciones',
-    'texto' => 'Creamos momentos que convierten miradas curiosas en clientes comprometidos.',
-    'color' => '#cccccc'
+    'icono' => '"',
+    'titulo' => 'Nunca imaginé que un stand en un centro comercial generara tanto hype.',
+    'color' => '#B5F613',
+    'usuario' => 'Carlos Rodríguez',
+    'cargo' => 'Gerente',
   ],
 ];
-  @endphp
+    @endphp
 
-      @foreach($valores as $valor)
-      <div class="col-md-6 col-lg-2">
-      <div class="p-3 h-100 text-white rounded-3 shadow-sm d-flex flex-column"
-        style="background-color: #16121E; border: 1px solid rgba(255, 255, 255, 0.1);">
-        <div class="fs-2 mb-4" style="color: {{ $valor['color'] }};">{{ $valor['icono'] }}</div>
-        <h5 class="fw-bold mb-4 text-white">{{ $valor['titulo'] }}</h5>
-        <p class="mb-0 text-white">{{ $valor['texto'] }}</p>
+    @foreach($valores as $valor)
+    <div class="col-md-6 col-lg-5">
+      <div class="p-4 h-100 text-white rounded-3 shadow-sm d-flex flex-column justify-content-between"
+      style="background-color: #16121E; border: 1px solid rgba(255, 255, 255, 0.1);">
+      <div>
+        <div class="fs-1 mb-3" style="color: {{ $valor['color'] }};">{{ $valor['icono'] }}</div>
+        <h5 class="fw-bold mb-3 text-white">{{ $valor['titulo'] }}</h5>
+      </div>
+      <div class="d-flex align-items-center">
+        <div class="me-3 d-flex justify-content-center align-items-center"
+        style="width: 50px; height: 50px; border-radius: 50%; background-color: #8130b1; color: rgb(255, 255, 255); font-weight: bold; font-size: 1.2rem;">
+        {{ substr($valor['usuario'], 0, 1) }}
+        </div>
+        <div>
+        <div class="fw-semibold">{{ $valor['usuario'] }}</div>
+        <small class="text-muted">{{ $valor['cargo'] }}</small>
+        </div>
       </div>
       </div>
-    @endforeach
     </div>
+  @endforeach
+
+    </div>
+      <div class="text-center" style="margin-top: 3rem">
+      <button class="rounded fw-bold mt-3" style="background: #B9FF38; padding: 12px 30px; font-size: 15px;">Ver más testimonios</button>
+      </div>
 
   </div>
 </section>
