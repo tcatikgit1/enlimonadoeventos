@@ -48,7 +48,7 @@
 
     @include('enlimonado.pages.Nosotros.equipo')
 
-    @include('enlimonado.pages.home.consulta')
+    @include('enlimonado.pages.Nosotros.contacto')
 
     <!-- Modal -->
     @include('_partials._modals.modal-add-role')
