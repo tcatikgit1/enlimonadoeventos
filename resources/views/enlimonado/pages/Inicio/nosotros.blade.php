@@ -13,6 +13,23 @@
     @php
 $valores = [
   [
+
+    'icono' => 'quote',
+    'texto' => 'Nuestra convención pasó de aburrida a icónica en 24h.',
+    'color' => '#B9FF38',
+    'avatar' => 'CarlosRodriguez',
+    'nombre' => 'Carlos Rodriguez',
+    'cargo' => 'Gerente, Centro Comercial Y'
+  ],
+  [
+    'icono' => 'quote',
+    'texto' => 'Nunca imaginé que un stand en un centro comercial generara tanto hype.',
+    'color' => '#B9FF38',
+    'avatar' => 'MariaLopez',
+    'nombre' => 'Maria Lopez',
+    'cargo' => 'Directora de Marketing, Empresa Innovación'
+  ]
+  [
     'icono' => '"',
     'titulo' => 'Nuestra convención pasó de aburrida a icónica en 24h.',
     'color' => '#B5F613',
