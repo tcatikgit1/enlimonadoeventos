@@ -167,6 +167,7 @@ use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogManagement;
 use App\Http\Controllers\ServiciosController;
+use App\Http\Controllers\ContactController;
 
 //LOGIN
 
@@ -183,6 +184,8 @@ Route::get('/about-us', [WebController::class, 'aboutus'])->name('aboutus');
 Route::get('/contact', [WebController::class, 'contact'])->name('contact');
 Route::get('/success', [WebController::class, 'successes'])->name('successes');
 
+//Mandar Mail
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 
 Route::get('/projects', [WebController::class, 'proyectos'])->name('proyects');

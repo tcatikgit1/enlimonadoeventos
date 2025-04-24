@@ -1,4 +1,4 @@
-<section style="background-color: #000000;">
+<section style="background: linear-gradient(to top, #000000 30%, #160b24 100%);">
   <div class="container py-5">
     <div class="d-flex justify-content-center">
     <iframe

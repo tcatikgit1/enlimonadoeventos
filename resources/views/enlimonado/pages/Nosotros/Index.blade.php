@@ -50,8 +50,6 @@
 
     @include('enlimonado.pages.Nosotros.contacto')
 
-    {{-- @include('enlimonado.pages.home.consulta') --}}
-
     <!-- Modal -->
     @include('_partials._modals.modal-add-role')
 @endsection

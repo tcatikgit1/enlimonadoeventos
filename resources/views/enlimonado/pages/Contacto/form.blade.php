@@ -1,3 +1,18 @@
+<style>
+  input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  box-shadow: 0 0 0px 1000px #1e1e1e inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+</style>
 <section class="contact-section py-10" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
   <div class="container">
     <div class="row align-items-stretch">
@@ -7,7 +22,7 @@
         <p class="mb-4 text-white-50">Cuéntanos lo que tienes en mente. Desde una idea inicial hasta un concepto
           desarrollado, estamos aquí para transformar tu visión en una experiencia extraordinaria.</p>
 
-        <form>
+        <form method="POST" action="{{ route('contact.store') }}">
           @csrf
           <div class="row g-3">
             <div class="col-md-6">
@@ -45,6 +60,18 @@
                 Enviar mensaje <i class="fas fa-paper-plane ms-1"></i>
               </button>
             </div>
+            <div id="form-message" class="mt-3">
+  @if(session('success'))
+    <div class="alert alert-success">
+      {{ session('success') }}
+    </div>
+  @elseif(session('error'))
+    <div class="alert alert-danger">
+      {{ session('error') }}
+    </div>
+  @endif
+</div>
+
           </div>
         </form>
       </div>
