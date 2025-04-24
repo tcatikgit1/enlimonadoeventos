@@ -20,18 +20,14 @@
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    height: 350px;
+    height: 450px; /* Aumentada */
     display: flex;
     align-items: flex-end;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .event-card:hover {
-    transform: scale(1.02);
   }
 
   .event-card::before {
     content: '';
+    background-image: var(--bg-img);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,7 +38,7 @@
   }
 
   .event-card:hover::before {
-    transform: scale(1.05);
+    transform: scale(1.10); /* Solo la imagen se agranda */
   }
 
   .event-content {
@@ -57,10 +53,10 @@
   .event-tag {
     background-color: #B9FF38;
     color: black;
-    font-weight: 100;
+    font-weight: 700; /* En negrita */
     font-size: 0.75rem;
     padding: 4px 8px;
-    border-radius: 5px;
+    border-radius: 20px;
     display: inline-block;
     margin-bottom: 0.5rem;
   }
@@ -71,7 +67,7 @@
     height: 5px;
     background-color: #B9FF38;
     width: 10%;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.1s ease-in-out;
   }
 
   .event-card:hover .lime-bar {
@@ -127,11 +123,11 @@
 
       @foreach($articles as $article)
       <div class="col-md-4 col-xl-4">
-        <div class="event-card" style="background-image: url('{{ asset('assets/img/enlimonado/blog/' . $article['img']) }}');">
+        <div class="event-card" data-bg="{{ asset('assets/img/enlimonado/blog/' . $article['img']) }}">
           <div class="event-content">
             <div class="event-tag">{{ $article['tag'] }}</div>
-            <h5 class="fw-bold">{{ $article['title'] }}</h5>
-            <p class="mb-1"><small>Por {{ $article['author'] }}</small></p>
+            <h5 class="fw-bold" style="color: #ffffff;">{{ $article['title'] }}</h5>
+            <h6 class="mb-1" style="color: #ffffff;">Por {{ $article['author'] }}</h6>
             <div class="lime-bar"></div>
           </div>
         </div>
@@ -140,3 +136,10 @@
     </div>
   </div>
 </section>
+
+<script>
+  document.querySelectorAll('.event-card').forEach(card => {
+    const bgUrl = card.getAttribute('data-bg');
+    card.style.setProperty('--bg-img', `url(${bgUrl})`);
+  });
+</script>
