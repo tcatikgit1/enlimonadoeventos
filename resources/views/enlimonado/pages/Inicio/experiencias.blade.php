@@ -13,44 +13,44 @@
 
     <div class="row justify-content-center g-5" style="margin-top: 3rem">
       @php
-    $valores = [
-      [
-      'icono' => '🚀',
-      'titulo' => 'Eventos Corporativos',
-      'texto' => 'Transformamos tus convenciones aburridas en experiencias memorables que impulsan tu marca.',
-      'color' => '#ff4dd6'
-      ],
-      [
-      'icono' => '✨',
-      'titulo' => 'Retail & Activaciones',
-      'texto' => 'Creamos momentos que convierten miradas curiosas en clientes comprometidos.',
-      'color' => '#cccccc'
-      ],
-      [
-      'icono' => '🎵',
-      'titulo' => 'Experiencias Musicales',
-      'texto' => 'Diseñamos espacios donde la música, el arte y tu marca crean una sinfonía perfecta..',
-      'color' => '#cccccc'
-      ],
-      [
-      'icono' => '🤝',
-      'titulo' => 'Team Building',
-      'texto' => 'Actividades que fortalecen equipos a través de experiencias compartidas únicas.',
-      'color' => '#ffb347'
-      ],
-      [
-      'icono' => '🥂',
-      'titulo' => 'Celebraciones',
-      'texto' => 'Eventos privados con personalidad donde cada detalle cuenta una historia.',
-      'color' => '#ffb347'
-      ],
-      [
-      'icono' => '🔮',
-      'titulo' => 'Lo Bizarro',
-      'texto' => '¿Tienes una idea loca? Nosotros la hacemos más loca... y funcional.',
-      'color' => '#FFEB3B'
-      ],
-    ];
+$valores = [
+  [
+    'icono' => '🚀',
+    'titulo' => 'Eventos Corporativos',
+    'texto' => 'Transformamos tus convenciones aburridas en experiencias memorables que impulsan tu marca.',
+    'color' => '#ff4dd6'
+  ],
+  [
+    'icono' => '✨',
+    'titulo' => 'Retail & Activaciones',
+    'texto' => 'Creamos momentos que convierten miradas curiosas en clientes comprometidos.',
+    'color' => '#cccccc'
+  ],
+  [
+    'icono' => '🎵',
+    'titulo' => 'Experiencias Musicales',
+    'texto' => 'Diseñamos espacios donde la música, el arte y tu marca crean una sinfonía perfecta..',
+    'color' => '#cccccc'
+  ],
+  [
+    'icono' => '🤝',
+    'titulo' => 'Team Building',
+    'texto' => 'Actividades que fortalecen equipos a través de experiencias compartidas únicas.',
+    'color' => '#ffb347'
+  ],
+  [
+    'icono' => '🥂',
+    'titulo' => 'Celebraciones',
+    'texto' => 'Eventos privados con personalidad donde cada detalle cuenta una historia.',
+    'color' => '#ffb347'
+  ],
+  [
+    'icono' => '🔮',
+    'titulo' => 'Lo Bizarro',
+    'texto' => '¿Tienes una idea loca? Nosotros la hacemos más loca... y funcional.',
+    'color' => '#FFEB3B'
+  ],
+];
     @endphp
 
       @foreach($valores as $valor)
@@ -63,6 +63,14 @@
       </div>
       </div>
     @endforeach
+    </div>
+
+    <!-- Botón centrado -->
+    <div class="text-center mt-5">
+      <a href="tel:+34928123456" class="btn btn-sm"
+        style="background-color: #000000; color: #B9FF38; border: 1px solid #B9FF38; font-size: 0.875rem; padding: 0.5rem 1rem; margin-top: 3rem;">
+        Descubre nuestro enfoque <i class="ti ti-bolt ms-1"></i>
+      </a>
     </div>
   </div>
 </section>
