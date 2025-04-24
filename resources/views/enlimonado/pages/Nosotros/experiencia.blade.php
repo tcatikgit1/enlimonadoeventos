@@ -40,12 +40,33 @@ $items = [
         <img src="{{ asset('assets/img/enlimonado/Nosotros/Evento.jpg') }}" alt="Eventos"
           class="img-fluid rounded-4 shadow" style="object-fit: cover; width: 100%; height: auto;">
 
-        <div class="position-absolute bottom-0 start-0 m-0 p-5 text-black rounded-3"
-          style="background-color: #B5F613; max-width: 80%;">
-          <strong>+200 eventos producidos</strong><br>
-          Con resultados que superan las expectativas
-        </div>
+
+<div class="position-absolute bottom-0 start-0 m-0 p-5 text-black rounded-3 slide-horizontal"
+  style="background-color: #B5F613; max-width: 80%;">
+  <strong>+200 eventos producidos</strong><br>
+  Con resultados que superan las expectativas
+</div>
+
       </div>
     </div>
   </div>
 </section>
+
+
+<style>
+  .slide-horizontal {
+    animation: slideLR 10s infinite;
+  }
+
+  @keyframes slideLR {
+
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(10px);
+    }
+  }
+</style>

@@ -14,35 +14,21 @@
 $valores = [
   [
 
-    'icono' => 'quote',
+    'icono' => '"',
     'texto' => 'Nuestra convención pasó de aburrida a icónica en 24h.',
     'color' => '#B9FF38',
     'avatar' => 'CarlosRodriguez',
     'nombre' => 'Carlos Rodriguez',
-    'cargo' => 'Gerente, Centro Comercial Y'
+    'cargo' => 'Gerente,'
   ],
   [
-    'icono' => 'quote',
+    'icono' => '"',
     'texto' => 'Nunca imaginé que un stand en un centro comercial generara tanto hype.',
     'color' => '#B9FF38',
     'avatar' => 'MariaLopez',
     'nombre' => 'Maria Lopez',
     'cargo' => 'Directora de Marketing, Empresa Innovación'
   ]
-  [
-    'icono' => '"',
-    'titulo' => 'Nuestra convención pasó de aburrida a icónica en 24h.',
-    'color' => '#B5F613',
-    'usuario' => 'María Lopez',
-    'cargo' => 'Directora de Marketing',
-  ],
-  [
-    'icono' => '"',
-    'titulo' => 'Nunca imaginé que un stand en un centro comercial generara tanto hype.',
-    'color' => '#B5F613',
-    'usuario' => 'Carlos Rodríguez',
-    'cargo' => 'Gerente',
-  ],
 ];
     @endphp
 
@@ -52,15 +38,15 @@ $valores = [
       style="background-color: #16121E; border: 1px solid rgba(255, 255, 255, 0.1);">
       <div>
         <div class="fs-1 mb-3" style="color: {{ $valor['color'] }};">{{ $valor['icono'] }}</div>
-        <h5 class="fw-bold mb-3 text-white">{{ $valor['titulo'] }}</h5>
+        <h5 class="fw-bold mb-3 text-white">{{ $valor['texto'] }}</h5>
       </div>
       <div class="d-flex align-items-center">
         <div class="me-3 d-flex justify-content-center align-items-center"
         style="width: 50px; height: 50px; border-radius: 50%; background-color: #8130b1; color: rgb(255, 255, 255); font-weight: bold; font-size: 1.2rem;">
-        {{ substr($valor['usuario'], 0, 1) }}
+        {{ substr($valor['nombre'], 0, 1) }}
         </div>
         <div>
-        <div class="fw-semibold">{{ $valor['usuario'] }}</div>
+        <div class="fw-semibold">{{ $valor['nombre'] }}</div>
         <small class="text-muted">{{ $valor['cargo'] }}</small>
         </div>
       </div>

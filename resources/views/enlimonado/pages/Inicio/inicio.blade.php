@@ -1,5 +1,5 @@
 <section class="py-5" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
-  
+
   <style>
    .mi-boton1:hover {
     background-color: #7daa17 !important;
@@ -22,17 +22,17 @@
         <h2 class="fw-bold display-1 display-md-1 display-lg-1" style="color: #ffffff;">
           Eventos <span style="color: #B9FF38;">top</span>, ácidos y <br>
           bizarros.<br>
-          <span style="background: linear-gradient(to right, #B9FF38, #9757EC); 
-                       -webkit-background-clip: text; 
-                       -webkit-text-fill-color: transparent; 
-                       background-clip: text; 
-                       color: transparent; 
+          <span style="background: linear-gradient(to right, #B9FF38, #9757EC);
+                       -webkit-background-clip: text;
+                       -webkit-text-fill-color: transparent;
+                       background-clip: text;
+                       color: transparent;
                        font-weight: bold;">
             Como tú.
           </span>
         </h2>
       </div>
-      
+
 
       <div class="d-flex justify-content-center text-center my-4" style="padding-left: 20%; padding-right: 20%;">
         <p class="fs-4 fs-md-4"  style="color: #AAADB2;">
@@ -57,15 +57,37 @@
         <i class="ti chevron-compact-down" style="font-weight: bold;"></i>
       </a>
 
-     
+
+
+
       <div class="d-flex justify-content-center my-10">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#105fb0"
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fff"
           stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+          class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down arrow-bounce">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M6 9l6 6l6 -6" />
         </svg>
       </div>
+
     </div>
   </div>
 </section>
+
+
+     <style>
+        .arrow-bounce {
+          animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+
+          50% {
+            transform: translateY(10px);
+          }
+        }
+      </style>
