@@ -21,12 +21,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer d-flex justify-content-between">
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center" style="background: #0E0B13; height: 70px; width: 170px;">
+                    <div class="card-footer d-flex flex-wrap gap-2">
+                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
                             <p class="mb-0" style="font-size: 13px">Asistentes</p>
                             <p class="mb-0 fw-bold" style="color: #B9FF38">200+</p>
                         </div>
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center" style="background: #0E0B13; height: 70px; width: 170px;">
+                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
                             <p class="mb-0" style="font-size: 13px">Satisfacción</p>
                             <p class="mb-0 fw-bold" style="color: #B9FF38">98%</p>
                         </div>
@@ -48,12 +48,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer d-flex justify-content-between">
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center" style="background: #0E0B13; height: 70px; width: 170px;">
+                    <div class="card-footer d-flex flex-wrap gap-2">
+                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
                             <p class="mb-0" style="font-size: 13px">Interacción</p>
                             <p class="mb-0 fw-bold" style="color: #B9FF38">15K+</p>
                         </div>
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center" style="background: #0E0B13; height: 70px; width: 170px;">
+                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
                             <p class="mb-0" style="font-size: 13px">Incremento Ventas</p>
                             <p class="mb-0 fw-bold" style="color: #B9FF38">+45%</p>
                         </div>
@@ -75,12 +75,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer d-flex justify-content-between">
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center" style="background: #0E0B13; height: 70px; width: 170px;">
+                    <div class="card-footer d-flex flex-wrap gap-2">
+                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
                             <p class="mb-0" style="font-size: 13px">Impacto R R S S</p>
                             <p class="mb-0 fw-bold" style="color: #B9FF38">1.2M impresiones</p>
                         </div>
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center" style="background: #0E0B13; height: 70px; width: 170px;">
+                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
                             <p class="mb-0" style="font-size: 13px">Apariciones Medios</p>
                             <p class="mb-0 fw-bold" style="color: #B9FF38">8 publicaciones</p>
                         </div>
@@ -102,12 +102,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer d-flex justify-content-between">
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center" style="background: #0E0B13; height: 70px; width: 170px;">
+                    <div class="card-footer d-flex flex-wrap gap-2">
+                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
                             <p class="mb-0" style="font-size: 13px">Mejora Colaboración</p>
                             <p class="mb-0 fw-bold" style="color: #B9FF38">+37%</p>
                         </div>
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center" style="background: #0E0B13; height: 70px; width: 170px;">
+                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
                             <p class="mb-0" style="font-size: 13px">Satisfacción Equipo</p>
                             <p class="mb-0 fw-bold" style="color: #B9FF38">95%</p>
                         </div>
@@ -129,18 +129,37 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer d-flex justify-content-between">
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center" style="background: #0E0B13; height: 70px; width: 170px;">
+                    <div class="card-footer d-flex flex-wrap gap-2">
+                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
                             <p class="mb-0" style="font-size: 13px">Asistentes</p>
                             <p class="mb-0 fw-bold" style="color: #B9FF38">5,000+</p>
                         </div>
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center" style="background: #0E0B13; height: 70px; width: 170px;">
+                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
                             <p class="mb-0" style="font-size: 13px">Valoración Media</p>
                             <p class="mb-0 fw-bold" style="color: #B9FF38">4.8/5</p>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
+
+<style>
+    img.rounded-circle {
+        object-fit: cover;
+    }
+
+    .card-footer {
+        background: none;
+        border-top: none;
+    }
+
+    .stat-box {
+        background: #0E0B13;
+        height: 70px;
+        min-width: 140px;
+        flex: 1;
+    }
+</style>
