@@ -13,27 +13,37 @@
       @php
 $valores = [
   [
-    'icono' => '"',
-    'titulo' => 'Eventos Corporativos',
-    'texto' => 'Transformamos tus convenciones aburridas en experiencias memorables que impulsan tu marca.',
-    'color' => '#ff4dd6'
+    'icono' => 'quote',
+    'texto' => 'Nuestra convención pasó de aburrida a icónica en 24h.',
+    'color' => '#B9FF38',
+    'avatar' => 'CarlosRodriguez',
+    'nombre' => 'Carlos Rodriguez',
+    'cargo' => 'Gerente, Centro Comercial Y'
   ],
   [
-    'icono' => '✨',
-    'titulo' => 'Retail & Activaciones',
-    'texto' => 'Creamos momentos que convierten miradas curiosas en clientes comprometidos.',
-    'color' => '#cccccc'
+    'icono' => 'quote',
+    'texto' => 'Nunca imaginé que un stand en un centro comercial generara tanto hype.',
+    'color' => '#B9FF38',
+    'avatar' => 'MariaLopez',
+    'nombre' => 'Maria Lopez',
+    'cargo' => 'Directora de Marketing, Empresa Innovación'
   ],
 ];
   @endphp
 
       @foreach($valores as $valor)
-      <div class="col-md-6 col-lg-2">
+      <div class="col-md-6 col-lg-2" style="height: 250px; width: 600px;">
       <div class="p-3 h-100 text-white rounded-3 shadow-sm d-flex flex-column"
         style="background-color: #16121E; border: 1px solid rgba(255, 255, 255, 0.1);">
-        <div class="fs-2 mb-4" style="color: {{ $valor['color'] }};">{{ $valor['icono'] }}</div>
-        <h5 class="fw-bold mb-4 text-white">{{ $valor['titulo'] }}</h5>
-        <p class="mb-0 text-white">{{ $valor['texto'] }}</p>
+        <div class="fs-2 mb-4 ms-4" style="color: {{ $valor['color'] }};"> <i class="ti ti-{{ $valor['icono']}} fs-3 mb-3" style="color: {{ $valor['color'] }}"></i></div>
+        <h5 class="fw-bold mb-6 ms-4 text-white">{{ $valor['texto'] }}</h5>
+        <div class="d-flex align-items-center ms-4">
+          <img src="/assets/img/enlimonado/exitos/{{ $valor['avatar'] }}.webp" class="rounded-circle" width="50" height="50" alt="Maria Lopez">
+          <div class="ms-3">
+              <strong>{{ $valor['nombre'] }}</strong><br>
+              <small class="text-muted">{{ $valor['cargo'] }}</small>
+          </div>
+      </div>
       </div>
       </div>
     @endforeach
