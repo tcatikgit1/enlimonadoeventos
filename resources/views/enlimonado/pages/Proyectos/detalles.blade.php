@@ -39,8 +39,8 @@
             border-radius: 15px;
         }
     </style>
-
-    <div class="container py-5" style="background-color: #000;">
+<section class="py-7 py-lg-9" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
+    <div class="container py-5" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
         <div class="row mb-4">
             <div class="col-12 img-container">
                 <img src="{{ asset('assets/img/enlimonado/eventos/' . $project['img']) }}" class="img-fluid"
@@ -69,9 +69,9 @@
             </div>
         </div>
     </div>
+</section>
 
-
-    @include('enlimonado.pages.Proyectos.contacto')
+    @include('enlimonado.pages.Proyectos.contacto2')
     <!-- Add Role Modal -->
     @include('_partials/_modals/modal-add-role')
     <!-- / Add Role Modal -->

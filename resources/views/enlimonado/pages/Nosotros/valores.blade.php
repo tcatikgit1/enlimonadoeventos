@@ -27,7 +27,6 @@
     ];
 @endphp
 
-@section('page-style')
 <style>
     .valor-card {
         background-color: #16121E;
@@ -40,7 +39,6 @@
         background-color: #1f1c25;
     }
 </style>
-@endsection
 
 <section class="py-7"
     style="background: linear-gradient(to top, #000000 30%, #160b24 100%); padding-top: 7rem; padding-bottom: 7rem;">
@@ -52,7 +50,7 @@
         <div class="row justify-content-center g-4">
             @foreach ($valores as $valor)
                 <div class="col-md-6 col-lg-3">
-                    <div class="p-4 h-100 text-white rounded-3 d-flex flex-column valor-card">
+                    <div class="p-4 h-100 text-white rounded-3 shadow-sm d-flex flex-column valor-card">
                         <div class="fs-2 mb-4" style="color: {{ $valor['color'] }};">{{ $valor['icono'] }}</div>
                         <h5 class="fw-bold mb-4 text-white">{{ $valor['titulo'] }}</h5>
                         <p class="mb-0 text-white">{{ $valor['texto'] }}</p>
