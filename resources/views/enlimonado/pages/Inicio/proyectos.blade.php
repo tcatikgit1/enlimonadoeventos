@@ -118,8 +118,7 @@ $articles = [
   @endforeach
   </div>
     <div class="text-center mt-5">
-      <a href="tel:+34928123456" class="btn btn-sm"
-        style="background-color: #000000; color: #B9FF38; border: 1px solid #B9FF38; font-size: 0.875rem; padding: 0.5rem 1rem; margin-top: 3rem;">
+      <a href="tel:+34928123456" class="btn btn-outline-lime">
         Ver todos los proyectos <i class="ti ti-arrow-right ms-1"></i>
       </a>
     </div>

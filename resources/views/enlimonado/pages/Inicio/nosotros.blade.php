@@ -56,7 +56,7 @@ $valores = [
 
     </div>
       <div class="text-center" style="margin-top: 3rem">
-      <button class="rounded fw-bold mt-3" style="background: #B9FF38; padding: 12px 30px; font-size: 15px;">Ver más testimonios</button>
+      <button class="rounded fw-bold mt-3 mi-boton1" style="background: #B9FF38; padding: 12px 30px; font-size: 15px;">Ver más testimonios</button>
       </div>
 
   </div>
@@ -65,13 +65,13 @@ $valores = [
 <section
   style="position: relative; background-image: url('/assets/img/enlimonado/exitos/fondoExitos.webp'); background-size: cover; background-position: center; height: 340px; display: flex; align-items: center; justify-content: center; text-align: center;">
 
-  <div style="position: absolute; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+  <div style="position: absolute; inset: 0; background-color: rgba(0, 0, 0, 0.7); z-index: 1;"></div>
 
   <div class="container" style="position: relative; z-index: 2;">
     <div>
       <h4 class="text-white fs-2 fw-bold pb-2">¿El próximo gran evento? <span style="color: #B9FF38;"><br>Puede ser el tuyo.</span></h4>
       <p style="color: rgba(255, 255, 255, 0.8); font-size: 21px;">¿Tienes una marca, una idea o un marrón? Llámanos antes de que se agrie.</p>
-      <button class="rounded fw-bold mt-3" style="background: #B9FF38; padding: 12px 30px; font-size: 15px;">Contáctanos
+      <button class="rounded fw-bold mt-3 mi-boton1" style="background: #B9FF38; padding: 12px 30px; font-size: 15px;">Contáctanos
         ahora</button>
     </div>
   </div>
