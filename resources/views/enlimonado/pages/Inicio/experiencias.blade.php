@@ -67,8 +67,7 @@ $valores = [
 
     <!-- Botón centrado -->
     <div class="text-center mt-5">
-      <a href="tel:+34928123456" class="btn btn-sm"
-        style="background-color: #000000; color: #B9FF38; border: 1px solid #B9FF38; font-size: 0.875rem; padding: 0.5rem 1rem; margin-top: 3rem;">
+      <a href="/contact" class="btn btn-outline-lime"style="padding: 0.5rem 1rem; margin-top: 3rem;">
         Descubre nuestro enfoque <i class="ti ti-bolt ms-1"></i>
       </a>
     </div>

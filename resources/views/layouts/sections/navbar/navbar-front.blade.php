@@ -26,7 +26,7 @@ body {
 }
 
 .btn-outline-lime:hover {
-  background-color: rgba(163, 230, 53, 0.15); /* verde lima con transparencia */
+  background-color: rgba(160, 231, 46, 0.397); /* verde lima con transparencia */
   color: #ffffff;
 }
 </style>

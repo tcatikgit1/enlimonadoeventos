@@ -49,6 +49,7 @@
     padding: 1.5rem;
     color: white;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    width: 100%;
   }
 
   .event-tag {
@@ -91,35 +92,34 @@
 
       <!-- Tarjetas -->
       @php
-$articles = [
-  [
-    'img' => 'blog1.jpg',
-    'tag' => 'Workshop',
-    'title' => 'Cómo diseñar una estrategia de lanzamiento efectiva en 2023',
-  ],
-  [
-    'img' => 'blog2.jpg',
-    'tag' => 'Conferencia',
-    'title' => 'Los 7 errores más comunes en embudos de venta y cómo...',
-  ],
-];
-      @endphp
+    $articles = [
+      [
+      'img' => 'eve1.webp',
+      'tag' => 'Evento',
+      'title' => 'Painting Room',
+      ],
+      [
+      'img' => 'eve2.webp',
+      'tag' => 'Evento',
+      'title' => 'Primera Rage Room de CANARIAS',
+      ],
+    ];
+  @endphp
 
   @foreach($articles as $article)
     <div class="col-xl-6 d-flex justify-content-center"> {{-- Cambiado --}}
-    <div class="event-card" data-bg="{{ asset('assets/img/enlimonado/blog/' . $article['img']) }}">
+    <div class="event-card" data-bg="{{ asset('assets/img/enlimonado/eventos/' . $article['img']) }}">
       <div class="event-content">
-      <div class="event-tag">{{ $article['tag'] }}</div>
-      <h5 class="fw-bold" style="color: #ffffff;">{{ $article['title'] }}</h5>
-      <div class="lime-bar"></div>
+        <div class="event-tag">{{ $article['tag'] }}</div>
+        <h5 class="fw-bold" style="color: #ffffff;">{{ $article['title'] }}</h5>
+        <div class="lime-bar"></div>
       </div>
     </div>
     </div>
   @endforeach
   </div>
     <div class="text-center mt-5">
-      <a href="tel:+34928123456" class="btn btn-sm"
-        style="background-color: #000000; color: #B9FF38; border: 1px solid #B9FF38; font-size: 0.875rem; padding: 0.5rem 1rem; margin-top: 3rem;">
+      <a href="/projects" class="btn btn-outline-lime">
         Ver todos los proyectos <i class="ti ti-arrow-right ms-1"></i>
       </a>
     </div>

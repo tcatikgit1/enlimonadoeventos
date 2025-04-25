@@ -83,55 +83,61 @@
       @php
         $articles = [
           [
-            'img' => 'blog1.jpg',
-            'tag' => 'Workshop',
-            'title' => 'Cómo diseñar una estrategia de lanzamiento efectiva en 2023',
+            'img' => 'eve1.webp',
+            'tag' => 'Eventos',
+            'title' => 'Painting room',
             'author' => 'Juan Pérez',
           ],
           [
-            'img' => 'blog2.jpg',
-            'tag' => 'Conferencia',
-            'title' => 'Los 7 errores más comunes en embudos de venta y cómo...',
+            'img' => 'eve2.webp',
+            'tag' => 'Evento',
+            'title' => 'Primera Rage Room de CANARIAS',
             'author' => 'María Gómez',
           ],
           [
-            'img' => 'blog3.jpg',
-            'tag' => 'Seminario',
-            'title' => 'Posicionamiento SEO: Estrategias que funcionan en...',
+            'img' => 'eve3.webp',
+            'tag' => 'Evento',
+            'title' => 'Evento 21 aniversario',
             'author' => 'Carlos Torres',
           ],
           [
-            'img' => 'blog4.jpg',
-            'tag' => 'Taller',
-            'title' => 'Consultoría comercial: Cómo transformar equipos de venta...',
+            'img' => 'eve4.webp',
+            'tag' => 'Evento',
+            'title' => 'Concierto Maikel Delacalle',
             'author' => 'Ana Ruiz',
           ],
           [
-            'img' => 'blog5.jpg',
-            'tag' => 'Evento Online',
-            'title' => 'Estrategia omnicanal: Integrando la experiencia...',
+            'img' => 'eve5.webp',
+            'tag' => 'Evento',
+            'title' => 'Evento IOC 2022',
             'author' => 'Luis Martínez',
           ],
           [
-            'img' => 'blog6.jpg',
-            'tag' => 'Charla',
-            'title' => 'El arte de la propuesta comercial: Cómo aumentar la...',
+            'img' => 'eve6.webp',
+            'tag' => 'Evento',
+            'title' => 'Evento Find The Rider',
             'author' => 'Diana López',
           ],
         ];
       @endphp
 
+
+      @php use Illuminate\Support\Str; @endphp
+
       @foreach($articles as $article)
-      <div class="col-md-4 col-xl-4">
-        <div class="event-card" data-bg="{{ asset('assets/img/enlimonado/blog/' . $article['img']) }}">
-          <div class="event-content">
-            <div class="event-tag">{{ $article['tag'] }}</div>
-            <h5 class="fw-bold" style="color: #ffffff;">{{ $article['title'] }}</h5>
-            <h6 class="mb-1" style="color: #ffffff;">Por {{ $article['author'] }}</h6>
-            <div class="lime-bar"></div>
-          </div>
+        @php $slug = Str::slug($article['title']); @endphp
+        <div class="col-md-4 col-xl-4">
+          <a href="{{ route('proyects.detalles', ['slug' => $slug]) }}" style="text-decoration: none;">
+            <div class="event-card" data-bg="{{ asset('assets/img/enlimonado/eventos/' . $article['img']) }}">
+              <div class="event-content">
+                <div class="event-tag">{{ $article['tag'] }}</div>
+                <h5 class="fw-bold" style="color: #ffffff;">{{ $article['title'] }}</h5>
+                <h6 class="mb-1" style="color: #ffffff;">Por {{ $article['author'] }}</h6>
+                <div class="lime-bar"></div>
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
       @endforeach
     </div>
   </div>

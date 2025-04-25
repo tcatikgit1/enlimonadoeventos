@@ -3,9 +3,9 @@
     <span style="color: #B9FF38;">EN</span><span style="color: #fff;">LIMONADO</span>
   </div>
 
-  <h2 style="color:#B5F613; align-items: center;">¡Gracias por contactarnos, {{ $data['name'] }}!</h2>
+  <h2 style="color:#B5F613; text-align:center;">¡Gracias por contactarnos, {{ $data['name'] }}!</h2>
 
-  <p>Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.</p>
+  <p style="text-align:center">Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.</p>
 
   <hr style="border-top: 1px solid #444; margin: 30px 0;">
 

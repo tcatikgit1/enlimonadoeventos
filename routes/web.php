@@ -189,6 +189,8 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 
 
 Route::get('/projects', [WebController::class, 'proyectos'])->name('proyects');
+Route::get('/projects/{slug}', [WebController::class, 'proyectoDetalle'])->name('proyects.detalles');
+
 
 Route::get('/upcoming', [WebController::class, 'proximos'])->name('upcoming');
 
