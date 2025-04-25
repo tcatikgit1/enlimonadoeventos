@@ -2,21 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\StorePostRequest;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
-  public function store(Request $request)
+  public function store(StorePostRequest $request)
   {
-    $data = $request->validate([
-      'name' => 'required|string|max:255',
-      'email' => 'required|email|max:255',
-      'company' => 'nullable|string|max:255',
-      'phone' => 'nullable|string|max:20',
-      'subject' => 'required|string|max:255',
-      'message' => 'required|string',
-    ]);
+    $data = $request->validated();
 
     // Enviar email al administrador
     Mail::send('emails.contact-admin', ['data' => $data], function ($m) use ($data) {

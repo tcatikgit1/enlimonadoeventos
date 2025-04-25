@@ -168,6 +168,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogManagement;
 use App\Http\Controllers\ServiciosController;
 use App\Http\Controllers\ContactController;
+Use App\Http\Controllers\InscriptController;
 
 //LOGIN
 
@@ -183,16 +184,18 @@ Route::get('/', [WebController::class, 'index'])->name('app');
 Route::get('/about-us', [WebController::class, 'aboutus'])->name('aboutus');
 Route::get('/contact', [WebController::class, 'contact'])->name('contact');
 Route::get('/success', [WebController::class, 'successes'])->name('successes');
+Route::get('/upcoming', [WebController::class, 'proximos'])->name('upcoming');
 
 //Mandar Mail
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+Route::post('/upcoming', [InscriptController::class, 'store'])->name('inscript.store');
+
 
 
 Route::get('/projects', [WebController::class, 'proyectos'])->name('proyects');
 Route::get('/projects/{slug}', [WebController::class, 'proyectoDetalle'])->name('proyects.detalles');
 
 
-Route::get('/upcoming', [WebController::class, 'proximos'])->name('upcoming');
 
 Route::get('/blog', [BlogController::class, 'mainBlogView'])->name('blog.main');
 Route::get('/blog/{id}', [BlogController::class, 'showBlog'])->name('blog.show');

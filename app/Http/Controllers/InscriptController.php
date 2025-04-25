@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Requests\InscriptionRequest;
+use Illuminate\Support\Facades\Mail;
+class InscriptController extends Controller
+{
+  public function store(InscriptionRequest $request)
+  {
+    $data = $request->validated();
+
+    // Enviar email al administrador
+    Mail::send('emails.inscript-admin', ['data' => $data], function ($m) use ($data) {
+      $m->to('info@enlimonadoeventos.com')->subject("Nuevo usuario Inscrito");
+    });
+
+    // Enviar email al usuario
+    Mail::send('emails.inscript-user', ['data' => $data], function ($m) use ($data) {
+      $m->to($data['email'])->subject('Inscripción exitosa');
+    });
+
+    return back()->with('success', '¡Mensaje enviado con éxito!');
+  }
+}
