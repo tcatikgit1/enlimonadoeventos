@@ -8,28 +8,38 @@ $navbarDetached = ($navbarDetached ?? '');
 @endphp
 
 <style>
-.custom-blur-nav {
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  transition: background 0.3s ease;
-  z-index: 1030;
-}
-body {
-  background-color: #000000; /* Asegura que el fondo no sea blanco */
-}
+    * {
+      font-family: 'Poppins', sans-serif !important;
+    }
 
-.btn-outline-lime {
-  border: 1px solid #B9FF38;
-  color: #B9FF38;
-  background-color: #000;
-}
+    .custom-blur-nav {
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: background 0.3s ease;
+      z-index: 1030;
+    }
+    body {
+      background-color: #000000; /* Asegura que el fondo no sea blanco */
+    }
 
-.btn-outline-lime:hover {
-  background-color: rgba(160, 231, 46, 0.397); /* verde lima con transparencia */
-  color: #ffffff;
-}
+    .btn-outline-lime {
+      border: 1px solid #B9FF38;
+      color: #B9FF38;
+      background-color: #000;
+    }
+
+    .btn-outline-lime:hover {
+      background-color: rgba(160, 231, 46, 0.397); /* verde lima con transparencia */
+      color: #ffffff;
+    }
 </style>
+
+<head>
+  <!-- Google Fonts -->
+{{--   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ --}}  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+</head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-sm sticky-top custom-blur-nav">
   <div class="container">
