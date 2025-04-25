@@ -91,23 +91,23 @@
 
       <!-- Tarjetas -->
       @php
-$articles = [
-  [
-    'img' => 'blog1.jpg',
-    'tag' => 'Workshop',
-    'title' => 'Cómo diseñar una estrategia de lanzamiento efectiva en 2023',
-  ],
-  [
-    'img' => 'blog2.jpg',
-    'tag' => 'Conferencia',
-    'title' => 'Los 7 errores más comunes en embudos de venta y cómo...',
-  ],
-];
-      @endphp
+    $articles = [
+      [
+      'img' => 'eve1.webp',
+      'tag' => 'Evento',
+      'title' => 'Painting Room',
+      ],
+      [
+      'img' => 'eve2.webp',
+      'tag' => 'Evento',
+      'title' => 'Primera Rage Room de CANARIAS',
+      ],
+    ];
+  @endphp
 
   @foreach($articles as $article)
     <div class="col-xl-6 d-flex justify-content-center"> {{-- Cambiado --}}
-    <div class="event-card" data-bg="{{ asset('assets/img/enlimonado/blog/' . $article['img']) }}">
+    <div class="event-card" data-bg="{{ asset('assets/img/enlimonado/eventos/' . $article['img']) }}">
       <div class="event-content">
       <div class="event-tag">{{ $article['tag'] }}</div>
       <h5 class="fw-bold" style="color: #ffffff;">{{ $article['title'] }}</h5>
