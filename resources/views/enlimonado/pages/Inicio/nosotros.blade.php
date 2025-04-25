@@ -37,7 +37,7 @@ $valores = [
       <div class="p-4 h-100 text-white rounded-3 shadow-sm d-flex flex-column justify-content-between"
       style="background-color: #16121E; border: 1px solid rgba(255, 255, 255, 0.1);">
       <div>
-        <div class="fs-1 mb-3" style="color: {{ $valor['color'] }};">{{ $valor['icono'] }}</div>
+        <i class="ti ti-quote fs-3 mb-3" style="color: #B9FF38"></i>
         <h5 class="fw-bold mb-3 text-white">{{ $valor['texto'] }}</h5>
       </div>
       <div class="d-flex align-items-center">
@@ -55,11 +55,12 @@ $valores = [
   @endforeach
 
     </div>
-      <div class="text-center" style="margin-top: 3rem">
-      <button class="rounded fw-bold mt-3 mi-boton1" style="background: #B9FF38; padding: 12px 30px; font-size: 15px;">Ver más testimonios</button>
+      <div class="text-center mt-5">
+        <a href="/success" class="btn btn-lime">
+          Ver más testimonios <i class="ti ti-arrow-right ms-1"></i>
+        </a>
       </div>
-
-  </div>
+    </div>
 </section>
 
 <section
@@ -71,8 +72,11 @@ $valores = [
     <div>
       <h4 class="text-white fs-2 fw-bold pb-2">¿El próximo gran evento? <span style="color: #B9FF38;"><br>Puede ser el tuyo.</span></h4>
       <p style="color: rgba(255, 255, 255, 0.8); font-size: 21px;">¿Tienes una marca, una idea o un marrón? Llámanos antes de que se agrie.</p>
-      <button class="rounded fw-bold mt-3 mi-boton1" style="background: #B9FF38; padding: 12px 30px; font-size: 15px;">Contáctanos
-        ahora</button>
+      <div class="text-center mt-5">
+        <a href="/contact" class="btn btn-lg btn-lime-contact">
+          Contáctanos ahora
+        </a>
+      </div>
     </div>
   </div>
 </section>

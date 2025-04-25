@@ -1,22 +1,32 @@
 <style>
-  .mi-boton1 {
+  .btn-lime {
+    background-color: #B9FF38;
+    color: black;
+  }
+
+  .btn-lime:hover {
+    background-color: #7daa17 !important;
+    color: black !important;
+  }
+
+  .btn-lime-contact {
     background-color: #B9FF38;
     color: black;
     font-weight: bold;
   }
 
-  .mi-boton1:hover {
+  .btn-lime-contact:hover {
     background-color: #7daa17 !important;
     color: black !important;
   }
 
-  .mi-boton2 {
+  .btn-lime-proyects {
     color: white;
     border: 1px solid white;
     font-weight: bold;
   }
 
-  .mi-boton2:hover {
+  .btn-lime-proyects:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
     border-color: white;
@@ -74,13 +84,23 @@
 
     <div class="row justify-content-center text-center mb-5">
       <div class="col-auto d-flex flex-column flex-md-row gap-3">
-        <button type="button" class="btn btn-lg mi-boton1">
+        {{-- <button type="button" class="btn btn-lg mi-boton1">
           Exprímele jugo a tu idea <i class="ti ti-arrow-narrow-right ms-2"></i>
-        </button>
+        </button> --}}
+        <div class="text-center mt-5">
+          <a href="/contact" class="btn btn-lg btn-lime-contact">
+            Exprímele jugo a tu idea
+          </a>
+        </div>
+        <div class="text-center mt-5">
+          <a href="/projects" class="btn btn-lg btn-lime-proyects">
+            Ver Proyectos
+          </a>
+        </div>
 
-        <button type="button" class="btn btn-lg mi-boton2">
+        {{-- <button hreft="/projects" type="button" class="btn btn-lg mi-boton2">
           Ver Proyectos
-        </button>
+        </button> --}}
       </div>
     </div>
 

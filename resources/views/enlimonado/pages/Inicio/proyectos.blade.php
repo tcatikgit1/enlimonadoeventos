@@ -49,6 +49,7 @@
     padding: 1.5rem;
     color: white;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    width: 100%;
   }
 
   .event-tag {
@@ -109,16 +110,16 @@
     <div class="col-xl-6 d-flex justify-content-center"> {{-- Cambiado --}}
     <div class="event-card" data-bg="{{ asset('assets/img/enlimonado/eventos/' . $article['img']) }}">
       <div class="event-content">
-      <div class="event-tag">{{ $article['tag'] }}</div>
-      <h5 class="fw-bold" style="color: #ffffff;">{{ $article['title'] }}</h5>
-      <div class="lime-bar"></div>
+        <div class="event-tag">{{ $article['tag'] }}</div>
+        <h5 class="fw-bold" style="color: #ffffff;">{{ $article['title'] }}</h5>
+        <div class="lime-bar"></div>
       </div>
     </div>
     </div>
   @endforeach
   </div>
     <div class="text-center mt-5">
-      <a href="tel:+34928123456" class="btn btn-outline-lime">
+      <a href="/projects" class="btn btn-outline-lime">
         Ver todos los proyectos <i class="ti ti-arrow-right ms-1"></i>
       </a>
     </div>
