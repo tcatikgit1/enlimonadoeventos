@@ -196,6 +196,9 @@ Route::get('/projects', [WebController::class, 'proyectos'])->name('proyects');
 Route::get('/projects/{slug}', [WebController::class, 'proyectoDetalle'])->name('proyects.detalles');
 
 
+Route::get('/aviso-legal', [WebController::class, 'legales'])->name('legales');
+Route::get('/politica-de-privacidad', [WebController::class, 'politica'])->name('politica');
+
 
 Route::get('/blog', [BlogController::class, 'mainBlogView'])->name('blog.main');
 Route::get('/blog/{id}', [BlogController::class, 'showBlog'])->name('blog.show');

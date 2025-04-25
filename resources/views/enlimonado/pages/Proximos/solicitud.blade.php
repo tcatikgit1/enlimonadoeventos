@@ -68,7 +68,7 @@
 </style>
 
 
-<div class="modal fade" id="modalSolicitud" tabindex="-1" aria-labelledby="modalSolicitudLabel" aria-hidden="true">
+<div class="modal fade" id="modalSolicitud" tabindex="-1" aria-labelledby="modalSolicitudLabel" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.856); backdrop-filter: blur(5px);">
     <div class="modal-dialog modal-dialog-centered" style="max-width: 500px;">
         <div class="modal-content bg-dark text-white border-0 rounded-4">
             <div class="modal-header border-0">
