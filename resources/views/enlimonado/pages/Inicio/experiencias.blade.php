@@ -40,7 +40,8 @@
 @endphp
 
 <section class="py-7"
-    style="background: linear-gradient(to top, #000000 30%, #160b24 100%); padding-top: 7rem; padding-bottom: 7rem;">
+    style="background: linear-gradient(to top, #000000 30%, #160b24 100%); padding-top: 7rem; padding-bottom: 7rem;"
+    id="experiences">
     <div class="container" style="padding-top: 5rem; margin-bottom: 8rem;">
         <h2 class="text-center fw-bold mb-4 text-white">
             No hacemos <span style="color: #B5F613;">eventos</span>. Hacemos <span

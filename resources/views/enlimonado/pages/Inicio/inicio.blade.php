@@ -37,12 +37,9 @@
     }
 
     @keyframes bounce {
-
-        0%,
-        100% {
+        0%, 100% {
             transform: translateY(0);
         }
-
         50% {
             transform: translateY(10px);
         }
@@ -60,14 +57,20 @@
     .titulo-eventos {
         font-size: clamp(2.2rem, 6vw, 4.6rem);
         line-height: 1.2;
-        margin-top: 9rem;
+        margin-top: 6rem;
+    }
+
+    @media (max-width: 768px) {
+        .titulo-eventos {
+            margin-top: 4rem;
+        }
     }
 </style>
 
 <section class="py-5" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
     <div class="container">
         <div class="row justify-content-center text-center mb-5">
-            <div class="col-lg-10">
+            <div class="col-12 col-lg-10">
                 <h2 class="fw-bold text-white titulo-eventos">
                     Eventos <span style="color: #B9FF38;">top</span>, ácidos y <br>
                     bizarros.<br>
@@ -77,7 +80,7 @@
         </div>
 
         <div class="row justify-content-center text-center mb-4">
-            <div class="col-lg-8">
+            <div class="col-12 col-lg-8">
                 <p class="fs-5 text-light">
                     En Enlimonado no organizamos eventos: los <span style="color: #B9FF38;">reventamos</span>
                     (creativamente).
@@ -87,22 +90,21 @@
         </div>
 
         <div class="row justify-content-center text-center mb-5">
-            <div class="col-auto d-flex flex-column flex-md-row gap-3">
-                <div class="text-center mt-5">
-                    <a href="/contact" class="btn btn-lg btn-lime-contact">
-                        Exprímele jugo a tu idea <i class="ti ti-arrow-narrow-right ms-2"></i>
-                    </a>
-                </div>
-                <div class="text-center mt-5">
-                    <a href="/projects" class="btn btn-lg btn-lime-proyects">
-                        Ver Proyectos
-                    </a>
-                </div>
+            <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mt-4">
+                <a href="/contact" class="btn btn-lg btn-lime-contact">
+                    Exprímele jugo a tu idea <i class="ti ti-arrow-narrow-right ms-2"></i>
+                </a>
+                <a href="/projects" class="btn btn-lg btn-lime-proyects">
+                    Ver Proyectos
+                </a>
             </div>
         </div>
-        <div class="row justify-content-center text-center">
+
+        <div class="row justify-content-center text-center pt-5 pt-lg-7">
             <div class="col-auto">
-                <i class="ti ti-chevrons-down arrow-bounce" style="font-size: 40px; color: #fff;"></i>
+                <a href="#experiences" class="d-inline-block">
+                    <i class="ti ti-chevrons-down arrow-bounce" style="font-size: 40px; color: #fff; cursor: pointer;"></i>
+                </a>
             </div>
         </div>
     </div>
