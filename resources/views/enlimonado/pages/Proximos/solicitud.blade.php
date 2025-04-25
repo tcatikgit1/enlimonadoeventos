@@ -78,25 +78,26 @@
                 </h5>
             </div>
             <div class="modal-body">
-                <form>
+                <form method="POST" action="{{ route('inscript.store') }}">
+                    @csrf
                     <div class="mb-3">
-                        <label for="nombre" class="form-label text-white">Nombre completo</label>
-                        <input type="text" class="form-control" id="nombre" required
+                        <label for="name" class="form-label text-white">Nombre completo</label>
+                        <input type="text" class="form-control" id="name" name="name" required
                             placeholder="Escribe tu nombre completo" value="">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label text-white">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" required
+                        <input type="email" class="form-control" id="email" name="email" required
                             placeholder="Escribe tu correo electrónico" value="">
                     </div>
                     <div class="mb-3">
-                        <label for="telefono" class="form-label text-white">Teléfono</label>
-                        <input type="text" class="form-control" id="telefono" required
+                        <label for="phone" class="form-label text-white">Teléfono</label>
+                        <input type="text" class="form-control" id="phone" name="phone" required
                             placeholder="Escribe tu teléfono" value="">
                     </div>
                     <div class="mb-3">
-                        <label for="mensaje" class="form-label text-white">Mensaje (opcional)</label>
-                        <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe un mensaje (opcional)"></textarea>
+                        <label for="message" class="form-label text-white">Mensaje (opcional)</label>
+                        <textarea class="form-control" id="message" rows="3" name="message" placeholder="Escribe un mensaje (opcional)"></textarea>
                     </div>
                     <div class="d-flex justify-content-end">
                         <button type="button" class="btn-custom-cancelar me-2"
