@@ -12,6 +12,31 @@
         color: #000;
     }
 
+    .btn-lime-active {
+        border: 2px solid #B9FF38;
+        color: #000;
+        background-color: #B9FF38;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-lime-active:hover {
+        background-color: #9bd42f;
+        color: #000;
+    }
+
+    .btn-lime-desactive {
+        border: 1px solid #5e5e5e75;
+        color: #d6d5d5;
+        background-color: #000000ad;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+
+        cursor: not-allowed;
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
     .lime-text {
         color: #B9FF38;
     }

@@ -30,9 +30,9 @@
 
     /* Estilos para el botón "Enviar inscripción" personalizado */
     .btn-custom-enviar {
-        background-color: limegreen;
+        background-color: #B9FF38;
         color: black;
-        border: 2px solid limegreen;
+        border: 2px solid #B9FF38;
         padding: 10px 20px;
         font-size: 16px;
         border-radius: 8px;
@@ -41,8 +41,8 @@
 
     /* Estilos para el botón "Enviar inscripción" en hover */
     .btn-custom-enviar:hover {
-        background-color: lime;
-        border-color: lime;
+        background-color: #9bd42f;
+        border-color: #9bd42f;
     }
 
     /* Estilo para los campos de texto */
