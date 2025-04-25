@@ -1,3 +1,21 @@
+<style>
+    img.rounded-circle {
+        object-fit: cover;
+    }
+
+    .card-footer {
+        background: none;
+        border-top: none;
+    }
+
+    .stat-box {
+        background: #0E0B13;
+        height: 70px;
+        min-width: 140px;
+        flex: 1;
+    }
+</style>
+
 <section class="contact-section py-10" style="background: linear-gradient(to top, #000000 30%, #160b24 100%);">
     <div class="container">
         <div class="row justify-content-start mb-10">
@@ -12,9 +30,11 @@
                 <div class="card h-100 border-0" style="background-color: #16121E; color: white;">
                     <div class="card-body d-flex flex-column">
                         <i class="ti ti-quote fs-3 mb-3" style="color: #B9FF38"></i>
-                        <p class="fs-5">Nuestra convención pasó de aburrida a icónica en 24h. El equipo de Enlimonado creó una experiencia que nuestros empleados siguen comentando meses después.</p>
+                        <p class="fs-5">Nuestra convención pasó de aburrida a icónica en 24h. El equipo de Enlimonado
+                            creó una experiencia que nuestros empleados siguen comentando meses después.</p>
                         <div class="d-flex align-items-center mt-auto">
-                            <img src="/assets/img/enlimonado/exitos/MariaLopez.webp" class="rounded-circle" width="50" height="50" alt="Maria Lopez">
+                            <img src="/assets/img/enlimonado/exitos/MariaLopez.webp" class="rounded-circle"
+                                width="50" height="50" alt="Maria Lopez">
                             <div class="ms-3">
                                 <strong>María López</strong><br>
                                 <small class="text-muted">Directora de Marketing, Empresa Innovación</small>
@@ -39,9 +59,11 @@
                 <div class="card h-100 border-0" style="background-color: #16121E; color: white;">
                     <div class="card-body d-flex flex-column">
                         <i class="ti ti-quote fs-3 mb-3" style="color: #B9FF38"></i>
-                        <p class="fs-5">Nunca imaginé que un stand en un centro comercial generara tanto hype. La activación que diseñaron triplicó nuestras expectativas de visibilidad y conversión.</p>
+                        <p class="fs-5">Nunca imaginé que un stand en un centro comercial generara tanto hype. La
+                            activación que diseñaron triplicó nuestras expectativas de visibilidad y conversión.</p>
                         <div class="d-flex align-items-center mt-auto">
-                            <img src="/assets/img/enlimonado/exitos/CarlosRodriguez.webp" class="rounded-circle" width="50" height="50" alt="Carlos Rodriguez">
+                            <img src="/assets/img/enlimonado/exitos/CarlosRodriguez.webp" class="rounded-circle"
+                                width="50" height="50" alt="Carlos Rodriguez">
                             <div class="ms-3">
                                 <strong>Carlos Rodríguez</strong><br>
                                 <small class="text-muted">Gerente Comercial, Centro Comercial Las Arenas</small>
@@ -66,9 +88,11 @@
                 <div class="card h-100 border-0" style="background-color: #16121E; color: white;">
                     <div class="card-body d-flex flex-column">
                         <i class="ti ti-quote fs-3 mb-3" style="color: #B9FF38"></i>
-                        <p class="fs-5">Su visión para nuestro lanzamiento fue brillante. Mezclaron tecnología, creatividad y un toque bizarro que generó exactamente el impacto que buscábamos.</p>
+                        <p class="fs-5">Su visión para nuestro lanzamiento fue brillante. Mezclaron tecnología,
+                            creatividad y un toque bizarro que generó exactamente el impacto que buscábamos.</p>
                         <div class="d-flex align-items-center mt-auto">
-                            <img src="/assets/img/enlimonado/exitos/exitos2.webp" class="rounded-circle" width="50" height="50" alt="Laura Sánchez">
+                            <img src="/assets/img/enlimonado/exitos/exitos2.webp" class="rounded-circle" width="50"
+                                height="50" alt="Laura Sánchez">
                             <div class="ms-3">
                                 <strong>Laura Sánchez</strong><br>
                                 <small class="text-muted">CEO, Startup Tech</small>
@@ -93,9 +117,11 @@
                 <div class="card h-100 border-0" style="background-color: #16121E; color: white;">
                     <div class="card-body d-flex flex-column">
                         <i class="ti ti-quote fs-3 mb-3" style="color: #B9FF38"></i>
-                        <p class="fs-5">El team building que organizaron cambió completamente la dinámica de nuestro equipo. Combinar diversión con objetivos estratégicos fue un acierto total.</p>
+                        <p class="fs-5">El team building que organizaron cambió completamente la dinámica de nuestro
+                            equipo. Combinar diversión con objetivos estratégicos fue un acierto total.</p>
                         <div class="d-flex align-items-center mt-auto">
-                            <img src="/assets/img/enlimonado/exitos/exitos2.webp" class="rounded-circle" width="50" height="50" alt="Miguel Torres">
+                            <img src="/assets/img/enlimonado/exitos/exitos2.webp" class="rounded-circle" width="50"
+                                height="50" alt="Miguel Torres">
                             <div class="ms-3">
                                 <strong>Miguel Torres</strong><br>
                                 <small class="text-muted">Director de RRHH, Corporación Global</small>
@@ -120,9 +146,12 @@
                 <div class="card h-100 border-0" style="background-color: #16121E; color: white;">
                     <div class="card-body d-flex flex-column">
                         <i class="ti ti-quote fs-3 mb-3" style="color: #B9FF38"></i>
-                        <p class="fs-5">El festival que organizaron fue simplemente increíble. La combinación de música, arte y tecnología creó una atmósfera única que nos posicionó como referentes culturales.</p>
+                        <p class="fs-5">El festival que organizaron fue simplemente increíble. La combinación de
+                            música, arte y tecnología creó una atmósfera única que nos posicionó como referentes
+                            culturales.</p>
                         <div class="d-flex align-items-center mt-auto">
-                            <img src="/assets/img/enlimonado/exitos/ElenaMartin.webp" class="rounded-circle" width="50" height="50" alt="Elena Martín">
+                            <img src="/assets/img/enlimonado/exitos/ElenaMartin.webp" class="rounded-circle"
+                                width="50" height="50" alt="Elena Martín">
                             <div class="ms-3">
                                 <strong>Elena Martín</strong><br>
                                 <small class="text-muted">Directora Cultural, Fundación Artística</small>
@@ -141,25 +170,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
-
-<style>
-    img.rounded-circle {
-        object-fit: cover;
-    }
-
-    .card-footer {
-        background: none;
-        border-top: none;
-    }
-
-    .stat-box {
-        background: #0E0B13;
-        height: 70px;
-        min-width: 140px;
-        flex: 1;
-    }
-</style>
