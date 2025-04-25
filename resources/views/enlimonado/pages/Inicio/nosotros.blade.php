@@ -37,7 +37,7 @@ $valores = [
       <div class="p-4 h-100 text-white rounded-3 shadow-sm d-flex flex-column justify-content-between"
       style="background-color: #16121E; border: 1px solid rgba(255, 255, 255, 0.1);">
       <div>
-        <div class="fs-1 mb-3" style="color: {{ $valor['color'] }};"><i class="ti ti-{{ $valor['icono'] }}"></i></div>
+        <div class="mb-3" style="color: {{ $valor['color'] }};"><i class="ti ti-{{ $valor['icono'] }} fs-3"></i></div>
         <h5 class="fw-bold mb-3 text-white">{{ $valor['texto'] }}</h5>
       </div>
       <div class="d-flex align-items-center">
