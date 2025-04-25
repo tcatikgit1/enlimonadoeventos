@@ -39,6 +39,22 @@
     ];
 @endphp
 
+<style>
+    .experience-card {
+        background-color: #16121E;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        will-change: transform, box-shadow;
+    }
+
+    .experience-card:hover {
+        background-color: #1f1c25;
+        transform: scale(1.03);
+        box-shadow: 0 2px 3px rgba(187, 51, 255, 0.315); /* sombra morada visible */
+        z-index: 10;
+    }
+</style>
+
 <section class="py-7"
     style="background: linear-gradient(to top, #000000 30%, #160b24 100%); padding-top: 7rem; padding-bottom: 7rem;"
     id="experiences">
@@ -54,8 +70,7 @@
         <div class="row justify-content-center g-5" style="margin-top: 3rem">
             @foreach ($valores as $valor)
                 <div class="col-md-6 col-lg-4">
-                    <div class="p-3 h-100 text-white rounded-3 shadow-sm d-flex flex-column"
-                        style="background-color: #16121E; border: 1px solid rgba(255, 255, 255, 0.1);">
+                    <div class="p-3 h-100 text-white rounded-3 d-flex flex-column experience-card">
                         <div class="fs-2 mb-4" style="color: {{ $valor['color'] }};">{{ $valor['icono'] }}</div>
                         <h5 class="fw-bold mb-4 text-white">{{ $valor['titulo'] }}</h5>
                         <p class="mb-0 text-white">{{ $valor['texto'] }}</p>
@@ -66,7 +81,7 @@
 
         <!-- Botón centrado -->
         <div class="text-center mt-5">
-            <a href="/contact" class="btn btn-outline-lime"style="padding: 0.5rem 1rem; margin-top: 3rem;">
+            <a href="/contact" class="btn btn-outline-lime" style="padding: 0.5rem 1rem; margin-top: 3rem;">
                 Descubre nuestro enfoque <i class="ti ti-bolt ms-1"></i>
             </a>
         </div>

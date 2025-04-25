@@ -111,11 +111,11 @@ $containerFooter = (isset($configData['contentLayout']) && $configData['contentL
     <div class="container-fluid container d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 py-4">
       <div class="text-body footer-link">
         © <script>document.write(new Date().getFullYear())</script>
-        <a class="footer-link">Enlimonado Estrategias. Todos los derechos reservados.</a>
+        <a href="/legal-notice" class="footer-link">Enlimonado Estrategias. Todos los derechos reservados.</a>
       </div>
       <div class="d-flex flex-column flex-sm-row">
-        <a href="#" class="footer-link me-6">Aviso legal</a>
-        <a href="#" class="footer-link me-6">Política de privacidad</a>
+        <a href="/legal-notice" class="footer-link me-6">Aviso legal</a>
+        <a href="/privacy-policy" class="footer-link me-6">Política de privacidad</a>
       </div>
     </div>
   </footer>
