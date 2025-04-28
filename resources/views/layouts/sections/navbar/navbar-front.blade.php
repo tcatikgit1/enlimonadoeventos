@@ -1,5 +1,3 @@
-
-
 @php
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -36,15 +34,13 @@ $navbarDetached = ($navbarDetached ?? '');
 </style>
 
 <head>
-  <!-- Google Fonts -->
-{{--   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
- --}}  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-sm sticky-top custom-blur-nav">
   <div class="container">
     <a class="navbar-brand fw-bold fs-4" href="/">
-      <span style="color: #B9FF38;">EN</span><span style="color: #fff;">LIMONADO</span>
+      <img src="assets/img/enlimonado/logo/Log2.webp" alt="Logo Enlimonado" style="height: auto; width: 180px;">
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-label="Abrir menú de navegación">
@@ -66,4 +62,3 @@ $navbarDetached = ($navbarDetached ?? '');
     </div>
   </div>
 </nav>
-

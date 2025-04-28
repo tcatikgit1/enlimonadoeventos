@@ -51,7 +51,8 @@ footer.footer {
         <div class="col-12 col-md-4 mb-6">
           <h4 class="fw-bold fs-4 mb-3 text-white">
             <a href="#" class="text-uppercase text-white" style="text-decoration: none;">
-              <span style="color: #B9FF38;">EN</span><span style="color: #ffffff;">LIMONADO</span>
+              <!-- Aquí ponemos la imagen en lugar del texto ENLIMONADO -->
+              <img src="assets/img/enlimonado/logo/Log2.webp" alt="Logo Enlimonado" style="height: auto; width: 180px;">
             </a>
           </h4>
           <p style="color: #ffffff; font-family:Poppins, sans-serif">"Si no te lo cuestionan, es que no lo hiciste bien."</p>

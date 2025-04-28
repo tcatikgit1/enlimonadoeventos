@@ -1,6 +1,6 @@
 <div style="background-color:#000; color:#fff; font-family:Arial, sans-serif; padding:30px; border-radius:10px;">
   <div style="text-align:center; font-size:28px; font-weight:bold; margin-bottom:30px;">
-    <span style="color: #B9FF38;">EN</span><span style="color: #fff;">LIMONADO</span>
+    <img src="assets/img/enlimonado/logo/Log2.webp" alt="Logo Enlimonado" style="height: auto; width: 180px;">
   </div>
 
   <h2 style="color:#B5F613; align-items: center;">Nuevo usuario inscrito</h2>
