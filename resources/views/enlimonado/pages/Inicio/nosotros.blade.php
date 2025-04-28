@@ -52,7 +52,7 @@
             @endforeach
         </div>
         <div class="text-center mt-5">
-            <a href="/success" class="btn btn-lime">
+            <a href="/success" class="btn btn-lime" aria-label="Enlace para ver más testimonios">
                 Ver más testimonios <i class="ti ti-arrow-right ms-1"></i>
             </a>
         </div>
@@ -71,7 +71,7 @@
             <p style="color: rgba(255, 255, 255, 0.8); font-size: 21px;">¿Tienes una marca, una idea o un marrón?
                 Llámanos antes de que se agrie.</p>
             <div class="text-center mt-5">
-                <a href="/contact" class="btn btn-lg btn-lime-contact">
+                <a href="/contact" class="btn btn-lg btn-lime-contact" aria-label="Enlace para contactar con Enlimonado">
                     Contáctanos ahora
                 </a>
             </div>
