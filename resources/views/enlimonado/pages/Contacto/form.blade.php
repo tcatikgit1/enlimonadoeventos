@@ -12,9 +12,9 @@
         transition: background-color 5000s ease-in-out 0s;
     }
 </style>
-<section class="contact-section py-10" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
+<section class="contact-section py-10" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%); ">
     <div class="container">
-        <div class="row align-items-stretch">
+        <div class="row align-items-stretch" style="margin-bottom: 3rem;">
             <!-- Formulario -->
             <div class="col-lg-7 d-flex flex-column justify-content-center">
                 <h2 class="fw-bold mb-3 text-white">Háblanos de tu proyecto</h2>
@@ -23,7 +23,7 @@
 
                 <form method="POST" action="{{ route('contact.store') }}">
                     @csrf
-                    <div class="row g-3">
+                    <div class="row g-8">
                         <div class="col-md-6">
                             <label class="form-label text-white">Nombre completo *</label>
                             <input type="text" name="name" class="form-control bg-dark text-white border-0"
@@ -79,7 +79,7 @@
             <div class="col-lg-5 d-flex flex-column mt-5 mt-lg-0">
                 <h4 class="fw-bold text-white mb-5">Información de contacto</h4>
 
-                <div class="d-flex align-items-start mb-8">
+                <div class="d-flex align-items-start mb-11">
                     <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
                         style="width: 40px; height: 40px; background-color: #B9FF38;">
                         <i class="ti ti-mail text-black"></i>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex align-items-start mb-8">
+                <div class="d-flex align-items-start mb-11">
                     <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
                         style="width: 40px; height: 40px; background-color: #B9FF38;">
                         <i class="ti ti-phone text-black"></i>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex align-items-start mb-8">
+                <div class="d-flex align-items-start mb-11">
                     <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
                         style="width: 40px; height: 40px; background-color: #B9FF38;">
                         <i class="ti ti-map-pin text-black"></i>
