@@ -8,7 +8,11 @@ $menuCollapsed = ($configData['menuCollapsed'] === 'layout-menu-collapsed') ? js
 
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   @vite(['resources/assets/js/config.js'])
-
+@if ($configData['hasCustomizer'])
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+  @vite(['resources/assets/vendor/js/template-customizer.js'])
+@endif
 @if ($configData['hasCustomizer'])
 <script type="module">
   window.templateCustomizer = new TemplateCustomizer({
@@ -22,19 +26,19 @@ $menuCollapsed = ($configData['menuCollapsed'] === 'layout-menu-collapsed') ? js
       var resolvedPaths = {
         // Core stylesheets
         @foreach (['core'] as $name)
-          '{{ $name }}.scss': '{{ Vite::asset('resources/assets/vendor/scss'.$configData["rtlSupport"].'/'.$name.'.scss') }}',
-          '{{ $name }}-dark.scss': '{{ Vite::asset('resources/assets/vendor/scss'.$configData["rtlSupport"].'/'.$name.'-dark.scss') }}',
+          '{{ $name }}.scss': '{{ Vite::asset('resources/assets/vendor/scss' . $configData["rtlSupport"] . '/' . $name . '.scss') }}',
+          '{{ $name }}-dark.scss': '{{ Vite::asset('resources/assets/vendor/scss' . $configData["rtlSupport"] . '/' . $name . '-dark.scss') }}',
         @endforeach
 
         // Themes
         @foreach (['default', 'bordered', 'semi-dark'] as $name)
-          'theme-{{ $name }}.scss': '{{ Vite::asset('resources/assets/vendor/scss'.$configData["rtlSupport"].'/theme-'.$name.'.scss') }}',
-          'theme-{{ $name }}-dark.scss': '{{ Vite::asset('resources/assets/vendor/scss'.$configData["rtlSupport"].'/theme-'.$name.'-dark.scss') }}',
+          'theme-{{ $name }}.scss': '{{ Vite::asset('resources/assets/vendor/scss' . $configData["rtlSupport"] . '/theme-' . $name . '.scss') }}',
+          'theme-{{ $name }}-dark.scss': '{{ Vite::asset('resources/assets/vendor/scss' . $configData["rtlSupport"] . '/theme-' . $name . '-dark.scss') }}',
         @endforeach
       }
       return resolvedPaths[path] || path;
     },
-    'controls': <?php echo json_encode($configData['customizerControls']); ?>,
+    'controls': <?php  echo json_encode($configData['customizerControls']); ?>,
   });
 </script>
 @endif

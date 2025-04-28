@@ -5,7 +5,7 @@
 $configData = Helper::appClasses();
 @endphp
 
-@extends('layouts/commonMaster' )
+@extends('layouts/commonMaster')
 @php
 
 $menuHorizontal = true;
@@ -29,6 +29,13 @@ $container = ($configData['contentLayout'] === 'compact') ? 'container-xxl' : 'c
 $containerNav = ($configData['contentLayout'] === 'compact') ? 'container-xxl' : 'container-fluid';
 
 @endphp
+
+@if ($configData['hasCustomizer'])
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+  @vite(['resources/assets/vendor/js/template-customizer.js'])
+@endif
+
 
 @section('layoutContent')
 <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">

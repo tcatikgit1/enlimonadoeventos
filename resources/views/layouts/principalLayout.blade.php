@@ -5,7 +5,7 @@
 $configData = Helper::appClasses();
 @endphp
 
-@extends('layouts/commonMaster')
+@extends('layouts/principalCommonMaster' )
 @php
 
 $menuHorizontal = true;
