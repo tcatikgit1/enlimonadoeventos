@@ -81,7 +81,7 @@
 
         <!-- Botón centrado -->
         <div class="text-center mt-5">
-            <a href="/contact" class="btn btn-outline-lime" style="padding: 0.5rem 1rem; margin-top: 3rem;">
+            <a href="/contact" class="btn btn-outline-lime" style="padding: 0.5rem 1rem; margin-top: 3rem;" aria-label="Enlace para contactar con Enlimonado">
                 Descubre nuestro enfoque <i class="ti ti-bolt ms-1"></i>
             </a>
         </div>
