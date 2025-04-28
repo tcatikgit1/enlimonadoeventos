@@ -6,42 +6,39 @@ $containerFooter = (isset($configData['contentLayout']) && $configData['contentL
 @section('page-style')
 @vite('resources/css/enlimonado/footer.css')
 <style>
-  .footer-link {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
+  /* Footer general */
+footer.footer {
+  background-color: #000000; /* Fondo negro */
+}
 
-  .footer-link:hover {
-    color: #B9FF38;
-  }
+/* Enlaces en el footer */
+.footer-link {
+  color: #e1e1e1; /* Gris claro con mayor contraste */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
 
-  .footer-heading {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #ffffff;
-  }
+/* Hover en enlaces */
+.footer-link:hover {
+  color: #B9FF38; /* Verde brillante para el hover, con buen contraste */
+}
 
-  .icon-green {
-    color: #B9FF38;
-    margin-right: 8px;
-  }
+/* Encabezados en el footer */
+.footer-heading {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #e1e1e1; /* Gris claro para los encabezados */
+}
 
-  .footer-social-icon {
-    font-size: 1.25rem;
-    margin-right: 10px;
-    color: #ffffff;
-    transition: color 0.2s ease;
-  }
+/* Iconos sociales */
+.footer-social-icon {
+  color: #e1e1e1; /* Gris claro para los iconos */
+}
 
-  .footer-social-icon:hover {
-    color: #B9FF38;
-  }
-
-  .hrFooter {
-    border: none;
-    border-top: 1px solid #444;
-  }
+/* Iconos sociales en hover */
+.footer-social-icon:hover {
+  color: #B9FF38;
+}
 </style>
 @endsection
 

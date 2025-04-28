@@ -26,8 +26,8 @@
 
 @section('page-script')
 @vite([
-  'resources/assets/js/app-access-roles.js',
-  'resources/assets/js/modal-add-role.js',
+  /* 'resources/assets/js/app-access-roles.js',
+  'resources/assets/js/modal-add-role.js', */
 ])
 @endsection
 

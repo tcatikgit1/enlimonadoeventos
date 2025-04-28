@@ -47,7 +47,7 @@ $navbarDetached = ($navbarDetached ?? '');
       <span style="color: #B9FF38;">EN</span><span style="color: #fff;">LIMONADO</span>
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-label="Abrir menú de navegación">
       <span class="navbar-toggler-icon"></span>
     </button>
 

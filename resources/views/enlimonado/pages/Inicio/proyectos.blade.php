@@ -36,7 +36,6 @@
         overflow: hidden;
         border-radius: 15px;
         height: 400px;
-        /* Aumentada */
         width: 630px;
         margin-top: 3rem;
         display: flex;
@@ -57,7 +56,6 @@
 
     .event-card:hover::before {
         transform: scale(1.10);
-        /* Solo la imagen se agranda */
     }
 
     .event-content {
@@ -73,7 +71,6 @@
         background-color: #B9FF38;
         color: black;
         font-weight: 700;
-        /* En negrita */
         font-size: 0.75rem;
         padding: 4px 8px;
         border-radius: 20px;
@@ -97,20 +94,19 @@
 
 <section class="contact-section py-10" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
     <div class="container py-5">
-        <h2 class="text-center fw-bold mb-4 text-white">
+        <h2 class="text-center fw-bold mb-4 text-white" role="heading" aria-level="2">
             Proyectos <span style="color: #B5F613;">Enlimonados</span>.
         </h2>
         <p class="text-white fs-5 text-center mb-5 px-md-5" style="max-width: 850px; margin: 0 auto;">
             Un vistazo a nuestras creaciones más ácidas y bizarras
         </p>
         <div class="row mb-12 g-3 justify-content-center">
-            <!-- Tarjetas -->
             @foreach ($articles as $article)
-                <div class="col-xl-6 d-flex justify-content-center"> {{-- Cambiado --}}
+                <div class="col-xl-6 d-flex justify-content-center" aria-label="Tarjeta de evento">
                     <div class="event-card" data-bg="{{ asset('assets/img/enlimonado/eventos/' . $article['img']) }}">
                         <div class="event-content">
                             <div class="event-tag">{{ $article['tag'] }}</div>
-                            <h5 class="fw-bold" style="color: #ffffff;">{{ $article['title'] }}</h5>
+                            <h3 class="fw-bold" style="color: #ffffff;" role="heading" aria-level="3">{{ $article['title'] }}</h3> <!-- Cambio aquí: h5 -> h3 -->
                             <div class="lime-bar"></div>
                         </div>
                     </div>
