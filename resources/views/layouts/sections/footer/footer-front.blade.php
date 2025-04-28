@@ -90,7 +90,7 @@ footer.footer {
           <ul class="list-unstyled mt-3">
             <li class="d-flex align-items-center pb-2">
               <i class="ti ti-mail icon-green"></i>
-              <a href="mailto:$APP_MAIL" class="footer-link">{{ env('APP_MAIL') }}</a>
+              <a href="mailto:{{ env('APP_MAIL') }}" class="footer-link">{{ env('APP_MAIL') }}</a>
             </li>
             <li class="d-flex align-items-center pb-2">
               <i class="ti ti-phone icon-green"></i>
