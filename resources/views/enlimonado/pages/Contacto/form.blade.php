@@ -109,9 +109,6 @@
                     <div>
                         <strong class="text-white">Ubicación</strong><br>
                         <span class="text-white-50">Las Palmas de Gran Canaria, España</span><br>
-                        <small class="text-muted fst-italic">(Pero trabajamos donde haga falta, incluso en el desierto
-                            con generador
-                            portátil y DJ)</small>
                     </div>
                 </div>
 
