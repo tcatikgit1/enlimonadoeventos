@@ -163,21 +163,10 @@ use App\Http\Controllers\maps\Leaflet;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\laravel_example\ServicesManagement;
 use App\Http\Controllers\WebController;
-use App\Http\Controllers\NewsletterController;
-use App\Http\Controllers\BlogController;
-use App\Http\Controllers\BlogManagement;
-use App\Http\Controllers\ServiciosController;
 use App\Http\Controllers\ContactController;
 Use App\Http\Controllers\InscriptController;
 
-//LOGIN
 
-Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
-Route::post('/login', [AuthController::class, 'login']);
-Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
-
-//Newsletter
-Route::post('/newsletter', [NewsletterController::class, 'store'])->name('newsletter');
 
 // Main Page Route
 Route::get('/', [WebController::class, 'index'])->name('app');
@@ -185,41 +174,37 @@ Route::get('/about-us', [WebController::class, 'aboutus'])->name('aboutus');
 Route::get('/contact', [WebController::class, 'contact'])->name('contact');
 Route::get('/success', [WebController::class, 'successes'])->name('successes');
 Route::get('/upcoming', [WebController::class, 'proximos'])->name('upcoming');
+Route::get('/projects', [WebController::class, 'proyectos'])->name('proyects');
+Route::get('/projects/{slug}', [WebController::class, 'proyectoDetalle'])->name('proyects.detalles');
+Route::get('/aviso-legal', [WebController::class, 'legales'])->name('legales');
+Route::get('/politica-de-privacidad', [WebController::class, 'politica'])->name('politica');
 
 //Mandar Mail
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::post('/upcoming', [InscriptController::class, 'store'])->name('inscript.store');
 
+//Newsletter
 
+//LOGIN
 
-Route::get('/projects', [WebController::class, 'proyectos'])->name('proyects');
-Route::get('/projects/{slug}', [WebController::class, 'proyectoDetalle'])->name('proyects.detalles');
-
-
-Route::get('/aviso-legal', [WebController::class, 'legales'])->name('legales');
-Route::get('/politica-de-privacidad', [WebController::class, 'politica'])->name('politica');
-
-
-Route::get('/blog', [BlogController::class, 'mainBlogView'])->name('blog.main');
-Route::get('/blog/{id}', [BlogController::class, 'showBlog'])->name('blog.show');
-
-
-Route::get('/services', [ServiciosController::class, 'index']);
+// Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+// Route::post('/login', [AuthController::class, 'login']);
+// Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
 Route::middleware('auth')->group(
   function () {
 
 
-    Route::prefix('admin')->name('admin.')->group(function () {
-      Route::resource('blogs', BlogController::class);
+    // Route::prefix('admin')->name('admin.')->group(function () {
+    //   Route::resource('blogs', BlogController::class);
 
-    });
-    Route::get('/admin/blogs', [BlogController::class, 'index'])->name('blogs.index');
+    // });
+    // Route::get('/admin/blogs', [BlogController::class, 'index'])->name('blogs.index');
 
 
 
-    Route::get('/dashboard', [Analytics::class, 'index'])->name('dashboard-analytics');
+Route::get('/dashboard', [Analytics::class, 'index'])->name('dashboard-analytics');
 Route::get('/dashboard/crm', [Crm::class, 'index'])->name('dashboard-crm');
 // locale
 Route::get('/lang/{locale}', [LanguageController::class, 'swap']);
