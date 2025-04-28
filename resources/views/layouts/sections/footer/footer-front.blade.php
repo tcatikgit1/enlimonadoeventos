@@ -57,9 +57,7 @@ footer.footer {
           </h4>
           <p style="color: #ffffff; font-family:Poppins, sans-serif">"Si no te lo cuestionan, es que no lo hiciste bien."</p>
           <div class="mt-3">
-            <a href="https://facebook.com" target="_blank" aria-label="Enlace a Facebook"><i class="ti ti-brand-facebook footer-social-icon"></i></a>
-            <a href="https://instagram.com" target="_blank" aria-label="Enlace a Instagram"><i class="ti ti-brand-instagram footer-social-icon"></i></a>
-            <a href="https://twitter.com" target="_blank" aria-label="Enlace a Twitter"><i class="ti ti-brand-twitter footer-social-icon"></i></a>
+            <a href="https://www.instagram.com/enlimonadoproducciones/" target="_blank" aria-label="Enlace a Instagram"><i class="ti ti-brand-instagram footer-social-icon"></i></a>
           </div>
         </div>
 
