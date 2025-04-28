@@ -56,7 +56,7 @@
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn text-black mt-2 w-100" style="background-color: #B9FF38;">
-                                Enviar mensaje <i class="fas fa-paper-plane ms-1"></i>
+                                Enviar mensaje <i class="ti ti-send ms-1"></i>
                             </button>
                         </div>
                         <div id="form-message" class="mt-3">
@@ -122,7 +122,7 @@
                     </p>
                     <a href="tel:+34928123456" class="btn"
                         style="background-color: #000000; color: #B9FF38; border: 1px solid #B9FF38;">
-                        Llamar ahora <i class="fas fa-arrow-right ms-1" aria-label="Enlace para contactar por número de teléfono"></i>
+                        Llamar ahora <i class="ti ti-arrow-right ms-1" aria-label="Enlace para contactar por número de teléfono"></i>
                     </a>
                 </div>
             </div>
