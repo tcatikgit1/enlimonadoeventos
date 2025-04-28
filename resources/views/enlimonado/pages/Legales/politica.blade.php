@@ -1,6 +1,6 @@
 @extends('layouts/principalLayout')
 
-@section('title', 'Roles - Apps')
+@section('title', 'Política de Cookies - Enlimonado Eventos')
 
 @section('vendor-style')
 @vite([

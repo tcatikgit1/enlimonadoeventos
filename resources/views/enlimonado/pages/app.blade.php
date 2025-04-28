@@ -1,6 +1,6 @@
 @extends('layouts/principalLayout')
 
-@section('title', 'Roles - Apps')
+@section('title', 'Enlimonado Eventos')
 
 @section('vendor-style')
   @vite([
