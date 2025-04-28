@@ -13,7 +13,7 @@ class ContactController extends Controller
 
     // Enviar email al administrador
     Mail::send('emails.contact-admin', ['data' => $data], function ($m) use ($data) {
-      $m->to('info@enlimonadoeventos.com')->subject("{$data['subject']}");
+      $m->to(env('APP_MAIL'))->subject("{$data['subject']}");
     });
 
     // Enviar email al usuario

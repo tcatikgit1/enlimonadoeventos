@@ -89,11 +89,11 @@ footer.footer {
           <ul class="list-unstyled mt-3">
             <li class="d-flex align-items-center pb-2">
               <i class="ti ti-mail icon-green"></i>
-              <a href="mailto:info@enlimonadoeventos.com" class="footer-link">info@enlimonadoeventos.com</a>
+              <a href="mailto:$APP_MAIL" class="footer-link">{{ env('APP_MAIL') }}</a>
             </li>
             <li class="d-flex align-items-center pb-2">
               <i class="ti ti-phone icon-green"></i>
-              <a href="tel:+34928123456" class="footer-link">+34 928 123 456</a>
+              <a href="tel:+34828701918" class="footer-link">+34 828 701 918</a>
             </li>
             <li class="d-flex align-items-center">
               <i class="ti ti-map-pin icon-green"></i>

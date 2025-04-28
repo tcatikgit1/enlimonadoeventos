@@ -86,7 +86,8 @@
                     </div>
                     <div>
                         <strong class="text-white">Email</strong><br>
-                        <span class="text-white-50">info@enlimonadoeventos.com</span>
+                        <span class="text-white-50">{{ env('APP_MAIL') }}
+</span>
                     </div>
                 </div>
 
@@ -117,7 +118,7 @@
                     <p class="text-white-50 mb-3">Programa una llamada con nuestro equipo para discutir tu proyecto en
                         detalle.
                     </p>
-                    <a href="tel:+34928123456" class="btn"
+                    <a href="tel:+34828701918" class="btn"
                         style="background-color: #000000; color: #B9FF38; border: 1px solid #B9FF38;">
                         Llamar ahora <i class="ti ti-arrow-right ms-1" aria-label="Enlace para contactar por número de teléfono"></i>
                     </a>

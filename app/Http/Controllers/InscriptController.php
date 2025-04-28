@@ -12,7 +12,7 @@ class InscriptController extends Controller
 
     // Enviar email al administrador
     Mail::send('emails.inscript-admin', ['data' => $data], function ($m) use ($data) {
-      $m->to('info@enlimonadoeventos.com')->subject("Nuevo usuario Inscrito");
+      $m->to( env('APP_MAIL') )->subject("Nuevo usuario Inscrito");
     });
 
     // Enviar email al usuario
