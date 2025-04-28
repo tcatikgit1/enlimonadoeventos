@@ -86,8 +86,7 @@
                     </div>
                     <div>
                         <strong class="text-white">Email</strong><br>
-                        <span class="text-white-50">{{ env('APP_MAIL') }}
-</span>
+                        <span class="text-white-50"><a href="mailto:{{ env('APP_MAIL') }}" class="footer-link text-muted">{{ env('APP_MAIL') }}</a></span>
                     </div>
                 </div>
 
@@ -98,7 +97,7 @@
                     </div>
                     <div>
                         <strong class="text-white">Teléfono</strong><br>
-                        <span class="text-white-50">+34 928 123 456</span>
+                        <span class="text-white-50"><a href="tel:+34828701918" class="footer-link text-muted">+34 828 701 918</a></span>
                     </div>
                 </div>
 
