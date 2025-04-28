@@ -70,7 +70,7 @@
             </div>
 
             <div class="col-lg-6 position-relative mt-4 mt-lg-0">
-                <img src="{{ asset('assets/img/enlimonado/Nosotros/Evento.jpg') }}" alt="Eventos"
+                <img src="{{ asset('assets/img/enlimonado/Nosotros/Evento.webp') }}" alt="Eventos"
                     class="img-fluid rounded-4 shadow"
                     style="object-fit: cover; width: 100%; height: auto; border-radius: 15px">
 

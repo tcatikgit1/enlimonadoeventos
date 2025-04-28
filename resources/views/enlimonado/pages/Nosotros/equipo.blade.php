@@ -5,7 +5,7 @@
             'cargo' => 'Dirección creativa',
             'frase' => '"Mi trabajo es hacer que lo imposible parezca normal"',
             'desc' => 'Responsable de las locuras que funcionan',
-            'img' => 'assets/img/enlimonado/Nosotros/Evento.jpg',
+            'img' => 'assets/img/enlimonado/Nosotros/Evento.webp',
             'color' => 'rgba(181, 246, 19, 0.85)',
         ],
         [
@@ -13,7 +13,7 @@
             'cargo' => 'Producción ejecutiva',
             'frase' => '"Si alguien dice que no se puede, yo encuentro la manera"',
             'desc' => 'El que convierte las ideas en realidad',
-            'img' => 'assets/img/enlimonado/Nosotros/Evento.jpg',
+            'img' => 'assets/img/enlimonado/Nosotros/Evento.webp',
             'color' => 'rgba(181, 246, 19, 0.85)',
         ],
         [
@@ -21,7 +21,7 @@
             'cargo' => 'Dirección de arte',
             'frase' => '"El diseño no es solo cómo se ve, sino cómo funciona"',
             'desc' => 'La maestra del caos visual organizado',
-            'img' => 'assets/img/enlimonado/Nosotros/Evento.jpg',
+            'img' => 'assets/img/enlimonado/Nosotros/Evento.webp',
             'color' => 'rgba(181, 246, 19, 0.85)',
         ],
     ];
