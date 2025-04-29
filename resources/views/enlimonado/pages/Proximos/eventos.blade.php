@@ -59,15 +59,15 @@
                 </p>
                 <ul class="list-unstyled mt-3">
                     <li class="d-flex align-items-center pb-2">
-                        <span class="ti ti-calendar-week icon-green"></span>
+                        <span class="ti ti-calendar-week icon-green me-2"></span>
                         <span class="text-white">{{ $evento['fecha'] }}</span>
                     </li>
                     <li class="d-flex align-items-center pb-2">
-                        <span class="ti ti-clock-hour-4 icon-green"></span>
+                        <span class="ti ti-clock-hour-4 icon-green me-2"></span>
                         <span class="text-white">{{ $evento['hora'] }}</span>
                     </li>
                     <li class="d-flex align-items-center">
-                        <i class="ti ti-map-pin icon-green"></i>
+                        <i class="ti ti-map-pin icon-green me-2"></i>
                         <span class="text-white">{{ $evento['ubicacion'] }}</span>
                     </li>
                 </ul>
