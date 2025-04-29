@@ -78,7 +78,7 @@
               @foreach ($items as $item)
                 <li class="d-flex mb-6">
                   <div class="me-4">
-                    <div class="badge rounded-circle p-1_5" style="background-color: #B9FF38;">
+                    <div class="badge rounded-circle p-1_5" style="background-color: #B9FF38; margin-top: 1rem;">
                       <i class="ti ti-check ti-md" style="color: black;"></i>
                     </div>
                   </div>
