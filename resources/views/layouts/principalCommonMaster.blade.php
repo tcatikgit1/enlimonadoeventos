@@ -42,7 +42,7 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   <meta name="apple-mobile-web-app-capable" content="yes">
 
 
-  <title>@yield('title') |
+  <title>@yield('title')
 
   </title>
   <meta name="csrf-token" content="{{ csrf_token() }}">
