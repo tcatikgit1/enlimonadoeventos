@@ -3,8 +3,6 @@
 $containerFooter = (isset($configData['contentLayout']) && $configData['contentLayout'] === 'compact') ? 'container-xxl' : 'container-fluid';
 @endphp
 
-@section('page-style')
-@vite('resources/css/enlimonado/footer.css')
 <style>
   /* Footer general */
 footer.footer {
@@ -44,7 +42,6 @@ footer.footer {
   color: #B9FF38;
 }
 </style>
-@endsection
 
 <!-- FOOTER HTML -->
 <section id="adv-footer">
