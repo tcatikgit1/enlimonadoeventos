@@ -4,6 +4,7 @@
             'nombre' => 'Daniel Trefny y Laura Castañeda',
             'cargo' => 'Dirección de arte',
             'frase' => '"El diseño no es solo cómo se ve, sino cómo funciona"',
+            'desc' => 'Los maestros del caos en los eventos',
             'img' => 'assets/img/enlimonado/Nosotros/Foto.webp',
             'color' => 'rgba(181, 246, 19, 0.85)', // Aquí es donde se define el color de la superposición
         ],
@@ -19,7 +20,7 @@
     .equipo-card:hover .overlay,
     .equipo-card:active .overlay {
         background-color: var(--overlay-color, rgba(181, 246, 19, 0.85)); /* Usamos el color que definiste */
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
     .equipo-card .overlay .hover-text {
@@ -50,7 +51,7 @@
     }
 </style>
 
-<section class="py-7" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
+<section class="py-7" style="background: #000000;">
     <div class="container text-center text-white py-5">
         <h2 class="fw-bold text-white mb-2">
             El <span style="color: #B5F613;">equipo</span> Enlimonado
@@ -71,8 +72,8 @@
                              style="background-color: transparent;">
                             @if ($persona['frase'])
                                 <div class="hover-text">
-                                    <h5 class="fw-bold text-black mb-2">{{ $persona['nombre'] }}</h5>
-                                    <p class="text-black mb-0">{{ $persona['frase'] }}</p>
+                                    <h5 class="fw-bold mb-2" style="color: #000; font-weight: 900;">{{ $persona['nombre'] }}</h5>
+                                    <p class="mb-0" style="color: #000; font-weight: 600;">{{ $persona['frase'] }}</p>
                                 </div>
                             @endif
                         </div>
@@ -80,9 +81,10 @@
                         <!-- Información del nombre y cargo -->
                         <div class="position-absolute bottom-0 start-0 w-100 text-start p-4">
                             <div>
-                                <h5 class="fw-bold text-white mb-0">{{ $persona['nombre'] }}</h5>
+                                <h3 class="fw-bold text-white mb-0">{{ $persona['nombre'] }}</h3>
                                 <div class="fw-semibold" style="color: #B5F613;">{{ $persona['cargo'] }}</div>
                             </div>
+                            <div class="text-white small mt-3">{{ $persona['desc'] }}</div>
                         </div>
                     </div>
                 </div>

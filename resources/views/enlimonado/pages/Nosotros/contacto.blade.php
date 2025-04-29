@@ -13,7 +13,7 @@
   }
 </style>
 
-<section class="contact-section py-10" style="background: linear-gradient(to top, #000000 30%, #160b24 100%);">
+<section class="contact-section py-10" style="background: linear-gradient(to right, #160b24 30%, #000000 100%);">
   <div class="container py-5">
     <div class="text-center mt-5">
       <h2 class="fw-bold text-white">¿Quieres formar parte de nuestra <span style="color: #B9FF38">próxima historia</span>?</h2>

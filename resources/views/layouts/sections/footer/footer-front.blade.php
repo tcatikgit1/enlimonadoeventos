@@ -23,6 +23,10 @@ footer.footer {
   color: #B9FF38; /* Verde brillante para el hover, con buen contraste */
 }
 
+.icon-green{
+  color: #B9FF38;
+}
+
 /* Encabezados en el footer */
 .footer-heading {
   font-size: 1.25rem;
@@ -58,6 +62,7 @@ footer.footer {
           <p style="color: #ffffff; font-family:Poppins, sans-serif">"Si no te lo cuestionan, es que no lo hiciste bien."</p>
           <div class="mt-3">
             <a href="https://www.instagram.com/enlimonadoproducciones/" target="_blank" aria-label="Enlace a Instagram"><i class="ti ti-brand-instagram footer-social-icon"></i></a>
+            <a href="//wa.me/667073126" target="_blank" aria-label="Enlace a Instagram"><i class="ti ti-brand-whatsapp footer-social-icon"></i></a>
           </div>
         </div>
 
@@ -87,16 +92,16 @@ footer.footer {
           <h5 class="footer-heading">Contáctanos</h5>
           <ul class="list-unstyled mt-3">
             <li class="d-flex align-items-center pb-2">
-              <i class="ti ti-mail icon-green"></i>
-              <a href="mailto:{{ env('APP_MAIL') }}" class="footer-link">{{ env('APP_MAIL') }}</a>
+              <i class="ti ti-mail icon-green me-2"></i>
+              <a href="mailto:{{ env('APP_MAIL') }}" class="footer-link"> {{ env('APP_MAIL') }}</a>
             </li>
             <li class="d-flex align-items-center pb-2">
-              <i class="ti ti-phone icon-green"></i>
-              <a href="tel:+34828701918" class="footer-link">+34 828 701 918</a>
+              <i class="ti ti-phone icon-green me-2"></i>
+              <a href="tel:+34828701918" class="footer-link"> +34 828 701 918</a>
             </li>
             <li class="d-flex align-items-center">
-              <i class="ti ti-map-pin icon-green"></i>
-              <span class="text-white">Las Palmas de Gran Canaria, España</span>
+              <i class="ti ti-map-pin icon-green me-2"></i>
+              <span class="text-white"> Las Palmas de Gran Canaria, España</span>
             </li>
           </ul>
         </div>
