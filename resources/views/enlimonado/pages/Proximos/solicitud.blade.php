@@ -65,6 +65,19 @@
         background-color: #333;
         border-color: #444;
     }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus {
+        background-color: #1e1e1e !important;
+        color: #fff !important;
+        -webkit-text-fill-color: #fff !important;
+        box-shadow: 0 0 0px 1000px #1e1e1e inset !important;
+        transition: background-color 5000s ease-in-out 0s;
+    }
 </style>
 
 
