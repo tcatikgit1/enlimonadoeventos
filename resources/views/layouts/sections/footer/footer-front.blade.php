@@ -110,8 +110,8 @@ footer.footer {
         <a href="/legal-notice" class="footer-link">Enlimonado Estrategias. Todos los derechos reservados.</a>
       </div>
       <div class="d-flex flex-column flex-sm-row">
-        <a href="/aviso-legal" class="footer-link me-6">Aviso legal</a>
         <a href="/politica-de-privacidad" class="footer-link me-6">Política de privacidad</a>
+        <a href="/aviso-legal" class="footer-link me-6">Política de cookies</a>
       </div>
     </div>
   </footer>
