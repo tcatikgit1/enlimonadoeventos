@@ -1,3 +1,58 @@
+@php
+    $testimonios = [
+        [
+            'mensaje' => 'Nuestra convención pasó de aburrida a icónica en 24h. El equipo de Enlimonado creó una experiencia que nuestros empleados siguen comentando.',
+            'avatar' => '/assets/img/enlimonado/exitos/MariaLopez.webp',
+            'nombre' => 'María López',
+            'cargo' => 'Directora de Marketing, Empresa Innovación',
+            'indicadores' => [
+                ['label' => 'Asistentes', 'valor' => '200+'],
+                ['label' => 'Satisfacción', 'valor' => '98%'],
+            ],
+        ],
+        [
+            'mensaje' => 'Nunca imaginé que un stand en un centro comercial generara tanto hype. La activación que diseñaron triplicó nuestras expectativas de visibilidad y conversión.',
+            'avatar' => '/assets/img/enlimonado/exitos/CarlosRodriguez.webp',
+            'nombre' => 'Carlos Rodríguez',
+            'cargo' => 'Gerente Comercial, Centro Comercial Las Arenas',
+            'indicadores' => [
+                ['label' => 'Interacción', 'valor' => '15K+'],
+                ['label' => 'Incremento Ventas', 'valor' => '+45%'],
+            ],
+        ],
+        [
+            'mensaje' => 'Su visión para nuestro lanzamiento fue brillante. Mezclaron tecnología, creatividad y un toque bizarro que generó exactamente el impacto que buscábamos.',
+            'avatar' => '/assets/img/enlimonado/exitos/exitos2.webp',
+            'nombre' => 'Laura Sánchez',
+            'cargo' => 'CEO, Startup Tech',
+            'indicadores' => [
+                ['label' => 'Impacto R R S S', 'valor' => '1.2M impresiones'],
+                ['label' => 'Apariciones Medios', 'valor' => '8 publicaciones'],
+            ],
+        ],
+        [
+            'mensaje' => 'El team building que organizaron cambió completamente la dinámica de nuestro equipo. Combinar diversión con objetivos estratégicos fue un acierto total.',
+            'avatar' => '/assets/img/enlimonado/exitos/exitos2.webp',
+            'nombre' => 'Miguel Torres',
+            'cargo' => 'Director de RRHH, Corporación Global',
+            'indicadores' => [
+                ['label' => 'Mejora Colaboración', 'valor' => '+37%'],
+                ['label' => 'Satisfacción Equipo', 'valor' => '95%'],
+            ],
+        ],
+        [
+            'mensaje' => 'El festival que organizaron fue simplemente increíble. La combinación de música, arte y tecnología creó una atmósfera única que nos posicionó como referentes culturales.',
+            'avatar' => '/assets/img/enlimonado/exitos/ElenaMartin.webp',
+            'nombre' => 'Elena Martín',
+            'cargo' => 'Directora Cultural, Fundación Artística',
+            'indicadores' => [
+                ['label' => 'Asistentes', 'valor' => '5,000+'],
+                ['label' => 'Valoración Media', 'valor' => '4.8/5'],
+            ],
+        ],
+    ];
+@endphp
+
 <style>
     img.rounded-circle {
         object-fit: cover;
@@ -25,151 +80,42 @@
         </div>
 
         <div class="row">
-            <!-- Cliente 1 -->
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                <div class="card h-100 border-0" style="background-color: #16121E; color: white;">
-                    <div class="card-body d-flex flex-column">
-                        <i class="ti ti-quote fs-3 mb-3" style="color: #B9FF38"></i>
-                        <p class="fs-5">Nuestra convención pasó de aburrida a icónica en 24h. El equipo de Enlimonado
-                            creó una experiencia que nuestros empleados siguen comentando meses después.</p>
-                        <div class="d-flex align-items-center mt-auto">
-                            <img src="/assets/img/enlimonado/exitos/MariaLopez.webp" class="rounded-circle"
-                                width="50" height="50" alt="Maria Lopez">
-                            <div class="ms-3">
-                                <strong>María López</strong><br>
-                                <small class="text-muted">Directora de Marketing, Empresa Innovación</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer d-flex flex-wrap gap-2">
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
-                            <p class="mb-0" style="font-size: 13px">Asistentes</p>
-                            <p class="mb-0 fw-bold" style="color: #B9FF38">200+</p>
-                        </div>
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
-                            <p class="mb-0" style="font-size: 13px">Satisfacción</p>
-                            <p class="mb-0 fw-bold" style="color: #B9FF38">98%</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Cliente 2 -->
+        @foreach ($testimonios as $testimonial)
             <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                <div class="card h-100 border-0" style="background-color: #16121E; color: white;">
-                    <div class="card-body d-flex flex-column">
-                        <i class="ti ti-quote fs-3 mb-3" style="color: #B9FF38"></i>
-                        <p class="fs-5">Nunca imaginé que un stand en un centro comercial generara tanto hype. La
-                            activación que diseñaron triplicó nuestras expectativas de visibilidad y conversión.</p>
-                        <div class="d-flex align-items-center mt-auto">
-                            <img src="/assets/img/enlimonado/exitos/CarlosRodriguez.webp" class="rounded-circle"
-                                width="50" height="50" alt="Carlos Rodriguez">
-                            <div class="ms-3">
-                                <strong>Carlos Rodríguez</strong><br>
-                                <small class="text-muted">Gerente Comercial, Centro Comercial Las Arenas</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer d-flex flex-wrap gap-2">
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
-                            <p class="mb-0" style="font-size: 13px">Interacción</p>
-                            <p class="mb-0 fw-bold" style="color: #B9FF38">15K+</p>
-                        </div>
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
-                            <p class="mb-0" style="font-size: 13px">Incremento Ventas</p>
-                            <p class="mb-0 fw-bold" style="color: #B9FF38">+45%</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              <div class="card h-100" style="background-color: #16121E; color: white;">
+                <div class="card-body">
+                  <div class="badge p-1 mb-2 rounded">
+                    <i class="ti ti-quote ti-28px" style="color: #B9FF38;"></i>
+                  </div>
 
-            <!-- Cliente 3 -->
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                <div class="card h-100 border-0" style="background-color: #16121E; color: white;">
-                    <div class="card-body d-flex flex-column">
-                        <i class="ti ti-quote fs-3 mb-3" style="color: #B9FF38"></i>
-                        <p class="fs-5">Su visión para nuestro lanzamiento fue brillante. Mezclaron tecnología,
-                            creatividad y un toque bizarro que generó exactamente el impacto que buscábamos.</p>
-                        <div class="d-flex align-items-center mt-auto">
-                            <img src="/assets/img/enlimonado/exitos/exitos2.webp" class="rounded-circle" width="50"
-                                height="50" alt="Laura Sánchez">
-                            <div class="ms-3">
-                                <strong>Laura Sánchez</strong><br>
-                                <small class="text-muted">CEO, Startup Tech</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer d-flex flex-wrap gap-2">
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
-                            <p class="mb-0" style="font-size: 13px">Impacto R R S S</p>
-                            <p class="mb-0 fw-bold" style="color: #B9FF38">1.2M impresiones</p>
-                        </div>
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
-                            <p class="mb-0" style="font-size: 13px">Apariciones Medios</p>
-                            <p class="mb-0 fw-bold" style="color: #B9FF38">8 publicaciones</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                  <h5 class="card-title mb-3" style="color: white;">
+                    {{ $testimonial['mensaje'] }}
+                  </h5>
 
-            <!-- Cliente 4 -->
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                <div class="card h-100 border-0" style="background-color: #16121E; color: white;">
-                    <div class="card-body d-flex flex-column">
-                        <i class="ti ti-quote fs-3 mb-3" style="color: #B9FF38"></i>
-                        <p class="fs-5">El team building que organizaron cambió completamente la dinámica de nuestro
-                            equipo. Combinar diversión con objetivos estratégicos fue un acierto total.</p>
-                        <div class="d-flex align-items-center mt-auto">
-                            <img src="/assets/img/enlimonado/exitos/exitos2.webp" class="rounded-circle" width="50"
-                                height="50" alt="Miguel Torres">
-                            <div class="ms-3">
-                                <strong>Miguel Torres</strong><br>
-                                <small class="text-muted">Director de RRHH, Corporación Global</small>
-                            </div>
-                        </div>
+                  <div class="d-flex align-items-center mb-4 overflow-hidden">
+                    <div class="flex-shrink-0">
+                      <img src="{{ asset($testimonial['avatar']) }}" alt="Avatar" class="rounded-circle"
+                          style="width: 48px; height: 48px; object-fit: cover;" />
                     </div>
-                    <div class="card-footer d-flex flex-wrap gap-2">
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
-                            <p class="mb-0" style="font-size: 13px">Mejora Colaboración</p>
-                            <p class="mb-0 fw-bold" style="color: #B9FF38">+37%</p>
-                        </div>
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
-                            <p class="mb-0" style="font-size: 13px">Satisfacción Equipo</p>
-                            <p class="mb-0 fw-bold" style="color: #B9FF38">95%</p>
-                        </div>
+                    <div class="ms-3 text-truncate w-100">
+                      <h6 class="mb-0 text-truncate" style="color: white;">{{ $testimonial['nombre'] }}</h6>
+                      <small class="text-muted text-truncate d-block">{{ $testimonial['cargo'] }}</small>
                     </div>
-                </div>
-            </div>
+                  </div>
 
-            <!-- Cliente 5 -->
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                <div class="card h-100 border-0" style="background-color: #16121E; color: white;">
-                    <div class="card-body d-flex flex-column">
-                        <i class="ti ti-quote fs-3 mb-3" style="color: #B9FF38"></i>
-                        <p class="fs-5">El festival que organizaron fue simplemente increíble. La combinación de
-                            música, arte y tecnología creó una atmósfera única que nos posicionó como referentes
-                            culturales.</p>
-                        <div class="d-flex align-items-center mt-auto">
-                            <img src="/assets/img/enlimonado/exitos/ElenaMartin.webp" class="rounded-circle"
-                                width="50" height="50" alt="Elena Martín">
-                            <div class="ms-3">
-                                <strong>Elena Martín</strong><br>
-                                <small class="text-muted">Directora Cultural, Fundación Artística</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer d-flex flex-wrap gap-2">
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
-                            <p class="mb-0" style="font-size: 13px">Asistentes</p>
-                            <p class="mb-0 fw-bold" style="color: #B9FF38">5,000+</p>
-                        </div>
-                        <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
-                            <p class="mb-0" style="font-size: 13px">Valoración Media</p>
-                            <p class="mb-0 fw-bold" style="color: #B9FF38">4.8/5</p>
-                        </div>
-                    </div>
+                  <div class="card-footer d-flex flex-wrap gap-2">
+                    @foreach ($testimonial['indicadores'] as $indicador)
+                      <div class="rounded d-flex flex-column justify-content-center align-items-center stat-box">
+                        <p class="mb-0" style="font-size: 13px">{{ $indicador['label'] }}</p>
+                        <p class="mb-0 fw-bold" style="color: #B9FF38">{{ $indicador['valor'] }}</p>
+                      </div>
+                    @endforeach
+                  </div>
                 </div>
+              </div>
             </div>
+          @endforeach
         </div>
     </div>
 </section>

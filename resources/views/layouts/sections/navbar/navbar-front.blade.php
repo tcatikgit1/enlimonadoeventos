@@ -31,6 +31,16 @@ $navbarDetached = ($navbarDetached ?? '');
       background-color: rgba(160, 231, 46, 0.397); /* verde lima con transparencia */
       color: #ffffff;
     }
+
+    /* Quitar el borde al botón del menú */
+.navbar-toggler {
+    border: none;
+}
+
+/* Quitar el borde alrededor del icono */
+.navbar-toggler-icon {
+    border: none;
+}
 </style>
 
 <head>
@@ -43,9 +53,10 @@ $navbarDetached = ($navbarDetached ?? '');
       <img src="assets/img/enlimonado/logo/Log2.webp" alt="Logo Enlimonado" style="height: auto; width: 180px;">
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-label="Abrir menú de navegación">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- Botón de menú personalizado con un icono Tabler (ej: "menu-2") -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-label="Abrir menú de navegación" style="border: none; background: none;">
+  <i class="ti ti-menu-deep" style="font-size: 24px; color: white;"></i>
+</button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarMain">
       <ul class="navbar-nav align-items-center gap-7">
@@ -56,7 +67,7 @@ $navbarDetached = ($navbarDetached ?? '');
         <li class="nav-item"><a class="nav-link" href="/upcoming">Próximos</a></li>
         <li class="nav-item"><a class="nav-link" href="/contact">Contacto</a></li>
         <li class="nav-item ms-lg-3">
-          <a href="href="//wa.me/667073126"" class="btn btn-outline-lime px-4 py-2 rounded"><i class="ti ti-brand-whatsapp" style="margin-right: 10px;"></i>Contáctanos</a>
+          <a href="//wa.me/667073126" class="btn btn-outline-lime px-4 py-2 rounded"><i class="ti ti-brand-whatsapp" style="margin-right: 10px;"></i>Contáctanos</a>
         </li>
       </ul>
     </div>
