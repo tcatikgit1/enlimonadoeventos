@@ -23,13 +23,23 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   --}}
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta name="title" content="Enlimonado Eventos - Organización de eventos únicos y a medida en Canarias">
+  <meta name="title" content="Enlimonado Eventos - Organización de eventos únicos y a medida en Canarias">
 
-<meta name="description"
+  <meta name="description"
   content="Enlimonado Eventos organiza eventos únicos y a medida en Canarias: corporativos, networking, lanzamientos, ferias, ruedas de prensa, activaciones de marca y teambuilding. Creamos experiencias originales, impactantes y alineadas con tu estrategia, sean bizarras, divertidas o serias.">
 
-<meta name="keywords"
+  <meta name="keywords"
   content="Organización de eventos Canarias, organización de eventos España, eventos corporativos, agencia de eventos, networking empresarial, lanzamientos de productos, presentaciones de marca, ruedas de prensa, activaciones de marca, campañas experienciales, ferias y congresos, eventos sectoriales, eventos de teambuilding, eventos creativos, eventos empresariales, eventos personalizados, experiencias de marca, eventos impactantes, eventos originales, enlimonado eventos  ">
+
+  <!-- Barra superior en dispositivos Android (Chrome, Firefox OS, etc.) -->
+  <meta name="theme-color" content="#000000">
+
+  <!-- Color de la barra de navegación en Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000000">
+
+  <!-- Estilo de la barra de estado en iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 
 
   <title>@yield('title') |
