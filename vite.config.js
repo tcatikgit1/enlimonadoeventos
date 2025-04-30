@@ -28,6 +28,7 @@ const LibsJsFiles = GetFilesArray('resources/assets/vendor/libs/**/*.js');
  */
 // Processing Core, Themes & Pages Scss Files
 const CoreScssFiles = GetFilesArray('resources/assets/vendor/scss/**/!(_)*.scss');
+const MyStyles = GetFilesArray('resources/scss/styles/**/!(_)*.scss');
 
 // Processing Libs Scss & Css Files
 const LibsScssFiles = GetFilesArray('resources/assets/vendor/libs/**/!(_)*.scss');
@@ -63,6 +64,7 @@ export default defineConfig({
         ...pageJsFiles,
         ...vendorJsFiles,
         ...LibsJsFiles,
+        ...MyStyles,
         'resources/js/laravel-user-management.js', // Processing Laravel User Management CRUD JS File
         ...CoreScssFiles,
         ...LibsScssFiles,
