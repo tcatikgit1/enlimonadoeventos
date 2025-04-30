@@ -4,26 +4,13 @@
 
 @section('vendor-style')
 @vite([
-  'resources/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.scss',
-  'resources/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.scss',
   'resources/assets/vendor/libs/@form-validation/form-validation.scss',
-  'resources/assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.scss',
 ])
 @endsection
 
-@section('vendor-script')
-@vite([
-  'resources/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js',
-  'resources/assets/vendor/libs/@form-validation/popular.js',
-  'resources/assets/vendor/libs/@form-validation/bootstrap5.js',
-  'resources/assets/vendor/libs/@form-validation/auto-focus.js',
-])
-@endsection
 
 @section('page-script')
 @vite([
-  /* 'resources/assets/js/app-access-roles.js',
-  'resources/assets/js/modal-add-role.js', */
   'resources/assets/js/form-validation.js',
 ])
 @endsection
@@ -43,7 +30,4 @@
     @include('enlimonado.pages.contact.form')
     @include('enlimonado.pages.contact.map')
 
-    <!-- Add Role Modal -->
-    @include('_partials/_modals/modal-add-role')
-    <!-- / Add Role Modal -->
 @endsection

@@ -2,18 +2,6 @@
 
 @section('title', 'Proximos Eventos - Enlimonado Eventos')
 
-@section('vendor-style')
-    @vite(['resources/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.scss', 'resources/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.scss', 'resources/assets/vendor/libs/@form-validation/form-validation.scss', 'resources/assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.scss'])
-@endsection
-
-@section('vendor-script')
-    @vite(['resources/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js', 'resources/assets/vendor/libs/@form-validation/popular.js', 'resources/assets/vendor/libs/@form-validation/bootstrap5.js', 'resources/assets/vendor/libs/@form-validation/auto-focus.js'])
-@endsection
-
-@section('page-script')
-    @vite([/* 'resources/assets/js/app-access-roles.js', 'resources/assets/js/modal-add-role.js' */])
-@endsection
-
 @section('content')
     <section class="py-7 py-lg-9" style="background-color: #000000;">
         <div class="container">
@@ -32,7 +20,4 @@
 
     @include('enlimonado.pages.upcoming.contacto')
 
-    <!-- Add Role Modal -->
-    @include('_partials/_modals/modal-add-role')
-    <!-- / Add Role Modal -->
 @endsection
