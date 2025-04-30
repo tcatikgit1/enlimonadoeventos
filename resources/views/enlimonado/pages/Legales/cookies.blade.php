@@ -40,7 +40,7 @@
       </div>
     </section>
 
-    @include('enlimonado.pages.Legales.avisoconte')
+    @include('enlimonado.pages.legales.cookiesconte')
     <!-- Modal -->
     @include('_partials._modals.modal-add-role')
 @endsection

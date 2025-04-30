@@ -113,7 +113,7 @@ footer.footer {
       </div>
       <div class="d-flex flex-column flex-sm-row">
         <a href="/politica-de-privacidad" class="footer-link me-6">Política de privacidad</a>
-        <a href="/aviso-legal" class="footer-link me-6">Política de cookies</a>
+        <a href="/politica-de-cookies" class="footer-link me-6">Política de cookies</a>
       </div>
     </div>
   </footer>

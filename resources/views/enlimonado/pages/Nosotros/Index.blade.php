@@ -42,13 +42,13 @@
     </section>
 
 
-    @include('enlimonado.pages.Nosotros.experiencia')
+    @include('enlimonado.pages.nosotros.experiencia')
 
-    @include('enlimonado.pages.Nosotros.valores')
+    @include('enlimonado.pages.nosotros.valores')
 
-    @include('enlimonado.pages.Nosotros.equipo')
+    @include('enlimonado.pages.nosotros.equipo')
 
-    @include('enlimonado.pages.Nosotros.contacto')
+    @include('enlimonado.pages.nosotros.contacto')
 
     <!-- Modal -->
     @include('_partials._modals.modal-add-role')

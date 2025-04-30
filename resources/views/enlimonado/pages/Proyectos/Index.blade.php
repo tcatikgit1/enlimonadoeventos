@@ -28,8 +28,8 @@
         </div>
     </section>
 
-    @include('enlimonado.pages.Proyectos.galeria')
-    @include('enlimonado.pages.Proyectos.contacto')
+    @include('enlimonado.pages.proyectos.galeria')
+    @include('enlimonado.pages.proyectos.contacto')
 
     <!-- Add Role Modal -->
     @include('_partials/_modals/modal-add-role')

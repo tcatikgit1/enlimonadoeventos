@@ -176,7 +176,7 @@ Route::get('/success', [WebController::class, 'successes'])->name('successes');
 Route::get('/upcoming', [WebController::class, 'proximos'])->name('upcoming');
 Route::get('/projects', [WebController::class, 'proyectos'])->name('proyects');
 Route::get('/projects/{slug}', [WebController::class, 'proyectoDetalle'])->name('proyects.detalles');
-Route::get('/aviso-legal', [WebController::class, 'legales'])->name('legales');
+Route::get('/politica-de-cookies', [WebController::class, 'cookies'])->name('cookies');
 Route::get('/politica-de-privacidad', [WebController::class, 'politica'])->name('politica');
 
 //Mandar Mail

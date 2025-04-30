@@ -28,9 +28,9 @@
         </div>
     </section>
 
-    @include('enlimonado.pages.Proximos.eventos')
+    @include('enlimonado.pages.proximos.eventos')
 
-    @include('enlimonado.pages.Proximos.contacto')
+    @include('enlimonado.pages.proximos.contacto')
 
     <!-- Add Role Modal -->
     @include('_partials/_modals/modal-add-role')

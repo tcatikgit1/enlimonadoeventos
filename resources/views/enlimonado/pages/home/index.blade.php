@@ -33,10 +33,10 @@
 
 @section('content')
 
-    @include('enlimonado.pages.Inicio.inicio')
-    @include('enlimonado.pages.Inicio.experiencias')
-    @include('enlimonado.pages.Inicio.proyectos')
-    @include('enlimonado.pages.Inicio.nosotros')
+    @include('enlimonado.pages.home.inicio')
+    @include('enlimonado.pages.home.experiencias')
+    @include('enlimonado.pages.home.proyectos')
+    @include('enlimonado.pages.home.nosotros')
 
     {{-- <!-- Add Role Modal -->
     @include('_partials/_modals/modal-add-role')
