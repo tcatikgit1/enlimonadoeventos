@@ -1,4 +1,4 @@
-<div style="background-color:#000; color:#fff; font-family:Arial, sans-serif; padding:30px; border-radius:10px;">
+<div style="background-color:#000000; color:#fff; font-family:Arial, sans-serif; padding:30px; border-radius:10px;">
   <div style="text-align:center; font-size:28px; font-weight:bold; margin-bottom:30px;">
 <img src="{{ $message->embed(public_path('assets/img/enlimonado/logo/Log2.webp')) }}" alt="Logo Enlimonado"
   style="height: auto; width: 180px;">
@@ -13,6 +13,6 @@
 
   <hr style="border-top: 1px solid #B5F613; margin: 30px 0;">
 
-  <p style="font-size: 0.9rem;">Este mensaje fue enviado desde el formulario de inscripcion de <strong>Enlimonado</strong>.
+  <p  class="text-white" style="font-size: 0.9rem;">Este mensaje fue enviado desde el formulario de inscripcion de <strong>Enlimonado</strong>.
   </p>
 </div>
