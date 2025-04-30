@@ -39,22 +39,6 @@
     ];
 @endphp
 
-<style>
-    .experience-card {
-        background-color: #16121E;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        will-change: transform, box-shadow;
-    }
-
-    .experience-card:hover {
-        background-color: #1f1c25;
-        transform: scale(1.03);
-        box-shadow: 0 2px 3px rgba(187, 51, 255, 0.315);
-        z-index: 10;
-    }
-</style>
-
 <section class="py-7" style="background: linear-gradient(to top, #000000 30%, #160b24 100%); padding-top: 7rem; padding-bottom: 7rem;" id="experiences">
     <div class="container" style="padding-top: 5rem; margin-bottom: 8rem;">
         <h2 class="text-center fw-bold mb-4 text-white" role="heading" aria-level="2">

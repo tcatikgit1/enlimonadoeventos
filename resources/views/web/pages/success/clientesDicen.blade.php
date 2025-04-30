@@ -53,24 +53,6 @@
     ];
 @endphp
 
-<style>
-    img.rounded-circle {
-        object-fit: cover;
-    }
-
-    .card-footer {
-        background: none;
-        border-top: none;
-    }
-
-    .stat-box {
-        background: #0E0B13;
-        height: 70px;
-        min-width: 140px;
-        flex: 1;
-    }
-</style>
-
 <section class="contact-section py-10" style="background: linear-gradient(to top, #000000 30%, #160b24 100%);">
     <div class="container">
         <div class="row justify-content-start mb-10">

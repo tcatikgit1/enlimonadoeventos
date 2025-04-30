@@ -11,46 +11,6 @@
     ];
 @endphp
 
-<style>
-    .equipo-card .overlay {
-        transition: background-color 0.4s ease, opacity 0.4s ease;
-    }
-
-    /* Usamos :hover para la versión de escritorio y :active para móviles */
-    .equipo-card:hover .overlay,
-    .equipo-card:active .overlay {
-        background-color: var(--overlay-color, rgba(181, 246, 19, 0.85)); /* Usamos el color que definiste */
-        opacity: 0.9;
-    }
-
-    .equipo-card .overlay .hover-text {
-        opacity: 0;
-        transition: opacity 0.4s ease;
-    }
-
-    /* Hacemos que el texto de la overlay sea visible cuando se activa el hover o el active */
-    .equipo-card:hover .overlay .hover-text,
-    .equipo-card:active .overlay .hover-text {
-        opacity: 1;
-    }
-
-    /* Eliminamos el borde y sombra, pero mantenemos la overlay */
-    .equipo-card {
-        border: none !important;
-        box-shadow: none !important;
-        border-radius: 25px;
-        position: relative; /* Asegura que el contenido esté bien posicionado sobre la imagen */
-        overflow: hidden;
-    }
-
-    .equipo-card img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        border-radius: 25px;
-    }
-</style>
-
 <section class="py-7" style="background: #000000;">
     <div class="container text-center text-white py-5">
         <h2 class="fw-bold text-white mb-2">

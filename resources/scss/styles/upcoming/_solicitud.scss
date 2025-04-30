@@ -1,0 +1,79 @@
+/* Estilo para el modal */
+    .modal-content {
+        background-color: #000 !important;
+        color: white !important;
+        border-radius: 10px;
+    }
+
+    /* Eliminar la "X" en la esquina superior derecha */
+    .modal-header .btn-close {
+        display: none;
+    }
+
+    /* Estilos para el botón "Cancelar" personalizado */
+    .btn-custom-cancelar {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 8px;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    /* Estilos para el botón "Cancelar" en hover */
+    .btn-custom-cancelar:hover {
+        background-color: red;
+        border-color: red;
+    }
+
+    /* Estilos para el botón "Enviar inscripción" personalizado */
+    .btn-custom-enviar {
+        background-color: #B9FF38;
+        color: black;
+        border: 2px solid #B9FF38;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 8px;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    /* Estilos para el botón "Enviar inscripción" en hover */
+    .btn-custom-enviar:hover {
+        background-color: #9bd42f;
+        border-color: #9bd42f;
+    }
+
+    /* Estilo para los campos de texto */
+    .form-control {
+        background-color: #222;
+        color: white !important;
+        border: 1px solid #444;
+    }
+
+    .form-control::placeholder {
+        color: #888;
+    }
+
+    .form-control:focus {
+        border-color: #fff !important;
+        box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+    }
+
+    .form-control:disabled {
+        background-color: #333;
+        border-color: #444;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus {
+        background-color: #1e1e1e !important;
+        color: #fff !important;
+        -webkit-text-fill-color: #fff !important;
+        box-shadow: 0 0 0px 1000px #1e1e1e inset !important;
+        transition: background-color 5000s ease-in-out 0s;
+    }

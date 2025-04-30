@@ -1,0 +1,10 @@
+.valor-card {
+  background-color: #16121e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.1s ease;
+  will-change: background-color;
+}
+
+.valor-card:hover {
+  background-color: #1f1c25;
+}
