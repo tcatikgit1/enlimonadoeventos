@@ -11,31 +11,31 @@ class WebController extends Controller {
   }
 
   public function aboutus() {
-    return view('enlimonado.pages.nosotros.index');
+    return view('enlimonado.pages.aboutus.index');
   }
 
   public function contact() {
-    return view('enlimonado.pages.contacto.index');
+    return view('enlimonado.pages.contact.index');
   }
 
   public function successes() {
-    return view('enlimonado.pages.exitos.index');
+    return view('enlimonado.pages.success.index');
   }
 
   public function proyectos() {
-    return view('enlimonado.pages.proyectos.index');
+    return view('enlimonado.pages.proyects.index');
   }
 
   public function cookies() {
-    return view('enlimonado.pages.legales.cookies');
+    return view('enlimonado.pages.legals.cookies');
   }
 
   public function politica() {
-    return view('enlimonado.pages.legales.politica');
+    return view('enlimonado.pages.legals.politica');
   }
 
   public function proximos() {
-    return view('enlimonado.pages.proximos.index');
+    return view('enlimonado.pages.upcoming.index');
   }
 
   public function proyectoDetalle($slug) {
@@ -101,6 +101,6 @@ class WebController extends Controller {
       abort(404);
     }
 
-    return view('enlimonado.pages.proyectos.detalles', ['project' => $articles[$slug]]);
+    return view('enlimonado.pages.proyects.detalles', ['project' => $articles[$slug]]);
   }
 }

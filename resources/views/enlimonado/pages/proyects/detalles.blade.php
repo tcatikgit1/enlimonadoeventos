@@ -71,7 +71,7 @@
     </div>
 </section>
 
-    @include('enlimonado.pages.Proyectos.contacto2')
+    @include('enlimonado.pages.proyects.contacto2')
     <!-- Add Role Modal -->
     @include('_partials/_modals/modal-add-role')
     <!-- / Add Role Modal -->

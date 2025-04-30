@@ -1,6 +1,6 @@
 @extends('layouts/principalLayout')
 
-@section('title', 'Proximos Eventos - Enlimonado Eventos')
+@section('title', 'Exitos - Apps')
 
 @section('vendor-style')
     @vite(['resources/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.scss', 'resources/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.scss', 'resources/assets/vendor/libs/@form-validation/form-validation.scss', 'resources/assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.scss'])
@@ -19,18 +19,18 @@
         <div class="container">
             <div class="row justify-content-start" style="margin-top: 9%; margin-bottom: 9%;">
                 <div class="col-xl-7 col-lg-8 col-md-10">
-                    <h2 class="fw-bold display-3 mb-4" style="color: #ffffff;">Próximos <span
-                            class="lime-text">Proyectos</span></h2>
-                    <p class="fs-4 text-white">Un vistazo a lo que estamos preparando. Eventos que están a punto de
-                        transformar la experiencia de sus participantes.</p>
+                    <h2 class="fw-bold display-3 mb-4 text-white">Nuestros <span class="fw-bold display-3 mb-4"
+                            style="color: #B9FF38;">Éxitos</span></h2>
+                    <p class="fs-4" style="color: rgba(255, 255, 255, 0.8);">Resultados que hablan por sí mismos. Proyectos
+                        que superaron expectativas y clientes que quedaron fascinados con el "efecto Enlimonado".</p>
                 </div>
             </div>
         </div>
     </section>
 
-    @include('enlimonado.pages.proximos.eventos')
-
-    @include('enlimonado.pages.proximos.contacto')
+    @include('enlimonado.pages.success.exitosDestacados')
+    @include('enlimonado.pages.success.clientesDicen')
+    @include('enlimonado.pages.success.proximoExito')
 
     <!-- Add Role Modal -->
     @include('_partials/_modals/modal-add-role')

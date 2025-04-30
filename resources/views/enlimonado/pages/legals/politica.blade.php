@@ -41,7 +41,7 @@
     </section>
 
 
-    @include('enlimonado.pages.legales.politicaconte')
+    @include('enlimonado.pages.legals.politicaconte')
     <!-- Modal -->
     @include('_partials._modals.modal-add-role')
 @endsection
