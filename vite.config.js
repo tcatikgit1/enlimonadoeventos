@@ -16,6 +16,8 @@ function GetFilesArray(query) {
  */
 // Page JS Files
 const pageJsFiles = GetFilesArray('resources/assets/js/*.js');
+const MyJS = GetFilesArray('resources/js/*.js');
+
 
 // Processing Vendor JS Files
 const vendorJsFiles = GetFilesArray('resources/assets/vendor/js/*.js');
@@ -65,6 +67,7 @@ export default defineConfig({
         ...vendorJsFiles,
         ...LibsJsFiles,
         ...MyStyles,
+        ...MyJS,
         'resources/js/laravel-user-management.js', // Processing Laravel User Management CRUD JS File
         ...CoreScssFiles,
         ...LibsScssFiles,
