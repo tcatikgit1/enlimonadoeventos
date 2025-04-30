@@ -16,8 +16,8 @@
         </div>
     </section>
 
-    @include('enlimonado.pages.upcoming.eventos')
+    @include('web.pages.upcoming.eventos')
 
-    @include('enlimonado.pages.upcoming.contacto')
+    @include('web.pages.upcoming.contacto')
 
 @endsection

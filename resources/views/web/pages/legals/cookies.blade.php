@@ -15,6 +15,8 @@
       </div>
     </section>
 
-    @include('enlimonado.pages.legals.cookiesconte')
+    @include('web.pages.legals.cookiesconte')
+    <!-- Modal -->
+    @include('_partials._modals.modal-add-role')
 @endsection
 

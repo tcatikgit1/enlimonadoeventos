@@ -16,7 +16,11 @@
         </div>
     </section>
 
-    @include('enlimonado.pages.success.exitosDestacados')
-    @include('enlimonado.pages.success.clientesDicen')
-    @include('enlimonado.pages.success.proximoExito')
+    @include('web.pages.success.exitosDestacados')
+    @include('web.pages.success.clientesDicen')
+    @include('web.pages.success.proximoExito')
+
+    <!-- Add Role Modal -->
+    @include('_partials/_modals/modal-add-role')
+    <!-- / Add Role Modal -->
 @endsection

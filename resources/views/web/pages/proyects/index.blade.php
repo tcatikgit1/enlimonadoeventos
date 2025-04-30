@@ -17,7 +17,7 @@
         </div>
     </section>
 
-    @include('enlimonado.pages.proyects.galeria')
-    @include('enlimonado.pages.proyects.contacto')
+    @include('web.pages.proyects.galeria')
+    @include('web.pages.proyects.contacto')
 
 @endsection

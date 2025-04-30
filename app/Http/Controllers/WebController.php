@@ -7,35 +7,35 @@ use Illuminate\Http\Request;
 
 class WebController extends Controller {
   public function index() {
-    return view('enlimonado.pages.home.index');
+    return view('web.pages.home.index');
   }
 
   public function aboutus() {
-    return view('enlimonado.pages.aboutus.index');
+    return view('web.pages.aboutus.index');
   }
 
   public function contact() {
-    return view('enlimonado.pages.contact.index');
+    return view('web.pages.contact.index');
   }
 
   public function successes() {
-    return view('enlimonado.pages.success.index');
+    return view('web.pages.success.index');
   }
 
   public function proyectos() {
-    return view('enlimonado.pages.proyects.index');
+    return view('web.pages.proyects.index');
   }
 
   public function cookies() {
-    return view('enlimonado.pages.legals.cookies');
+    return view('web.pages.legals.cookies');
   }
 
   public function politica() {
-    return view('enlimonado.pages.legals.politica');
+    return view('web.pages.legals.politica');
   }
 
   public function proximos() {
-    return view('enlimonado.pages.upcoming.index');
+    return view('web.pages.upcoming.index');
   }
 
   public function proyectoDetalle($slug) {
@@ -101,6 +101,6 @@ class WebController extends Controller {
       abort(404);
     }
 
-    return view('enlimonado.pages.proyects.detalles', ['project' => $articles[$slug]]);
+    return view('web.pages.proyects.detalles', ['project' => $articles[$slug]]);
   }
 }

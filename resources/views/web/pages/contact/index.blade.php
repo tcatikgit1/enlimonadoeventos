@@ -27,7 +27,7 @@
   </div>
 </section>
 
-    @include('enlimonado.pages.contact.form')
-    @include('enlimonado.pages.contact.map')
+    @include('web.pages.contact.form')
+    @include('web.pages.contact.map')
 
 @endsection
