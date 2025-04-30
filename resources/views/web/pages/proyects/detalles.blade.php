@@ -39,8 +39,8 @@
             border-radius: 15px;
         }
     </style>
-<section class="py-7 py-lg-9" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
-    <div class="container py-5" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
+<section class="py-7 py-lg-9" style="background: #000000;">
+    <div class="container py-5" style="background: #000000 ;">
         <div class="row mb-4">
             <div class="col-12 img-container">
                 <img src="{{ asset('assets/img/enlimonado/eventos/' . $project['img']) }}" class="img-fluid"

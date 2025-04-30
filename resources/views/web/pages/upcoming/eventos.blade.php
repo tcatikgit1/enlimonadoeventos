@@ -33,7 +33,7 @@
     ];
 @endphp
 
-<section class="contact-section py-10" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
+<section class="contact-section py-10" style="background: #000000;">
     <div class="container">
         <div class="row justify-content-start mb-10">
             <div class="col-xl-7 col-lg-8 col-md-10">

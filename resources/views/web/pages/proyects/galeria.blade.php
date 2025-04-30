@@ -128,7 +128,7 @@
     }
 </style>
 
-<section class="contact-section py-10" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
+<section class="contact-section py-10" style="background: #000000 ;">
     <div class="container py-5">
 
         <!-- Filtro estilo píldora -->
