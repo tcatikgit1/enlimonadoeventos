@@ -2,6 +2,12 @@
 
 @section('title', 'Exitos - Apps')
 
+@section('vendor-style')
+  @vite([
+  'resources/scss/styles/success/success.scss',
+])
+@endsection
+
 @section('content')
     <section class="py-7 py-lg-9" style="background-color: #000000;">
         <div class="container">

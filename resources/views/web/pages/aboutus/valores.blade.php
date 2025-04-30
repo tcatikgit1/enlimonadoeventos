@@ -27,19 +27,6 @@
     ];
 @endphp
 
-<style>
-    .valor-card {
-        background-color: #16121E;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        transition: all 0.1s ease;
-        will-change: background-color;
-    }
-
-    .valor-card:hover {
-        background-color: #1f1c25;
-    }
-</style>
-
 <section class="py-7"
     style="background: linear-gradient(to top, #000000 30%, #160b24 100%); padding-top: 7rem; padding-bottom: 7rem;">
     <div class="container" style="padding-top: 5rem; padding-bottom: 5rem;">

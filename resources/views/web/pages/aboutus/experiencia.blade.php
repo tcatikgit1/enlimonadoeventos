@@ -20,41 +20,6 @@
     ];
 @endphp
 
-<style>
-    .slide-horizontal {
-        animation: slideLR 10s infinite;
-    }
-
-    @keyframes slideLR {
-
-        0%,
-        100% {
-            transform: translateX(0);
-        }
-
-        50% {
-            transform: translateX(10px);
-        }
-    }
-
-
-    /* Apilar columnas una sobre otra debajo de 1020px */
-  @media (max-width: 1020px) {
-    .responsive-stack {
-      flex-direction: column !important;
-    }
-
-    .responsive-stack > div {
-      width: 100% !important;
-      max-width: 100% !important;
-    }
-
-    .image-wrapper {
-      margin-top: 2rem !important;
-    }
-  }
-</style>
-
 <section class="py-5" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
   <div class="container py-5">
     <div class="row align-items-center d-flex responsive-stack">

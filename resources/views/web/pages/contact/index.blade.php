@@ -5,6 +5,7 @@
 @section('vendor-style')
 @vite([
   'resources/assets/vendor/libs/@form-validation/form-validation.scss',
+  'resources/scss/styles/contact/contact.scss',
 ])
 @endsection
 

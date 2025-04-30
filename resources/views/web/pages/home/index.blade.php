@@ -4,7 +4,8 @@
 
 @section('vendor-style')
   @vite([
-  'resources/assets/vendor/libs/swiper/swiper.scss'
+  'resources/assets/vendor/libs/swiper/swiper.scss',
+  'resources/scss/styles/home/home.scss',
 
 
 ])

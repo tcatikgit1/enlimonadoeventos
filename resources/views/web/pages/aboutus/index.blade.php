@@ -2,6 +2,13 @@
 
 @section('title', 'Nosotros - Enlimonado Eventos')
 
+@section('vendor-style')
+  @vite([
+  /* 'resources/assets/vendor/libs/swiper/swiper.scss', */
+  'resources/scss/styles/aboutus/aboutus.scss',
+])
+@endsection
+
 
 @section('page-script')
 @vite([

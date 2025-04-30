@@ -2,31 +2,13 @@
 
 @section('title', 'Eventos - Detalles')
 
+@section('vendor-style')
+  @vite([
+  'resources/scss/styles/proyects/_detalles.scss',
+])
+@endsection
+
 @section('content')
-    <style>
-        .lime-heading {
-            color: #B9FF38;
-            font-weight: bold;
-            margin-top: 2rem;
-        }
-
-        .white-text {
-            color: white;
-        }
-
-        .img-fluid {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 15px;
-            max-height: 500px;
-        }
-
-        .img-container {
-            overflow: hidden;
-            border-radius: 15px;
-        }
-    </style>
 <section class="py-7 py-lg-9" style="background: #000000;">
     <div class="container py-5" style="background: #000000 ;">
         <div class="row mb-4">

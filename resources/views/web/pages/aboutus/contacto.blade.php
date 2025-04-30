@@ -1,18 +1,3 @@
-<style>
-  .btn-lime-cta {
-    border: 2px solid #B9FF38;
-    color: #000;
-    background-color: #B9FF38;
-    font-weight: 600;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .btn-lime-cta:hover {
-    background-color: #9bd42f;
-    color: #000;
-  }
-</style>
-
 <section class="contact-section py-10" style="background: linear-gradient(to right, #160b24 20%, #000000 80%);">
   <div class="container py-5">
     <div class="text-center mt-5">
