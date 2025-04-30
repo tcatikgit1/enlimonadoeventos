@@ -2,18 +2,6 @@
 
 @section('title', 'Eventos - Detalles')
 
-@section('vendor-style')
-    @vite(['resources/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.scss', 'resources/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.scss', 'resources/assets/vendor/libs/@form-validation/form-validation.scss', 'resources/assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.scss'])
-@endsection
-
-@section('vendor-script')
-    @vite(['resources/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js', 'resources/assets/vendor/libs/@form-validation/popular.js', 'resources/assets/vendor/libs/@form-validation/bootstrap5.js', 'resources/assets/vendor/libs/@form-validation/auto-focus.js'])
-@endsection
-
-@section('page-script')
-    @vite([/* 'resources/assets/js/app-access-roles.js', 'resources/assets/js/modal-add-role.js' */])
-@endsection
-
 @section('content')
     <style>
         .lime-heading {
@@ -39,8 +27,8 @@
             border-radius: 15px;
         }
     </style>
-<section class="py-7 py-lg-9" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
-    <div class="container py-5" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
+<section class="py-7 py-lg-9" style="background: #000000;">
+    <div class="container py-5" style="background: #000000 ;">
         <div class="row mb-4">
             <div class="col-12 img-container">
                 <img src="{{ asset('assets/img/enlimonado/eventos/' . $project['img']) }}" class="img-fluid"

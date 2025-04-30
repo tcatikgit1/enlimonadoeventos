@@ -42,7 +42,7 @@
     }
 </style>
 
-<section class="contact-section py-10" style="background: linear-gradient(to bottom, #160b24 30%, #000000 100%);">
+<section class="contact-section py-10" style="background: linear-gradient(to right, #160b24 20%, #000000 80%);">
     <div class="container py-5">
         <div class="text-center mt-5">
             <h2 class="fw-bold text-white">¿El próximo gran evento? <span class="lime-text">Puede ser el tuyo.</span></h2>
