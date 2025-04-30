@@ -1,6 +1,6 @@
 @extends('layouts/principalLayout')
 
-@section('title', 'Nuestros Proyectos - Enlimonado Eventos')
+@section('title', 'Exitos - Apps')
 
 @section('vendor-style')
     @vite(['resources/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.scss', 'resources/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.scss', 'resources/assets/vendor/libs/@form-validation/form-validation.scss', 'resources/assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.scss'])
@@ -17,19 +17,20 @@
 @section('content')
     <section class="py-7 py-lg-9" style="background-color: #000000;">
         <div class="container">
-            <div class="row justify-content-start" style="margin-top: 9%; margin-bottom: 4%;">
+            <div class="row justify-content-start" style="margin-top: 9%; margin-bottom: 9%;">
                 <div class="col-xl-7 col-lg-8 col-md-10">
-                    <h2 class="fw-bold display-3 mb-4" style="color: #ffffff;">Proyectos <span
-                            class="lime-text">Enlimonados</span></h2>
-                    <p class="fs-4 text-white-50">Un recorrido visual por nuestras creaciones más ácidas y bizarras. Eventos
-                        únicos que han dejado huella.</p>
+                    <h2 class="fw-bold display-3 mb-4 text-white">Nuestros <span class="fw-bold display-3 mb-4"
+                            style="color: #B9FF38;">Éxitos</span></h2>
+                    <p class="fs-4" style="color: rgba(255, 255, 255, 0.8);">Resultados que hablan por sí mismos. Proyectos
+                        que superaron expectativas y clientes que quedaron fascinados con el "efecto Enlimonado".</p>
                 </div>
             </div>
         </div>
     </section>
 
-    @include('enlimonado.pages.proyects.galeria')
-    @include('enlimonado.pages.proyects.contacto')
+    @include('web.pages.success.exitosDestacados')
+    @include('web.pages.success.clientesDicen')
+    @include('web.pages.success.proximoExito')
 
     <!-- Add Role Modal -->
     @include('_partials/_modals/modal-add-role')

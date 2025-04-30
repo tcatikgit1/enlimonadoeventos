@@ -86,7 +86,7 @@
         @endforeach
     </div>
 
-    @include('enlimonado.pages.upcoming.solicitud')
+    @include('web.pages.upcoming.solicitud')
 </section>
 
 <script>

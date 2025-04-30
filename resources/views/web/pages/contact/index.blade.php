@@ -40,8 +40,8 @@
   </div>
 </section>
 
-    @include('enlimonado.pages.contact.form')
-    @include('enlimonado.pages.contact.map')
+    @include('web.pages.contact.form')
+    @include('web.pages.contact.map')
 
     <!-- Add Role Modal -->
     @include('_partials/_modals/modal-add-role')

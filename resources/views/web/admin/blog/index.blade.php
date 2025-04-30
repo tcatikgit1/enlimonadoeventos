@@ -84,7 +84,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
     </div>
     <div class="modal-body">
-    @include('enlimonado.pages.blog.form')
+    @include('web.pages.blog.form')
     </div>
     <div class="modal-footer">
     <button type="submit" class="btn btn-warning">Actualizar</button>
