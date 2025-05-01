@@ -130,4 +130,6 @@ return [
     'Helper' => App\Helpers\Helpers::class,
   ],
 
+  'version' => env('APP_VERSION', '1.0.0'),
+
 ];

@@ -6,9 +6,7 @@
   @vite([
   'resources/assets/vendor/libs/swiper/swiper.scss',
   'resources/scss/styles/home/home.scss',
-
-
-])
+  ])
 @endsection
 
 @section('vendor-script')

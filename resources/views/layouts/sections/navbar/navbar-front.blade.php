@@ -67,7 +67,7 @@ $navbarDetached = ($navbarDetached ?? '');
         <li class="nav-item"><a class="nav-link" href="/upcoming">Próximos</a></li>
         <li class="nav-item"><a class="nav-link" href="/contact">Contacto</a></li>
         <li class="nav-item ms-lg-3">
-          <a href="//wa.me/667073126" class="btn btn-outline-lime px-4 py-2 rounded"><i class="ti ti-brand-whatsapp" style="margin-right: 10px;"></i>Contáctanos</a>
+          <a href="//wa.me/667073126" class="btn btn-outline-lime bg-transparent px-4 py-2 rounded"><i class="ti ti-brand-whatsapp" style="margin-right: 10px;"></i>Contáctanos</a>
         </li>
       </ul>
     </div>
