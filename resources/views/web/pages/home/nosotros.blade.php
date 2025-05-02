@@ -19,8 +19,8 @@
     ];
 @endphp
 
-<section class="py-7" style="background: linear-gradient(to top, #000000 30%, #160b24 100%); padding-top: 7rem; padding-bottom: 7rem;">
-    <div class="container" style="padding-top: 5rem; margin-bottom: 8rem;">
+<section style="background: linear-gradient(to top, #000000 30%, #160b24 100%);">
+    <div class="container" style=" margin-bottom: 4rem;">
         <!-- Título Principal -->
         <h2 class="text-center fw-bold mb-4 text-white" role="heading" aria-level="2">
             Lo que <span style="color: #B5F613;">dicen</span> de nosotros.
@@ -52,7 +52,7 @@
         </div>
         <div class="text-center mt-5">
             <a href="/success" class="btn btn-lime" aria-label="Enlace para ver más testimonios">
-                Ver más testimonios <i class="ti ti-arrow-right ms-1"></i>
+                Conoce nuestros éxitos <i class="ti ti-arrow-right ms-1"></i>
             </a>
         </div>
     </div>

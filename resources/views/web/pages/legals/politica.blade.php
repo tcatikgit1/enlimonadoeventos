@@ -1,6 +1,6 @@
 @extends('layouts/principalLayout')
 
-@section('title', 'Política de Cookies - Enlimonado Eventos')
+@section('title', 'Política de Privacidad - Enlimonado Eventos')
 
 
 @section('content')
@@ -9,7 +9,7 @@
       <div class="container">
         <div class="row justify-content-start" style="margin-top: 9%; margin-bottom: 9%;">
           <div class="col-xl-7 col-lg-8 col-md-10">
-            <span class="fw-bold display-3 mb-4" style="color: #B9FF38;">Políticas </span><span class="fw-bold display-3 mb-4" style="color: #ffffff;">de privacidad</span>
+            <h1 class="fw-bold display-3 mb-4" style="color: #B9FF38;">Políticas <span class="fw-bold display-3 mb-4" style="color: #ffffff;">de privacidad</span></h1>
           </div>
         </div>
       </div>

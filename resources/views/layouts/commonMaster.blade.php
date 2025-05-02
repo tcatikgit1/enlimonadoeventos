@@ -14,9 +14,19 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
  --}}
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <meta name="description" content="Enlimonado Eventos organiza eventos únicos y a medida en Canarias: corporativos, networking, lanzamientos, ferias, ruedas de prensa, activaciones de marca y teambuilding. Creamos experiencias originales, impactantes y alineadas con tu estrategia, sean bizarras, divertidas o serias.">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.enlimonadoeventos.com/" />
+  <meta property="og:title" content="Enlimonado Eventos" />
+  <meta property="og:description" content="Enlimonado Eventos organiza eventos únicos y a medida en Canarias: corporativos, networking, lanzamientos, ferias, ruedas de prensa, activaciones de marca y teambuilding. Creamos experiencias originales, impactantes y alineadas con tu estrategia, sean bizarras, divertidas o serias." />
+  <meta property="og:image" content="https://www.enlimonadoeventos.com/public/assets/img/enlimonado/logo/Logogrande.webp" />
 
-  <meta name="keywords" content="Organización de eventos Canarias, organización de eventos España, eventos corporativos, agencia de eventos, networking empresarial, lanzamientos de productos, presentaciones de marca, ruedas de prensa, activaciones de marca, campañas experienciales, ferias y congresos, eventos sectoriales, eventos de teambuilding, eventos creativos, eventos empresariales, eventos personalizados, experiencias de marca, eventos impactantes, eventos originales, enlimonado eventos  ">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://www.enlimonadoeventos.com/" />
+  <meta property="twitter:title" content="Enlimonado Eventos" />
+  <meta property="twitter:description" content="Enlimonado Eventos organiza eventos únicos y a medida en Canarias: corporativos, networking, lanzamientos, ferias, ruedas de prensa, activaciones de marca y teambuilding. Creamos experiencias originales, impactantes y alineadas con tu estrategia, sean bizarras, divertidas o serias." />
+  <meta property="twitter:image" content="https://www.enlimonadoeventos.com/public/assets/img/enlimonado/logo/Logogrande.webp" />
 
 
   <title>@yield('title') |
@@ -35,11 +45,6 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   <!-- DataTables Bootstrap 5 CSS -->
   <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 
-
-
-
-
-
   <!-- Include Styles -->
   <!-- $isFront is used to append the front layout styles only on the front layout otherwise the variable will be blank -->
   @include('layouts/sections/styles' . $isFront)
@@ -47,8 +52,6 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   <!-- Include Scripts for customizer, helper, analytics, config -->
   <!-- $isFront is used to append the front layout scriptsIncludes only on the front layout otherwise the variable will be blank -->
   @include('layouts/sections/scriptsIncludes' . $isFront)
-
-
 
 </head>
 
@@ -58,8 +61,7 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   @yield('layoutContent')
   <!--/ Layout Content -->
 
-
-
+  
   <!-- Include Scripts -->
   <!-- $isFront is used to append the front layout scripts only on the front layout otherwise the variable will be blank -->
   @include('layouts/sections/scripts' . $isFront)

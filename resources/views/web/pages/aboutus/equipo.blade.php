@@ -12,7 +12,7 @@
 @endphp
 
 <section class="py-7" style="background: #000000;">
-    <div class="container text-center text-white py-5">
+    <div class="container text-center text-white" style="padding-bottom: 3rem;">
         <h2 class="fw-bold text-white mb-2">
             El <span style="color: #B5F613;">equipo</span> Enlimonado
         </h2>
@@ -32,7 +32,7 @@
                              style="background-color: transparent;">
                             @if ($persona['frase'])
                                 <div class="hover-text">
-                                    <h5 class="fw-bold mb-2" style="color: #000; font-weight: 900;">{{ $persona['nombre'] }}</h5>
+                                    <h3 class="fw-bold mb-2" style="color: #000; font-weight: 900;">{{ $persona['nombre'] }}</h3>
                                     <p class="mb-0" style="color: #000; font-weight: 600;">{{ $persona['frase'] }}</p>
                                 </div>
                             @endif
@@ -41,7 +41,7 @@
                         <!-- Información del nombre y cargo -->
                         <div class="position-absolute bottom-0 start-0 w-100 text-start p-4">
                             <div>
-                                <h3 class="fw-bold text-white mb-0">{{ $persona['nombre'] }}</h3>
+                                <h4 class="fw-bold text-white mb-0">{{ $persona['nombre'] }}</h4>
                                 <div class="fw-semibold" style="color: #B5F613;">{{ $persona['cargo'] }}</div>
                             </div>
                             <div class="text-white small mt-3">{{ $persona['desc'] }}</div>

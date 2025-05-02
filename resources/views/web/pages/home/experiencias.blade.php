@@ -39,8 +39,8 @@
     ];
 @endphp
 
-<section class="py-7" style="background: linear-gradient(to top, #000000 30%, #160b24 100%); padding-top: 7rem; padding-bottom: 7rem;" id="experiences">
-    <div class="container" style="padding-top: 5rem; margin-bottom: 8rem;">
+<section style="background: linear-gradient(to top, #000000 30%, #160b24 100%);" id="experiences">
+    <div class="container" style="padding-top: 3rem; margin-bottom: 1rem;">
         <h2 class="text-center fw-bold mb-4 text-white" role="heading" aria-level="2">
             No hacemos <span style="color: #B5F613;">eventos</span>. Hacemos <span style="color: #B5F613;">experiencias</span>.
         </h2>
@@ -61,7 +61,7 @@
 
         <!-- Botón centrado -->
         <div class="text-center mt-5">
-            <a href="/contact" class="btn btn-outline-lime" style="padding: 0.5rem 1rem; margin-top: 3rem;" aria-label="Enlace para contactar con Enlimonado">
+            <a href="/contact" class="btn btn-outline-lime" style="" aria-label="Enlace para contactar con Enlimonado">
                 Descubre nuestro enfoque <i class="ti ti-bolt ms-1"></i>
             </a>
         </div>

@@ -2,6 +2,7 @@
     <div class="container">
         <div class="row justify-content-center text-center mb-5">
             <div class="col-12 col-lg-10">
+                <h1 class="invisible">Enlimonado Eventos</h1>
                 <h2 class="fw-bold text-white titulo-eventos">
                     Eventos <span style="color: #B9FF38;">top</span>, ácidos y <br>
                     bizarros.<br>

@@ -37,7 +37,7 @@
     <div class="container">
         <div class="row justify-content-start mb-10">
             <div class="col-xl-7 col-lg-8 col-md-10">
-                <h4 class="fw-bold fs-2 text-white">Eventos en el horizonte</h4>
+                <h2 class="fw-bold fs-2 text-white">Eventos en el horizonte</h2>
             </div>
         </div>
         @foreach ($eventos as $evento)

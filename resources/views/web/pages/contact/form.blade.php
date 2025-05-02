@@ -63,7 +63,7 @@
 
             <!-- Info de contacto -->
             <div class="col-lg-5 d-flex flex-column mt-5 mt-lg-0">
-                <h4 class="fw-bold text-white mb-5">Información de contacto</h4>
+                <h2 class="fw-bold text-white mb-5">Información de contacto</h2>
 
                 <div class="d-flex align-items-start mb-11">
                     <div class="rounded-circle d-flex align-items-center justify-content-center me-3"

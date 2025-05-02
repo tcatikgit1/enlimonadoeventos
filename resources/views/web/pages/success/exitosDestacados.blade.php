@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row justify-content-start mb-10">
             <div class="col-xl-7 col-lg-8 col-md-10">
-                <h4 class="fw-bold fs-2 text-white">Casos de Éxito Destacados</h4>
+                <h2 class="fw-bold fs-2 text-white">Casos de Éxito Destacados</h2>
             </div>
         </div>
 
@@ -19,7 +19,7 @@
                 </p>
 
                 <div class="rounded p-4 mt-5" style="border: 1px solid rgba(66, 59, 59, 0.848); background: #110F15;">
-                    <h6 class="fw-bold mb-3 fs-5 ms-2 mt-2" style="color: #B9FF38;">Resultados obtenidos:</h6>
+                    <h3 class="fw-bold mb-3 fs-5 ms-2 mt-2" style="color: #B9FF38;">Resultados obtenidos:</h3>
                     <ul class="list-unstyled mb-0">
                         <li class="fs-5 mb-2" style="color: rgba(255, 255, 255, 0.8);"><i
                                 class="ti ti-circle-check-filled fs-3" style="color: #B9FF38"></i> 98% de los asistentes
@@ -47,7 +47,7 @@
                     que transformó un espacio comercial en una instalación artística participativa.</p>
 
                 <div class="rounded p-4 mt-5" style="border: 1px solid rgba(66, 59, 59, 0.848); background: #110F15;">
-                    <h6 class="fw-bold mb-3 fs-5 ms-2 mt-2" style="color: #B9FF38;">Resultados obtenidos:</h6>
+                    <h3 class="fw-bold mb-3 fs-5 ms-2 mt-2" style="color: #B9FF38;">Resultados obtenidos:</h3>
                     <ul class="list-unstyled mb-0">
                         <li class="fs-5 mb-2" style="color: rgba(255, 255, 255, 0.8);"><i
                                 class="ti ti-circle-check-filled fs-3" style="color: #B9FF38"></i> Incremento del 120%
@@ -75,7 +75,7 @@
                     fusionaba música electrónica con experiencias sensoriales y arte digital interactivo.</p>
 
                 <div class="rounded p-4 mt-5" style="border: 1px solid rgba(66, 59, 59, 0.848); background: #110F15;">
-                    <h6 class="fw-bold mb-3 fs-5 ms-2 mt-2" style="color: #B9FF38;">Resultados obtenidos:</h6>
+                    <h3 class="fw-bold mb-3 fs-5 ms-2 mt-2" style="color: #B9FF38;">Resultados obtenidos:</h3>
                     <ul class="list-unstyled mb-0">
                         <li class="fs-5 mb-2" style="color: rgba(255, 255, 255, 0.8);"><i
                                 class="ti ti-circle-check-filled fs-3" style="color: #B9FF38"></i> 5,000+ asistentes

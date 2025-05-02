@@ -2,10 +2,10 @@
     <div class="modal-dialog modal-dialog-centered" style="max-width: 500px;">
         <div class="modal-content bg-dark text-white border-0 rounded-4">
             <div class="modal-header border-0">
-                <h5 class="modal-title text-white" id="modalSolicitudLabel">
+                <h3 class="modal-title text-white" id="modalSolicitudLabel">
                     Inscripción: <span id="modalTituloEvento">Evento</span><br>
                     <small class="text-muted fs-6" id="modalFechaEvento">Fecha y hora</small>
-                </h5>
+                </h3>
             </div>
             <div class="modal-body">
                 <form method="POST" action="{{ route('inscript.store') }}">

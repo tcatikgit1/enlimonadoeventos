@@ -83,6 +83,8 @@
   justify-content: center;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+  flex-flow: column;
+  
 
   /* Añade esto ↓ */
   max-width: 455px;
