@@ -5,7 +5,7 @@
             'cargo' => 'Dirección de arte',
             'frase' => '"El diseño no es solo cómo se ve, sino cómo funciona"',
             'desc' => 'Los maestros del caos en los eventos',
-            'img' => 'assets/img/enlimonado/Nosotros/Foto.webp',
+            'img' => 'assets/img/enlimonado/Nosotros/equipo.webp',
             'color' => 'rgba(181, 246, 19, 0.85)', // Aquí es donde se define el color de la superposición
         ],
     ];
