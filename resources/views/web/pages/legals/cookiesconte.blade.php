@@ -35,7 +35,7 @@
                     Mediante el acceso a <a href="https://www.lemontik.com/" target="_blank" rel="noopener noreferrer">https://www.lemontik.com/</a>, acepta de manera expresa que podamos usar este tipo de cookies en sus dispositivos. Si desactiva las cookies, puede que su navegación por <a href="https://www.lemontik.com/" target="_blank" rel="noopener noreferrer">https://www.lemontik.com/</a> no sea óptima y algunas de las utilidades que dispone <a href="https://www.lemontik.com/" target="_blank" rel="noopener noreferrer">https://www.lemontik.com/</a> no funcionen correctamente.
                 </p>
 
-                <h3 class="fw-bold mt-4 text-white">a)Cookies propias</h3>
+                <h4 class="fw-bold mt-4 text-white">a)Cookies propias</h4>
                 <p class="fs-5">
                     Con el fin de reconocerte y prestarte un mejor servicio, nuestro sitio utiliza cookies (pequeños archivos de texto que tu navegador almacena) propias. Las ventajas que conlleva la aceptación de nuestras cookies se traduce en un ahorro de tiempo. Asimismo pueden ser utilizadas también para reconocerte entre visitas sucesivas y así adaptar el contenido que se te muestra, para obtener información acerca de la fecha y hora de tu última visita, medir algunos parámetros de tráfico dentro del propio sitio, y estimar el número de visitas realizadas, de manera que podamos enfocar y ajustar los servicios y promociones de forma más efectiva.
                 </p>
@@ -51,7 +51,7 @@
                 <p class="fs-5">XSRF-TOKEN, Creada por Laravel</p>
                 <p class="fs-5">Duración: 2 horas - Cookie propia que facilita la protección de la web de ataques de falsificación de solicitudes entre sitios (CSRF).</p>
 
-                <h3 class="fw-bold mt-4 text-white">b)Cookies de Terceros. Cookies de Google Analytics</h3>
+                <h4 class="fw-bold mt-4 text-white">b)Cookies de Terceros. Cookies de Google Analytics</h4>
                 <p class="fs-5">
                     El sitio utiliza el servicio Google Analytics, que es prestado por Google, Inc., entidad cuya oficina principal está en 1600 Amphitheatre Parkway, Mountain View (California), CA 94043, Estados Unidos ("Google").
                 </p>

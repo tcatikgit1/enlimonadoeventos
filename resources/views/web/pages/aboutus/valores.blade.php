@@ -39,7 +39,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="p-4 h-100 text-white rounded-3 shadow-sm d-flex flex-column valor-card">
                         <div class="fs-2 mb-4" style="color: {{ $valor['color'] }};">{{ $valor['icono'] }}</div>
-                        <h5 class="fw-bold mb-4 text-white">{{ $valor['titulo'] }}</h5>
+                        <h3 class="fw-bold mb-4 fs-4 text-white">{{ $valor['titulo'] }}</h3>
                         <p class="mb-0 text-white">{{ $valor['texto'] }}</p>
                     </div>
                 </div>

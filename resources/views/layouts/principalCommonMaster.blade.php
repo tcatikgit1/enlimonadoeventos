@@ -31,15 +31,14 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   <meta property="og:url" content="https://www.enlimonadoeventos.com/" />
   <meta property="og:title" content="Enlimonado Eventos" />
   <meta property="og:description" content="Enlimonado Eventos organiza eventos únicos y a medida en Canarias: corporativos, networking, lanzamientos, ferias, ruedas de prensa, activaciones de marca y teambuilding. Creamos experiencias originales, impactantes y alineadas con tu estrategia, sean bizarras, divertidas o serias." />
-  <meta property="og:image" content="https://www.enlimonadoeventos.com/public/assets/img/enlimonado/logo/Preview.webp" />
+  <meta property="og:image" content="https://www.enlimonadoeventos.com/public/assets/img/enlimonado/logo/Logogrande.webp" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://www.enlimonadoeventos.com/" />
   <meta property="twitter:title" content="Enlimonado Eventos" />
   <meta property="twitter:description" content="Enlimonado Eventos organiza eventos únicos y a medida en Canarias: corporativos, networking, lanzamientos, ferias, ruedas de prensa, activaciones de marca y teambuilding. Creamos experiencias originales, impactantes y alineadas con tu estrategia, sean bizarras, divertidas o serias." />
-  <meta property="twitter:image" content="https://www.enlimonadoeventos.com/public/assets/img/enlimonado/logo/Preview.webp" />
-
+  <meta property="twitter:image" content="https://www.enlimonadoeventos.com/public/assets/img/enlimonado/logo/Logogrande.webp" />
 
   <!-- Barra superior en dispositivos Android (Chrome, Firefox OS, etc.) -->
   <meta name="theme-color" content="#000000">

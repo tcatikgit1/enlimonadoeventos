@@ -41,7 +41,7 @@
             </div>
         </div>
         @foreach ($eventos as $evento)
-        <div class="row align-items-start mb-5 {{ $evento['reverse'] ? 'flex-lg-row-reverse' : '' }}">
+        <div class="row align-items-start mb-10  {{ $evento['reverse'] ? 'flex-lg-row-reverse' : '' }}">
             <div class="col-12 col-lg-6 p-4 position-relative">
                 <img src="{{ $evento['imagen'] }}" alt="{{ $evento['titulo'] }}"
                     class="img-fluid rounded w-100 h-auto" style="max-height: 500px;">
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 p-4 text-light">
-                <h2 class="fs-4 text-white">{{ $evento['titulo'] }}</h2>
+                <h3 class="fs-4 text-white">{{ $evento['titulo'] }}</h3>
                 <p class="fs-5 mb-4 mt-4" style="color: rgba(255, 255, 255, 0.8);">
                     {{ $evento['descripcion'] }}
                 </p>
