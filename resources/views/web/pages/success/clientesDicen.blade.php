@@ -53,11 +53,11 @@
     ];
 @endphp
 
-<section class="contact-section py-10" style="background: linear-gradient(to top, #000000 30%, #160b24 100%);">
+<section class="contact-section py-10 mb-5" style="background: linear-gradient(to top, #000000 30%, #160b24 100%);">
     <div class="container">
         <div class="row justify-content-start mb-10">
             <div class="col-xl-7 col-lg-8 col-md-10">
-                <h4 class="fw-bold fs-2 text-white">Lo que nuestros clientes dicen</h4>
+                <h2 class="fw-bold fs-2 text-white">Lo que nuestros clientes dicen</h2>
             </div>
         </div>
 
@@ -71,17 +71,17 @@
                     <i class="ti ti-quote ti-28px" style="color: #B9FF38;"></i>
                   </div>
 
-                  <h5 class="card-title mb-3" style="color: white;">
+                  <p class="card-title mb-3" style="color: white;">
                     {{ $testimonial['mensaje'] }}
-                  </h5>
+                  </p>
 
                   <div class="d-flex align-items-center mb-4 overflow-hidden">
-                    <div class="flex-shrink-0">
-                      <img src="{{ asset($testimonial['avatar']) }}" alt="Avatar" class="rounded-circle"
+                    <div class="flex-shrink-0 pt-5">
+                      <img src="{{ asset($testimonial['avatar']) }}" alt="Avatar" class="rounded-circle "
                           style="width: 48px; height: 48px; object-fit: cover;" />
                     </div>
-                    <div class="ms-3 text-truncate w-100">
-                      <h6 class="mb-0 text-truncate" style="color: white;">{{ $testimonial['nombre'] }}</h6>
+                    <div class="ms-3 text-truncate w-100 pt-5">
+                      <p class="mb-0 text-truncate fs-5" style="color: white;">{{ $testimonial['nombre'] }}</p>
                       <small class="text-muted text-truncate d-block">{{ $testimonial['cargo'] }}</small>
                     </div>
                   </div>

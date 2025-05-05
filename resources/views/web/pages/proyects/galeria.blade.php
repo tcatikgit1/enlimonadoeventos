@@ -32,8 +32,8 @@
                         <div class="event-card" data-bg="{{ asset('assets/img/enlimonado/eventos/' . $article['img']) }}">
                             <div class="event-content">
                                 <div class="event-tag">{{ $article['tag'] }}</div>
-                                <h5 class="fw-bold" style="color: #ffffff;">{{ $article['title'] }}</h5>
-                                <h6 class="mb-1" style="color: #ffffff;">Por {{ $article['author'] }}</h6>
+                                <h3 class="fw-bold fs-4" style="color: #ffffff;">{{ $article['title'] }}</h3>
+                                <h4 class="mb-1 fs-5" style="color: #ffffff;">Por {{ $article['author'] }}</h4>
                                 <div class="lime-bar"></div>
                             </div>
                         </div>

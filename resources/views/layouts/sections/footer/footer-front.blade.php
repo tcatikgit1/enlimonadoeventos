@@ -50,12 +50,12 @@ footer.footer {
       <div class="row">
         <!-- Brand + social -->
         <div class="col-12 col-md-4 mb-6">
-          <h4 class="fw-bold fs-4 mb-3 text-white">
+          <h2 class="fw-bold fs-4 mb-3 text-white">
             <a href="#" class="text-uppercase text-white" style="text-decoration: none;">
               <!-- Aquí ponemos la imagen en lugar del texto ENLIMONADO -->
               <img src="{{ asset('assets/img/enlimonado/logo/Logopeque.webp') }}" alt="Logo Enlimonado" style="height: auto; width: 180px;">
             </a>
-          </h4>
+          </h2>
           <p style="color: #ffffff; font-family:Poppins, sans-serif">"Si no te lo cuestionan, es que no lo hiciste bien."</p>
           <div class="mt-3">
             <a href="https://www.instagram.com/enlimonadoproducciones/" target="_blank" aria-label="Enlace a Instagram"><i class="ti ti-brand-instagram footer-social-icon"></i></a>
@@ -65,7 +65,7 @@ footer.footer {
 
         <!-- Enlaces rápidos -->
         <div class="col-12 col-md-4 mb-6">
-          <h5 class="footer-heading">Enlaces Rápidos</h5>
+          <h2 class="footer-heading">Enlaces Rápidos</h2>
           <div class="row">
             <div class="col-6">
               <ul class="list-unstyled mt-3">
@@ -86,7 +86,7 @@ footer.footer {
 
         <!-- Contáctanos -->
         <div class="col-12 col-md-4">
-          <h5 class="footer-heading">Contáctanos</h5>
+          <h2 class="footer-heading">Contáctanos</h2>
           <ul class="list-unstyled mt-3">
             <li class="d-flex align-items-center pb-2">
               <i class="ti ti-mail icon-green me-2"></i>

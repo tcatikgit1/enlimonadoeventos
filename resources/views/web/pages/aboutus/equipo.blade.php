@@ -41,7 +41,7 @@
                         <!-- Información del nombre y cargo -->
                         <div class="position-absolute bottom-0 start-0 w-100 text-start p-4">
                             <div>
-                                <h4 class="fw-bold text-white mb-0">{{ $persona['nombre'] }}</h4>
+                                <h3 class="fw-bold text-white mb-0">{{ $persona['nombre'] }}</h3>
                                 <div class="fw-semibold" style="color: #B5F613;">{{ $persona['cargo'] }}</div>
                             </div>
                             <div class="text-white small mt-3">{{ $persona['desc'] }}</div>

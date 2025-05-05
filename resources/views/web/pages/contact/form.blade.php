@@ -99,7 +99,7 @@
                 </div>
 
                 <div class="p-4 rounded mt-4" style="background-color: #1c1c1e;">
-                    <h5 class="fw-bold text-white mb-2">¿Prefieres hablar por teléfono?</h5>
+                    <h3 class="fw-bold fs-5 text-white mb-2">¿Prefieres hablar por teléfono?</h3>
                     <p class="text-white-50 mb-3">Programa una llamada con nuestro equipo para discutir tu proyecto en
                         detalle.
                     </p>
