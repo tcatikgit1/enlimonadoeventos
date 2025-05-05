@@ -83,8 +83,6 @@
   justify-content: center;
   margin-bottom: 2rem;
   flex-wrap: wrap;
-  flex-flow: column;
-  
 
   /* Añade esto ↓ */
   max-width: 455px;
@@ -100,6 +98,13 @@
   font-weight: 500;
   border-radius: 8px;
   transition: background-color 0.3s, color 0.3s;
+}
+
+@media (max-width: 768px) {
+  .filter-card {
+    flex-direction: column;
+    align-items: stretch; 
+  }
 }
 
 .btn-filter:hover {
