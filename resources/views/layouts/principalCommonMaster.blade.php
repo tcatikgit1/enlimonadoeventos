@@ -24,6 +24,23 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   <meta name="keywords"
   content="Organización de eventos Canarias, organización de eventos España, eventos corporativos, agencia de eventos, networking empresarial, lanzamientos de productos, presentaciones de marca, ruedas de prensa, activaciones de marca, campañas experienciales, ferias y congresos, eventos sectoriales, eventos de teambuilding, eventos creativos, eventos empresariales, eventos personalizados, experiencias de marca, eventos impactantes, eventos originales, enlimonado eventos  ">
 
+
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.enlimonadoeventos.com/" />
+  <meta property="og:title" content="Enlimonado Eventos" />
+  <meta property="og:description" content="Enlimonado Eventos organiza eventos únicos y a medida en Canarias: corporativos, networking, lanzamientos, ferias, ruedas de prensa, activaciones de marca y teambuilding. Creamos experiencias originales, impactantes y alineadas con tu estrategia, sean bizarras, divertidas o serias." />
+  <meta property="og:image" content="https://www.enlimonadoeventos.com/public/assets/img/enlimonado/logo/Preview.webp" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://www.enlimonadoeventos.com/" />
+  <meta property="twitter:title" content="Enlimonado Eventos" />
+  <meta property="twitter:description" content="Enlimonado Eventos organiza eventos únicos y a medida en Canarias: corporativos, networking, lanzamientos, ferias, ruedas de prensa, activaciones de marca y teambuilding. Creamos experiencias originales, impactantes y alineadas con tu estrategia, sean bizarras, divertidas o serias." />
+  <meta property="twitter:image" content="https://www.enlimonadoeventos.com/public/assets/img/enlimonado/logo/Preview.webp" />
+
+
   <!-- Barra superior en dispositivos Android (Chrome, Firefox OS, etc.) -->
   <meta name="theme-color" content="#000000">
 
