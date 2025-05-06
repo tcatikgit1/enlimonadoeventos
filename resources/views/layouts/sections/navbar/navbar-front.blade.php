@@ -50,7 +50,7 @@ $navbarDetached = ($navbarDetached ?? '');
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-sm sticky-top custom-blur-nav">
   <div class="container">
     <a class="navbar-brand fw-bold fs-4" href="/">
-      <img src="{{ asset('assets/img/enlimonado/logo/Logopeque.webp') }}" alt="Logo Enlimonado" style="height: auto; width: 180px;">
+      <img src="{{ asset('assets/img/enlimonado/logo/Logopeque.webp') }}" alt="Logo Enlimonado" style="height:  44.09px; width: 180px;">
     </a>
 
     <!-- Botón de menú personalizado con un icono Tabler (ej: "menu-2") -->
