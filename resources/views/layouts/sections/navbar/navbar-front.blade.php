@@ -6,9 +6,7 @@ $navbarDetached = ($navbarDetached ?? '');
 @endphp
 
 <style>
-    * {
-      font-family: 'Poppins', sans-serif !important;
-    }
+
 
     .custom-blur-nav {
       background: rgba(0, 0, 0, 0.7);
