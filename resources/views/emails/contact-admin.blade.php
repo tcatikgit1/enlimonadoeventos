@@ -4,7 +4,7 @@
   style="height: auto; width: 180px;">
   </div>
 
-  <h2 style="color:#B5F613; align-items: center;">Nuevo mensaje de contacto</h2>
+  <h2 style="color:#000000; align-items: center;">Nuevo mensaje de contacto</h2>
 
   <p><strong>Nombre:</strong> {{ $data['name'] }}</p>
   <p><strong>Email:</strong> {{ $data['email'] }}</p>
@@ -13,8 +13,8 @@
   <p><strong>Asunto:</strong> {{ $data['subject'] }}</p>
   <p><strong>Mensaje:</strong><br>{{ $data['message'] }}</p>
 
-  <hr style="border-top: 1px solid #B5F613; margin: 30px 0;">
+  <hr style="border-top: 1px solid #000000; margin: 30px 0;">
 
-  <p class="text-white" style="font-size: 0.9rem;">Este mensaje fue enviado desde el formulario de contacto de <strong>Enlimonado</strong>.
+  <p class="" style=" color:#000000;font-size: 0.9rem;">Este mensaje fue enviado desde el formulario de contacto de <strong>Enlimonado</strong>.
   </p>
 </div>

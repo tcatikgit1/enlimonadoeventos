@@ -4,12 +4,12 @@
   style="height: auto; width: 180px;">
   </div>
 
-  <h2 style="color:#B5F613; text-align:center;">¡Gracias por Inscribirte, {{ $data['name'] }}!</h2>
+  <h2 style="color:#000000; text-align:center;">¡Gracias por Inscribirte, {{ $data['name'] }}!</h2>
 
-  <p class="text-white" style="text-align:center">Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.</p>
+  <p class="" style="text-align:center; color:#000000;">Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.</p>
 
   <hr style="border-top: 1px solid #444; margin: 30px 0;">
 
 
-  <p class="text-white" style="margin-top: 30px;">Atentamente,<br><span style="color:#B5F613;">El equipo de Enlimonado Eventos</span></p>
+  <p class="" style="margin-top: 30px;">Atentamente,<br><span style="color:#000000;">El equipo de Enlimonado Eventos</span></p>
 </div>
