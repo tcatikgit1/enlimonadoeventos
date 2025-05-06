@@ -12,7 +12,6 @@
 
 @section('page-script')
 @vite([
-  'resources/js/equipo.js'
 ])
 @endsection
 
