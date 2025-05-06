@@ -11,5 +11,5 @@
   <hr style="border-top: 1px solid #444; margin: 30px 0;">
 
 
-  <p class="" style="margin-top: 30px;">Atentamente,<br><span style="color:#000000;">El equipo de Enlimonado Eventos</span></p>
+  <p class="" style="color:#000000;margin-top: 30px;">Atentamente,<br><span style="color:#000000;">El equipo de Enlimonado Eventos</span></p>
 </div>

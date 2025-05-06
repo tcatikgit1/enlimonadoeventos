@@ -6,6 +6,7 @@
 @section('vendor-style')
   @vite([
   'resources/scss/styles/proyects/proyects.scss',
+  'resources/scss/styles/proyects/_detalles.scss',
 ])
 @endsection
 

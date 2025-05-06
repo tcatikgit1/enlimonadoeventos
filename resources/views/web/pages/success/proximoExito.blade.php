@@ -1,9 +1,3 @@
-@section('page-style')
-  @vite([
-    'resources\scss\styles\proyects\_contacto.scss'
-  ])
-@endsection
-
 <section
     style="position: relative; background-image: url('/assets/img/enlimonado/exitos/fondoExitos.webp'); background-size: cover; background-position: center; height: 340px; display: flex; align-items: center; justify-content: center; text-align: center;">
 

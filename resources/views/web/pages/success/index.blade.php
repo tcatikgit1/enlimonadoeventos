@@ -3,9 +3,11 @@
 @section('title', 'Exitos - Apps')
 
 @section('vendor-style')
-  @vite([
-  'resources/scss/styles/success/success.scss',
-])
+    @vite([
+    'resources/scss/styles/success/success.scss',
+    'resources\scss\styles\proyects\_contacto.scss'
+
+  ])
 @endsection
 
 @section('content')
