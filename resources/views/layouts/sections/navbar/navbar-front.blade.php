@@ -61,13 +61,13 @@ $navbarDetached = ($navbarDetached ?? '');
     <div class="collapse navbar-collapse justify-content-end" id="navbarMain">
       <ul class="navbar-nav align-items-center gap-7">
         <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="/about-us">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="/projects">Proyectos</a></li>
-        <li class="nav-item"><a class="nav-link" href="/success">Éxitos</a></li>
-        <li class="nav-item"><a class="nav-link" href="/upcoming">Próximos</a></li>
-        <li class="nav-item"><a class="nav-link" href="/contact">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('nosotros') }}">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('proyectos') }}">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('exitos') }}">Éxitos</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('proximos') }}">Próximos</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('contacto') }}">Contacto</a></li>
         <li class="nav-item ms-lg-3">
-          <a href="//wa.me/667073126" class="btn btn-outline-lime bg-transparent px-4 py-2 rounded"><i class="ti ti-brand-whatsapp" style="margin-right: 10px;"></i>Contáctanos</a>
+          <a href="//wa.me/{{ config('app.tel_whatsapp') }}" class="btn btn-outline-lime bg-transparent px-4 py-2 rounded"><i class="ti ti-brand-whatsapp" style="margin-right: 10px;"></i>Contáctanos</a>
         </li>
       </ul>
     </div>

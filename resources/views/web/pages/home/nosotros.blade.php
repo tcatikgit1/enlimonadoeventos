@@ -51,7 +51,7 @@
             @endforeach
         </div>
         <div class="text-center mt-5">
-            <a href="/success" class="btn btn-lime" aria-label="Enlace para ver más testimonios">
+            <a href="{{ route('exitos') }} "class="btn btn-lime" aria-label="Enlace para ver más testimonios">
                 Conoce nuestros éxitos <i class="ti ti-arrow-right ms-1"></i>
             </a>
         </div>
@@ -66,7 +66,7 @@
             <h3 class="text-white fs-2 fw-bold pb-2" role="heading" aria-level="3">¿El próximo gran evento? <span style="color: #B9FF38;"><br>Puede ser el tuyo.</span></h3> <!-- Cambio aquí: h4 -> h3 -->
             <p style="color: rgba(255, 255, 255, 0.8); font-size: 21px;">¿Tienes una marca, una idea o un marrón? Llámanos antes de que se agrie.</p>
             <div class="text-center mt-5">
-                <a href="/contact" class="btn btn-lg btn-lime-contact" aria-label="Enlace para contactar con Enlimonado">
+                <a href="{{ route('contacto') }} "class="btn btn-lg btn-lime-contact" aria-label="Enlace para contactar con Enlimonado">
                     Contáctanos ahora
                 </a>
             </div>

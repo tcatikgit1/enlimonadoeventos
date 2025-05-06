@@ -11,7 +11,7 @@
 @section('content')
     <section class="py-7 py-lg-9" style="background-color: #000000;">
         <div class="container">
-            <div class="row justify-content-start" style="margin-top: 5%; margin-bottom: 3%;">
+            <div class="row justify-content-start" style="margin-top: 5%;">
                 <div class="col-xl-7 col-lg-8 col-md-10">
                     <h1 class="fw-bold display-3 mb-4" style="color: #ffffff;">Próximos <span
                             class="lime-text">Proyectos</span></h1>

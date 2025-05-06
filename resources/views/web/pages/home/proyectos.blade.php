@@ -35,7 +35,7 @@
             @endforeach
         </div>
         <div class="text-center mt-5">
-            <a href="/projects" class="btn btn-outline-lime" aria-label="Enlace para ver más proyectos">
+            <a href="{{ route('proyectos') }} "class="btn btn-outline-lime" aria-label="Enlace para ver más proyectos">
                 Ver todos los proyectos <i class="ti ti-arrow-right ms-1"></i>
             </a>
         </div>

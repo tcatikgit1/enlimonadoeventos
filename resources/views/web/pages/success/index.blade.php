@@ -11,7 +11,7 @@
 @section('content')
     <section style="background-color: #000000;">
         <div class="container">
-            <div class="row justify-content-start" style="margin-bottom: 3%;">
+            <div class="row justify-content-start">
                 <div class="col-xl-7 col-lg-8 col-md-10">
                     <h1 class="invisible">Exitos</h1>
                     <h2 class="fw-bold display-3 mb-4 text-white">Nuestros <span class="fw-bold display-3 mb-4"
@@ -26,5 +26,5 @@
     @include('web.pages.success.exitosDestacados')
     @include('web.pages.success.clientesDicen')
     @include('web.pages.success.proximoExito')
-    
+
 @endsection

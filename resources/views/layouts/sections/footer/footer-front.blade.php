@@ -59,7 +59,7 @@ footer.footer {
           <p style="color: #ffffff; font-family:Poppins, sans-serif">"Si no te lo cuestionan, es que no lo hiciste bien."</p>
           <div class="mt-3">
             <a href="https://www.instagram.com/enlimonadoproducciones/" target="_blank" aria-label="Enlace a Instagram"><i class="ti ti-brand-instagram footer-social-icon"></i></a>
-            <a href="//wa.me/667073126" target="_blank" aria-label="Enlace a Instagram"><i class="ti ti-brand-whatsapp footer-social-icon"></i></a>
+            <a href="//wa.me/{{ config('app.tel_whatsapp') }}" target="_blank" aria-label="Enlace a Instagram"><i class="ti ti-brand-whatsapp footer-social-icon"></i></a>
           </div>
         </div>
 
@@ -70,15 +70,15 @@ footer.footer {
             <div class="col-6">
               <ul class="list-unstyled mt-3">
                 <li><a href="/" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Inicio</a></li>
-                <li><a href="/about-us" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Nosotros</a></li>
-                <li><a href="/projects" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Proyectos</a></li>
+                <li><a href="{{ route('nosotros') }} "class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Nosotros</a></li>
+                <li><a href="{{ route('proyectos') }} "class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Proyectos</a></li>
               </ul>
             </div>
             <div class="col-6">
               <ul class="list-unstyled mt-3">
-                <li><a href="/success" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Éxitos</a></li>
-                <li><a href="/upcoming" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Próximos</a></li>
-                <li><a href="/contact" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Contacto</a></li>
+                <li><a href="{{ route('exitos') }}" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Éxitos</a></li>
+                <li><a href="{{ route('proximos') }}" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Próximos</a></li>
+                <li><a href="{{ route('contacto') }} "class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Contacto</a></li>
               </ul>
             </div>
           </div>
@@ -109,11 +109,11 @@ footer.footer {
     <div class="container-fluid container d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 py-4">
       <div class="text-body footer-link">
         © <script>document.write(new Date().getFullYear())</script>
-        <a href="/legal-notice" class="footer-link">Enlimonado Estrategias. Todos los derechos reservados.</a>
+        <a href="/legal-notice" class="footer-link">Enlimonado Eventos. Todos los derechos reservados.</a>
       </div>
       <div class="d-flex flex-column flex-sm-row">
-        <a href="/politica-de-privacidad" class="footer-link me-6">Política de privacidad</a>
-        <a href="/politica-de-cookies" class="footer-link me-6">Política de cookies</a>
+        <a href="{{ route('privacidad') }}" class="footer-link me-6">Política de privacidad</a>
+        <a href="{{ route('cookies') }}" class="footer-link me-6">Política de cookies</a>
       </div>
     </div>
   </footer>

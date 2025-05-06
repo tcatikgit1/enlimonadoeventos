@@ -61,7 +61,7 @@
 
         <!-- Botón centrado -->
         <div class="text-center mt-5">
-            <a href="/contact" class="btn btn-outline-lime" style="" aria-label="Enlace para contactar con Enlimonado">
+            <a href="{{ route('contacto') }} "class="btn btn-outline-lime" style="" aria-label="Enlace para contactar con Enlimonado">
                 Descubre nuestro enfoque <i class="ti ti-bolt ms-1"></i>
             </a>
         </div>

@@ -31,7 +31,7 @@ $equipo = [
 
         <!-- Imagen principal -->
         <img src="{{ asset($persona['img']) }}" alt="{{ $persona['nombre'] }}"
-        class="w-100 h-100 object-fit-cover d-block rounded-4 position-relative" style="z-index: 1;">
+        class="w-100 h-100 rounded-4 position-relative" style="z-index: 1;">
 
       </div>
       </div>

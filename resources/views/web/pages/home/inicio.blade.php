@@ -23,10 +23,10 @@
 
         <div class="row justify-content-center text-center mb-5">
             <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mt-4">
-                <a href="/contact" class="btn btn-lg btn-lime-contact" aria-label="Enlace para contactar con Enlimonado">
+                <a href="{{ route('contacto') }} "class="btn btn-lg btn-lime-contact" aria-label="Enlace para contactar con Enlimonado">
                     Exprímele jugo a tu idea <i class="ti ti-arrow-narrow-right ms-2"></i>
                 </a>
-                <a href="/projects" class="btn btn-lg btn-lime-proyects" aria-label="Enlace para ver los proyectos de Enlimonado">
+                <a href="{{ route('proyectos') }} "class="btn btn-lg btn-lime-proyects" aria-label="Enlace para ver los proyectos de Enlimonado">
                     Ver Proyectos
                 </a>
             </div>
