@@ -53,7 +53,7 @@ footer.footer {
           <h2 class="fw-bold fs-4 mb-3 text-white">
             <a href="#" class="text-uppercase text-white" style="text-decoration: none;">
               <!-- Aquí ponemos la imagen en lugar del texto ENLIMONADO -->
-              <img src="{{ asset('assets/img/enlimonado/logo/Logopeque.webp') }}" alt="Logo Enlimonado" style="height: auto; width: 180px;">
+              <img src="{{ asset('assets/img/enlimonado/logo/Logopeque.webp') }}" alt="Logo Enlimonado" style="height: 44.09px; width: 180px;">
             </a>
           </h2>
           <p style="color: #ffffff; font-family:Poppins, sans-serif">"Si no te lo cuestionan, es que no lo hiciste bien."</p>
