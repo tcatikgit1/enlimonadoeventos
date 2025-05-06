@@ -9,13 +9,12 @@
 ])
 @endsection
 
-
 @section('content')
-    <section style="background-color: #000000;">
+    <section class="py-5" style="background-color: #000000;">
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col-xl-7 col-lg-8 col-md-10">
-                    <h1 class="invisible">Proyectos</h1>
+                    <h1 class="visuallyhidden">Proyectos</h1>
                     <h2 class="fw-bold display-3 mb-4" style="color: #ffffff;">Proyectos <span
                             class="lime-text">Enlimonados</span></h2>
                     <p class="fs-4 text-white-50">Un recorrido visual por nuestras creaciones más ácidas y bizarras. Eventos

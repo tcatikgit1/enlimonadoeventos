@@ -15,7 +15,6 @@
   ])
 @endsection
 
-
 @section('content')
 
     @include('web.pages.home.inicio')

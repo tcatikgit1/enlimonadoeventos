@@ -9,11 +9,11 @@
 @endsection
 
 @section('content')
-    <section class="py-7 py-lg-9" style="background-color: #000000;">
+    <section class="py-5" style="background-color: #000000;">
         <div class="container">
-            <div class="row justify-content-start" style="margin-top: 5%;">
+            <div class="row justify-content-start">
                 <div class="col-xl-7 col-lg-8 col-md-10">
-                    <h1 class="fw-bold display-3 mb-4" style="color: #ffffff;">Próximos <span
+                    <h1 class="fw-bold display-1 mb-2" style="color: #ffffff;">Próximos <span
                             class="lime-text">Proyectos</span></h1>
                     <p class="fs-4 text-white">Un vistazo a lo que estamos preparando. Eventos que están a punto de
                         transformar la experiencia de sus participantes.</p>

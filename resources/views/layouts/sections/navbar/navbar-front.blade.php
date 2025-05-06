@@ -17,6 +17,7 @@ $navbarDetached = ($navbarDetached ?? '');
       transition: background 0.3s ease;
       z-index: 1030;
     }
+
     body {
       background-color: #000000; /* Asegura que el fondo no sea blanco */
     }
@@ -33,14 +34,27 @@ $navbarDetached = ($navbarDetached ?? '');
     }
 
     /* Quitar el borde al botón del menú */
-.navbar-toggler {
-    border: none;
-}
+    .navbar-toggler {
+        border: none;
+    }
 
-/* Quitar el borde alrededor del icono */
-.navbar-toggler-icon {
-    border: none;
-}
+    /* Quitar el borde alrededor del icono */
+    .navbar-toggler-icon {
+        border: none;
+    }
+
+    /* Hacer el logo responsive */
+    .navbar-logo {
+        max-width: 80%;   /* Asegura que el logo no exceda el contenedor */
+        height: auto;      /* Mantiene la proporción del logo */
+    }
+
+    /* En pantallas pequeñas, reducimos el tamaño del logo */
+    @media (max-width: 768px) {
+        .navbar-logo {
+            max-width: 120px;  /* Ajusta el tamaño del logo en pantallas pequeñas */
+        }
+    }
 </style>
 
 <head>
@@ -50,13 +64,14 @@ $navbarDetached = ($navbarDetached ?? '');
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-sm sticky-top custom-blur-nav">
   <div class="container">
     <a class="navbar-brand fw-bold fs-4" href="/">
-      <img src="{{ asset('assets/img/enlimonado/logo/Logopeque.webp') }}" alt="Logo Enlimonado" style="height:  44.09px; width: 180px;">
+      <!-- Aplicamos la clase navbar-logo para hacer el logo responsive -->
+      <img src="{{ asset('assets/img/enlimonado/logo/Logopeque.webp') }}" alt="Logo Enlimonado" class="navbar-logo">
     </a>
 
     <!-- Botón de menú personalizado con un icono Tabler (ej: "menu-2") -->
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-label="Abrir menú de navegación" style="border: none; background: none;">
-  <i class="ti ti-menu-deep" style="font-size: 24px; color: white;"></i>
-</button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-label="Abrir menú de navegación" style="border: none; background: none;">
+      <i class="ti ti-menu-deep" style="font-size: 24px; color: white;"></i>
+    </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarMain">
       <ul class="navbar-nav align-items-center gap-7">

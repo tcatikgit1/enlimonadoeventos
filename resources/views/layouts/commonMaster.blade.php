@@ -22,8 +22,9 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   <meta name="keywords" content="{{ config('variables.templateKeyword') ? config('variables.templateKeyword') : '' }}">
   <!-- laravel CRUD token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <!-- Canonical SEO -->
-  <link rel="canonical" href="{{ config('variables.productPage') ? config('variables.productPage') : '' }}">
+  {{-- <!-- Canonical SEO -->
+  <link rel="canonical" href="{{ config('variables.productPage') ? config('variables.productPage') : '' }}"> --}}
+  <link rel="canonical" href="{{ url()->current() }}" />
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon/favicon.ico') }}" />
 
@@ -46,7 +47,7 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   @yield('layoutContent')
   <!--/ Layout Content -->
 
-  
+
   <!-- Include Scripts -->
   <!-- $isFront is used to append the front layout scripts only on the front layout otherwise the variable will be blank -->
   @include('layouts/sections/scripts' . $isFront)

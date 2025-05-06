@@ -1,65 +1,78 @@
-<!-- FOOTER STYLE -->
 @php
 $containerFooter = (isset($configData['contentLayout']) && $configData['contentLayout'] === 'compact') ? 'container-xxl' : 'container-fluid';
 @endphp
 
 <style>
   /* Footer general */
-footer.footer {
-  background-color: #000000; /* Fondo negro */
-}
+  footer.footer {
+    background-color: #000000;
+  }
 
-/* Enlaces en el footer */
-.footer-link {
-  color: #e1e1e1; /* Gris claro con mayor contraste */
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
+  /* Enlaces en el footer */
+  .footer-link {
+    color: #e1e1e1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
 
-/* Hover en enlaces */
-.footer-link:hover {
-  color: #B9FF38; /* Verde brillante para el hover, con buen contraste */
-}
+  .footer-link:hover p {
+    color: #e1e1e1;
+  }
 
-.icon-green{
-  color: #B9FF38;
-}
+  .footer-link:hover {
+    color: #B9FF38;
+  }
 
-/* Encabezados en el footer */
-.footer-heading {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #e1e1e1; /* Gris claro para los encabezados */
-}
+  .icon-green {
+    color: #B9FF38;
+  }
 
-/* Iconos sociales */
-.footer-social-icon {
-  color: #e1e1e1; /* Gris claro para los iconos */
-}
+  .footer-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e1e1e1;
+  }
 
-/* Iconos sociales en hover */
-.footer-social-icon:hover {
-  color: #B9FF38;
-}
+  .footer-social-icon {
+    color: #e1e1e1;
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+
+  .footer-social-icon:hover {
+    color: #B9FF38;
+  }
+
+  /* Imagen del logo responsive */
+  .footer-logo-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Reducir tamaño del logo en móviles */
+  @media (max-width: 767px) {
+    .footer-logo-responsive {
+      max-width: 120px;  /* Ajusta el valor según tu preferencia */
+      height: auto;
+    }
+  }
 </style>
 
-<!-- FOOTER HTML -->
 <section id="adv-footer">
-  <footer class="footer" style="background-color: #000000;">
+  <footer class="footer">
     <div class="container-fluid container pt-12 pb-6">
       <div class="row">
         <!-- Brand + social -->
         <div class="col-12 col-md-4 mb-6">
           <h2 class="fw-bold fs-4 mb-3 text-white">
             <a href="#" class="text-uppercase text-white" style="text-decoration: none;">
-              <!-- Aquí ponemos la imagen en lugar del texto ENLIMONADO -->
-              <img src="{{ asset('assets/img/enlimonado/logo/Logopeque.webp') }}" alt="Logo Enlimonado" style="height: 44.09px; width: 180px;">
+              <img src="{{ asset('assets/img/enlimonado/logo/Logopeque.webp') }}" alt="Logo Enlimonado" class="footer-logo-responsive">
             </a>
           </h2>
           <p style="color: #ffffff; font-family:Poppins, sans-serif">"Si no te lo cuestionan, es que no lo hiciste bien."</p>
           <div class="mt-3">
             <a href="https://www.instagram.com/enlimonadoproducciones/" target="_blank" aria-label="Enlace a Instagram"><i class="ti ti-brand-instagram footer-social-icon"></i></a>
-            <a href="//wa.me/{{ config('app.tel_whatsapp') }}" target="_blank" aria-label="Enlace a Instagram"><i class="ti ti-brand-whatsapp footer-social-icon"></i></a>
+            <a href="//wa.me/{{ config('app.tel_whatsapp') }}" target="_blank" aria-label="Enlace a WhatsApp"><i class="ti ti-brand-whatsapp footer-social-icon"></i></a>
           </div>
         </div>
 
@@ -70,15 +83,15 @@ footer.footer {
             <div class="col-6">
               <ul class="list-unstyled mt-3">
                 <li><a href="/" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Inicio</a></li>
-                <li><a href="{{ route('nosotros') }} "class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Nosotros</a></li>
-                <li><a href="{{ route('proyectos') }} "class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Proyectos</a></li>
+                <li><a href="{{ route('nosotros') }}" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Nosotros</a></li>
+                <li><a href="{{ route('proyectos') }}" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Proyectos</a></li>
               </ul>
             </div>
             <div class="col-6">
               <ul class="list-unstyled mt-3">
                 <li><a href="{{ route('exitos') }}" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Éxitos</a></li>
                 <li><a href="{{ route('proximos') }}" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Próximos</a></li>
-                <li><a href="{{ route('contacto') }} "class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Contacto</a></li>
+                <li><a href="{{ route('contacto') }}" class="footer-link d-block pb-2"><i class="bi bi-chevron-right"></i> Contacto</a></li>
               </ul>
             </div>
           </div>
@@ -109,7 +122,7 @@ footer.footer {
     <div class="container-fluid container d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 py-4">
       <div class="text-body footer-link">
         © <script>document.write(new Date().getFullYear())</script>
-        <a href="/legal-notice" class="footer-link">Enlimonado Eventos. Todos los derechos reservados.</a>
+        <p class="footer-link">Enlimonado Eventos. Todos los derechos reservados.</p>
       </div>
       <div class="d-flex flex-column flex-sm-row">
         <a href="{{ route('privacidad') }}" class="footer-link me-6">Política de privacidad</a>
