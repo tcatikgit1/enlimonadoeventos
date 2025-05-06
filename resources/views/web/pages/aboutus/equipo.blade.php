@@ -21,7 +21,7 @@ $equipo = [
     <div class="row justify-content-center">
       @foreach ($equipo as $persona)
       <div class="col-12 col-md-10 col-lg-9 mx-auto">
-      <div class="position-relative equipo-card rounded-4 mx-auto overflow-visible" style="aspect-ratio: 16/9;">
+      <div class="position-relative equipo-card rounded-4 mx-auto overflow-visible" style="width: 80%; height: 100%;">
         <!-- Responsive height -->
 
         <!-- Sombra desenfocada -->
