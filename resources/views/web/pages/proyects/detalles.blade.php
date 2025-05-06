@@ -2,11 +2,7 @@
 
 @section('title', 'Eventos - Detalles')
 
-@section('vendor-style')
-  @vite([
-  'resources/scss/styles/proyects/_detalles.scss',
-])
-@endsection
+
 
 @section('content')
 <section class="py-7 py-lg-9" style="background: #000000;">
