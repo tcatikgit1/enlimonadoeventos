@@ -55,7 +55,6 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   </title>
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Canonical SEO -->
-  <link rel="canonical" href="{{ config('variables.productPage') ? config('variables.productPage') : '' }}">
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon/favicon.ico')}}?v={{config('app.version')}}" />
   <link rel="apple-touch-icon" href="{{ asset('assets/img/favicon/favicon.ico') }}?v={{config('app.version')}}">
