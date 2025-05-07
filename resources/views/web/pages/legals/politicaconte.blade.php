@@ -167,6 +167,26 @@
                 <p class="fs-5">Los datos tratados se mantendrán en tanto no expiren los plazos legales aludidos anteriormente, si hubiera obligación legal de mantenimiento, o de no existir ese plazo legal, hasta que el interesado solicite su supresión o revoque el consentimiento otorgado.</p>
                 <p class="fs-5">Mantendremos toda la información y comunicaciones relativas a su compra o a la prestación de nuestro servicio, mientras duren las garantías de los productos o servicios, para atender posibles reclamaciones.</p>
 
+                <h3 class="fw-bold mt-4 text-white">Consentimiento para el uso de cookies.</h3>
+                <p class="fs-5">Para que nuestro sitio web funcione correctamente utilizamos cookies. Para obtener tu consentimiento válido para el uso y el almacenamiento de cookies en el navegador que utilizas para acceder a nuestro sitio web y para documentarlo adecuadamente utilizamos una plataforma de gestión del consentimiento: CookieFirst. Esta tecnología es proporcionada por Digital Data Solutions BV, Plantage Middenlaan 42a, 1018 DH, Amsterdam, Países Bajos. Sitio web: https://cookiefirst.com denominado CookieFirst.</p>
+                <p class="fs-5">Cuando accedes a nuestro sitio web, se establece una conexión con el servidor de CookieFirst para darnos la posibilidad de obtener tu consentimiento válido para el uso de cookies determinadas. A continuación, CookieFirst almacena una cookie en tu navegador para poder activar sólo aquellas cookies a las que has dado tu consentimiento y para documentarlo adecuadamente. Los datos procesados se almacenan hasta que expira el periodo de almacenamiento predefinido o hasta que solicites la eliminación de los datos. A pesar de lo anterior, pueden aplicarse determinados periodos de almacenamiento legales obligatorios.</p>
+                <p class="fs-5">CookieFirst se utiliza para obtener el consentimiento legalmente requerido para el uso de cookies. La base legal para ello es el artículo 6(1)(c) del Reglamento General de Protección de Datos (GDPR).</p>
+
+                <h3 class="fw-bold mt-4 text-white">Acuerdo de procesamiento de datos</h3>
+                <p class="fs-5">Hemos celebrado un acuerdo de procesamiento de datos con CookieFirst. Se trata de un contrato exigido por la ley de protección de datos, que garantiza que los datos de los visitantes de nuestro sitio web solo se procesan de acuerdo con nuestras instrucciones y en cumplimiento del GDPR.</p>
+
+                <h3 class="fw-bold mt-4 text-white">Archivos de registro del servidor</h3>
+                <p class="fs-5">Nuestro sitio web y CookieFirst recogen y almacenan automáticamente información en los denominados archivos de registro del servidor, que tu navegador nos transmite automáticamente. Se recogen los siguientes datos:</p>
+                <ul class="fs-5">
+                    <li>Tu consentimiento o la retirada del mismo</li>
+                    <li>Tu dirección IP anónima</li>
+                    <li>Información sobre tu navegador</li>
+                    <li>Información sobre tu dispositivo</li>
+                    <li>La fecha y hora en que has visitado nuestro sitio web</li>
+                    <li>La url de la página web en la que has guardado o actualizado tus preferencias de consentimiento</li>
+                    <li>La ubicación aproximada del usuario que guardó sus preferencias de consentimiento</li>
+                </ul>
+                <p class="fs-5">Un identificador único universal (UUID) del visitante del sitio web que hizo clic en el banner cookie</p>
             </div>
         </div>
     </div>
