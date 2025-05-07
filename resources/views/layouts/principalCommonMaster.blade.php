@@ -41,8 +41,8 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   content="Organización de eventos Canarias, organización de eventos España, eventos corporativos, agencia de eventos, networking empresarial, lanzamientos de productos, presentaciones de marca, ruedas de prensa, activaciones de marca, campañas experienciales, ferias y congresos, eventos sectoriales, eventos de teambuilding, eventos creativos, eventos empresariales, eventos personalizados, experiencias de marca, eventos impactantes, eventos originales, enlimonado eventos  ">
 
 
-  {{-- <!-- Script de cookies -->
-  <script src="https://consent.cookiefirst.com/sites/enlimonadoeventos.com-6efaf787-1307-48bb-b07a-32f92105178a/consent.js"></script> --}}
+  <!-- Script de cookies -->
+  <script src="https://consent.cookiefirst.com/sites/enlimonadoeventos.com-6efaf787-1307-48bb-b07a-32f92105178a/consent.js"></script>
 
   {{-- <!-- Script para las cookies -->
     <script src="https://consent.cookiefirst.com/sites/autech.es-79f67677-51c3-4c80-ba54-80120c9956dc/consent.js"></script> --}}
@@ -94,15 +94,26 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   @include('layouts/sections/styles' . $isFront)
 
   <!-- Include Scripts for customizer, helper, analytics, config -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-57TG40QS1K"></script>
-  <script>
+  <!-- Google Consent Mode + gtag.js, pero solo cargado si el usuario acepta -->
+  <!-- Google Analytics con CookieFirst y Consent Mode V2 -->
+  <script type="text/plain" data-cookieconsent="analytics" data-cfasync="false">
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;j.src='https://www.googletagmanager.com/gtag/js?id=G-57TG40QS1K';
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','G-57TG40QS1K');
+  </script>
+
+  <script type="text/plain" data-cookieconsent="analytics" data-cfasync="false">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-57TG40QS1K');
   </script>
+
+
   <!-- $isFront is used to append the front layout scriptsIncludes only on the front layout otherwise the variable will be blank -->
   @include('layouts/sections/scriptsIncludesFront' . $isFront)
 

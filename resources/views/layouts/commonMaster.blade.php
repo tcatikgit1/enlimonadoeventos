@@ -37,11 +37,6 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   <!-- $isFront is used to append the front layout scriptsIncludes only on the front layout otherwise the variable will be blank -->
   @include('layouts/sections/scriptsIncludes' . $isFront)
 
-  <!-- Script de cookies -->
-  <script src="https://consent.cookiefirst.com/sites/enlimonadoeventos.com-6efaf787-1307-48bb-b07a-32f92105178a/consent.js"></script>
-
-  {{-- <!-- Script para las cookies -->
-    <script src="https://consent.cookiefirst.com/sites/autech.es-79f67677-51c3-4c80-ba54-80120c9956dc/consent.js"></script> --}}
 
 </head>
 
