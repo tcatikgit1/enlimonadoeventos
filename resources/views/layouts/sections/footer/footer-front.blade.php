@@ -79,7 +79,7 @@ $containerFooter = (isset($configData['contentLayout']) && $configData['contentL
               <img src="{{ asset('assets/img/enlimonado/logo/Logopeque.webp') }}" alt="Logo Enlimonado" class="footer-logo-responsive">
             </a>
           </h2>
-          <p style="color: #ffffff; font-family:Poppins, sans-serif">"Si no te lo cuestionan, es que no lo hiciste bien."</p>
+          <p style="color: #ffffff;">"Si no te lo cuestionan, es que no lo hiciste bien."</p>
           <div class="mt-3">
             <a href="https://www.instagram.com/enlimonadoproducciones/" target="_blank" aria-label="Enlace a Instagram"><i class="ti ti-brand-instagram footer-social-icon"></i></a>
             <a href="//wa.me/{{ config('app.tel_whatsapp') }}" target="_blank" aria-label="Enlace a WhatsApp"><i class="ti ti-brand-whatsapp footer-social-icon"></i></a>
