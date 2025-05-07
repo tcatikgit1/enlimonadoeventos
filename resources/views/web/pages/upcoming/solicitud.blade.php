@@ -8,7 +8,7 @@
                 </h3>
             </div>
             <div class="modal-body">
-                <form method="POST" action="{{ route('inscript.store') }}">
+                <form method="POST" action="{{ route('inscript.store') }}" id="inscription-form">
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label text-white">Nombre completo</label>
@@ -29,9 +29,16 @@
                         <label for="message" class="form-label text-white">Mensaje (opcional)</label>
                         <textarea class="form-control" id="message" rows="3" name="message" placeholder="Escribe un mensaje (opcional)"></textarea>
                     </div>
+
+                    <!-- Campo oculto para reCAPTCHA -->
+                    <input type="hidden" name="recaptcha_token" id="recaptcha_token_modal">
+
+                    @error('recaptcha_token')
+                        <div class="alert alert-danger mt-2">{{ $message }}</div>
+                    @enderror
+
                     <div class="d-flex justify-content-end">
-                        <button type="button" class="btn-custom-cancelar me-2"
-                            data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn-custom-cancelar me-2" data-bs-dismiss="modal">Cancelar</button>
                         <button type="submit" class="btn-custom-enviar">Enviar inscripción</button>
                     </div>
                 </form>
@@ -40,14 +47,25 @@
     </div>
 </div>
 
+
+<script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}"></script>
 <script>
     const modal = document.getElementById('modalSolicitud');
-    modal.addEventListener('show.bs.modal', function(event) {
+
+    modal.addEventListener('show.bs.modal', function (event) {
         const button = event.relatedTarget;
         const titulo = button.getAttribute('data-evento');
         const fecha = button.getAttribute('data-fecha');
 
         document.getElementById('modalTituloEvento').textContent = titulo;
         document.getElementById('modalFechaEvento').textContent = fecha;
+
+        // Ejecutar reCAPTCHA cada vez que se abre el modal
+        grecaptcha.ready(function () {
+            grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}', { action: 'inscription' }).then(function (token) {
+                document.getElementById('recaptcha_token_modal').value = token;
+            });
+        });
     });
 </script>
+

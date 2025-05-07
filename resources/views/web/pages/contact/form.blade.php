@@ -1,4 +1,4 @@
-<section class="contact-section py-10" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%); ">
+<section class="contact-section py-10" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
     <div class="container">
         <div class="row align-items-stretch" style="margin-bottom: 3rem;">
             <!-- Formulario -->
@@ -7,7 +7,7 @@
                 <p class="mb-4 text-white-50">Cuéntanos lo que tienes en mente. Desde una idea inicial hasta un concepto
                     desarrollado, estamos aquí para transformar tu visión en una experiencia extraordinaria.</p>
 
-                <form method="POST" action="{{ route('contact.store') }}">
+                <form method="POST" action="{{ route('contact.store') }}" id="contact-form">
                     @csrf
                     <div class="row g-8">
                         <div class="col-md-6">
@@ -40,11 +40,16 @@
                             <textarea name="message" rows="4" class="form-control bg-dark text-white border-0"
                                 placeholder="Cuéntanos los detalles de tu proyecto..." required></textarea>
                         </div>
+
+                        <!-- Campo oculto para reCAPTCHA v3 -->
+                        <input type="hidden" name="recaptcha_token" id="recaptcha_token">
+
                         <div class="col-12">
                             <button type="submit" class="btn text-black mt-2 w-100" style="background-color: #B9FF38;">
                                 Enviar mensaje <i class="ti ti-send ms-1"></i>
                             </button>
                         </div>
+
                         <div id="form-message" class="mt-3">
                             @if (session('success'))
                                 <div class="alert alert-success">
@@ -55,8 +60,13 @@
                                     {{ session('error') }}
                                 </div>
                             @endif
-                        </div>
 
+                            @error('recaptcha_token')
+                                <div class="alert alert-danger">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
                     </div>
                 </form>
             </div>
@@ -112,3 +122,13 @@
         </div>
     </div>
 </section>
+
+<!-- Script de reCAPTCHA v3 -->
+<script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}"></script>
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}', { action: 'contact' }).then(function (token) {
+            document.getElementById('recaptcha_token').value = token;
+        });
+    });
+</script>
