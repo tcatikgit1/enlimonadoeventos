@@ -5,8 +5,7 @@
 @section('vendor-style')
     @vite([
     'resources/scss/styles/success/success.scss',
-    'resources\scss\styles\proyects\_contacto.scss'
-
+    'resources/scss/styles/components/btnContact.scss'
   ])
 @endsection
 
