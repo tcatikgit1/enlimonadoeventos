@@ -15,7 +15,34 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   data-template="{{ $configData['layout'] . '-menu-' . $configData['themeOpt'] . '-' . $configData['styleOpt'] }}"
   data-style="{{$configData['styleOptVal']}}">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Enlimonado Eventos",
+  "url": "https://www.enlimonadoeventos.com",
+  "logo": "https://www.enlimonadoeventos.com/Log3.png",
+  "sameAs": [
+    "https://www.instagram.com/enlimonadoproducciones/",
+    "https://www.linkedin.com/company/enlimonadoeventos",
+    "https://www.tiktok.com/@enlimonadoproducciones?lang=es"
+  ]
+}
+</script>
+
+
 <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-57TG40QS1K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-57TG40QS1K');
+</script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="title" content="Enlimonado Eventos - Organización de eventos únicos y a medida en Canarias">
@@ -75,7 +102,6 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   <!-- Include Scripts for customizer, helper, analytics, config -->
   <!-- $isFront is used to append the front layout scriptsIncludes only on the front layout otherwise the variable will be blank -->
   @include('layouts/sections/scriptsIncludesFront' . $isFront)
-
 
 
 </head>

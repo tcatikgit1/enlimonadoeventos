@@ -73,6 +73,9 @@ $containerFooter = (isset($configData['contentLayout']) && $configData['contentL
           <div class="mt-3">
             <a href="https://www.instagram.com/enlimonadoproducciones/" target="_blank" aria-label="Enlace a Instagram"><i class="ti ti-brand-instagram footer-social-icon"></i></a>
             <a href="//wa.me/{{ config('app.tel_whatsapp') }}" target="_blank" aria-label="Enlace a WhatsApp"><i class="ti ti-brand-whatsapp footer-social-icon"></i></a>
+            <a href="tel:+34828701918" target="_blank" aria-label="Enlace a WhatsApp"><i class="ti ti-phone footer-social-icon"></i></a>
+            <a href="mailto:{{ env('APP_MAIL') }}" target="_blank" aria-label="Enlace a WhatsApp"><i class="ti ti-mail footer-social-icon"></i></a>
+            <a href="https://www.tiktok.com/@enlimonadoproducciones?lang=es" target="_blank" aria-label="Enlace a WhatsApp"><i class="ti ti-brand-tiktok footer-social-icon"></i></a>
           </div>
         </div>
 
