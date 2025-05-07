@@ -1,3 +1,21 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Enlimonado Eventos",
+  "url": "https://www.enlimonadoeventos.com"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Cookies",
+  "url": "https://www.enlimonadoeventos.com/cookies"
+}
+</script>
+
 <section class="legal-section py-3" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
     <div class="container text-white">
         <div class="row justify-content-start mb-10">

@@ -9,6 +9,25 @@
 @endsection
 
 @section('content')
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Enlimonado Eventos",
+  "url": "https://www.enlimonadoeventos.com"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Próximos",
+  "url": "https://www.enlimonadoeventos.com/proximos"
+}
+</script>
+
     <section class="py-5" style="background-color: #000000;">
         <div class="container">
             <div class="row justify-content-start">
