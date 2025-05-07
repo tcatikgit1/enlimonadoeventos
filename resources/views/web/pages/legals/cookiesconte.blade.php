@@ -16,6 +16,8 @@
 }
 </script>
 
+<script src="https://consent.cookiefirst.com/sites/enlimonadoeventos.com-6efaf787-1307-48bb-b07a-32f92105178a/consent.js"></script>
+
 <section class="legal-section py-3" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
     <div class="container text-white">
         <div class="row justify-content-start mb-10">
@@ -102,6 +104,11 @@
                 </ul>
 
             </div>
+
+            <div id="cookiefirst-policy-page"></div>
+            <div>Esta política de cookies ha sido creada y actualizada por <a href="https://cookiefirst.com/es/cookie-manager/">Cookie Management CookieFirst</a>.</div>
+            <div id="cookiefirst-cookies-table"></div>
+            <div>Esta tabla de cookies ha sido creada y actualizada por <a href="https://cookiefirst.com/es/cookie-banner/">CookieFirst - Cookie Banner Tool</a>.</div>
         </div>
     </div>
 </section>
