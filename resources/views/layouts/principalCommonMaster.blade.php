@@ -41,6 +41,11 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   content="Organización de eventos Canarias, organización de eventos España, eventos corporativos, agencia de eventos, networking empresarial, lanzamientos de productos, presentaciones de marca, ruedas de prensa, activaciones de marca, campañas experienciales, ferias y congresos, eventos sectoriales, eventos de teambuilding, eventos creativos, eventos empresariales, eventos personalizados, experiencias de marca, eventos impactantes, eventos originales, enlimonado eventos  ">
 
 
+  {{-- <!-- Script de cookies -->
+  <script src="https://consent.cookiefirst.com/sites/enlimonadoeventos.com-6efaf787-1307-48bb-b07a-32f92105178a/consent.js"></script> --}}
+
+  {{-- <!-- Script para las cookies -->
+    <script src="https://consent.cookiefirst.com/sites/autech.es-79f67677-51c3-4c80-ba54-80120c9956dc/consent.js"></script> --}}
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
