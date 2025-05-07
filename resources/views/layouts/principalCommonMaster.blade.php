@@ -40,21 +40,26 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   <meta property="twitter:description" content="Enlimonado Eventos organiza eventos únicos y a medida en Canarias: corporativos, networking, lanzamientos, ferias, ruedas de prensa, activaciones de marca y teambuilding. Creamos experiencias originales, impactantes y alineadas con tu estrategia, sean bizarras, divertidas o serias." />
   <meta property="twitter:image" content="https://www.enlimonadoeventos.com/public/assets/img/enlimonado/logo/Logogrande.webp" />
 
-  <!-- Barra superior en dispositivos Android (Chrome, Firefox OS, etc.) -->
+  <!-- Estilo de la barra superior para Android Chrome, Firefox OS, Opera -->
   <meta name="theme-color" content="#000000">
 
   <!-- Color de la barra de navegación en Windows Phone -->
   <meta name="msapplication-navbutton-color" content="#000000">
 
-  <!-- Estilo de la barra de estado en iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Para Safari en iOS (modo web-app full screen) -->
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- También para navegadores modernos que usen Web App Manifest -->
+  <meta name="mobile-web-app-capable" content="yes">
+
 
   <title>@yield('title')
 
   </title>
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Canonical SEO -->
+  <link rel="canonical" href="{{ url()->current() }}" />
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon/favicon.ico')}}?v={{config('app.version')}}" />
   <link rel="apple-touch-icon" href="{{ asset('assets/img/favicon/favicon.ico') }}?v={{config('app.version')}}">
