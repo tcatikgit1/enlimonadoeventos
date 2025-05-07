@@ -1,3 +1,21 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Enlimonado Eventos",
+  "url": "https://www.enlimonadoeventos.com"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Inicio",
+  "url": "https://www.enlimonadoeventos.com"
+}
+</script>
+
 <section class="py-5" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
     <div class="container">
         <div class="row justify-content-center text-center mb-5">
