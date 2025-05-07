@@ -1,6 +1,6 @@
 @section('page-style')
     @vite([
-    'resources\scss\styles\proyects\_contacto.scss'
+    'resources\scss\styles\components\btnContact.scss',
     ])
 @endsection
 
