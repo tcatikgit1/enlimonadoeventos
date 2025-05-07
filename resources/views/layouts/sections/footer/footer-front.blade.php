@@ -52,7 +52,7 @@ $containerFooter = (isset($configData['contentLayout']) && $configData['contentL
   /* Reducir tamaño del logo en móviles */
   @media (max-width: 767px) {
     .footer-logo-responsive {
-      max-width: 120px;  /* Ajusta el valor según tu preferencia */
+      max-width: 120px;
       height: auto;
     }
   }
@@ -119,14 +119,15 @@ $containerFooter = (isset($configData['contentLayout']) && $configData['contentL
     </div>
 
     <hr class="hrFooter container-fluid container my-4"/>
-    <div class="container-fluid container d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 py-4">
-      <div class="text-body footer-link">
-        © <script>document.write(new Date().getFullYear())</script>
-        <p class="footer-link">Enlimonado Eventos. Todos los derechos reservados.</p>
+
+    <!-- Footer Bottom -->
+    <div class="container-fluid container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 py-4">
+      <div class="d-flex flex-wrap align-items-center text-body footer-link">
+        <span>© <script>document.write(new Date().getFullYear())</script> Enlimonado Eventos. Todos los derechos reservados.</span>
       </div>
-      <div class="d-flex flex-column flex-sm-row">
-        <a href="{{ route('privacidad') }}" class="footer-link me-6">Política de privacidad</a>
-        <a href="{{ route('cookies') }}" class="footer-link me-6">Política de cookies</a>
+      <div class="d-flex flex-wrap justify-content-start justify-content-md-end">
+        <a href="{{ route('privacidad') }}" class="footer-link me-4">Política de privacidad</a>
+        <a href="{{ route('cookies') }}" class="footer-link">Política de cookies</a>
       </div>
     </div>
   </footer>
