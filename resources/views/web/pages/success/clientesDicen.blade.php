@@ -9,6 +9,8 @@
                 ['label' => 'Asistentes', 'valor' => '200+'],
                 ['label' => 'Satisfacción', 'valor' => '98%'],
             ],
+            'fecha' => '2024-09-15',
+            'calificacion' => 5,
         ],
         [
             'mensaje' => 'Nunca imaginé que un stand en un centro comercial generara tanto hype. La activación que diseñaron triplicó nuestras expectativas de visibilidad y conversión.',
@@ -19,6 +21,8 @@
                 ['label' => 'Interacción', 'valor' => '15K+'],
                 ['label' => 'Incremento Ventas', 'valor' => '+45%'],
             ],
+            'fecha' => '2024-09-16',
+            'calificacion' => 5,
         ],
         [
             'mensaje' => 'Su visión para nuestro lanzamiento fue brillante. Mezclaron tecnología, creatividad y un toque bizarro que generó exactamente el impacto que buscábamos.',
@@ -29,6 +33,8 @@
                 ['label' => 'Impacto R R S S', 'valor' => '1.2M impresiones'],
                 ['label' => 'Apariciones Medios', 'valor' => '8 publicaciones'],
             ],
+            'fecha' => '2024-09-17',
+            'calificacion' => 5,
         ],
         [
             'mensaje' => 'El team building que organizaron cambió completamente la dinámica de nuestro equipo. Combinar diversión con objetivos estratégicos fue un acierto total.',
@@ -39,6 +45,8 @@
                 ['label' => 'Mejora Colaboración', 'valor' => '+37%'],
                 ['label' => 'Satisfacción Equipo', 'valor' => '95%'],
             ],
+            'fecha' => '2024-09-18',
+            'calificacion' => 5,
         ],
         [
             'mensaje' => 'El festival que organizaron fue simplemente increíble. La combinación de música, arte y tecnología creó una atmósfera única que nos posicionó como referentes culturales.',
@@ -49,6 +57,8 @@
                 ['label' => 'Asistentes', 'valor' => '5,000+'],
                 ['label' => 'Valoración Media', 'valor' => '4.8/5'],
             ],
+            'fecha' => '2024-09-19',
+            'calificacion' => 5,
         ],
     ];
 @endphp
@@ -62,7 +72,6 @@
         </div>
 
         <div class="row">
-
         @foreach ($testimonios as $testimonial)
             <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
               <div class="card h-100" style="background-color: #16121E; color: white;">
@@ -96,8 +105,31 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Insertar el JSON-LD para cada testimonio -->
+              <script type="application/ld+json">
+              {
+                "@context": "https://schema.org",
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "{{ $testimonial['nombre'] }}"
+                },
+                "datePublished": "{{ $testimonial['fecha'] }}",
+                "reviewBody": "{{ $testimonial['mensaje'] }}",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "{{ $testimonial['calificacion'] }}",
+                  "bestRating": "5"
+                },
+                "itemReviewed": {
+                  "@type": "Service",
+                  "name": "Consultoría estratégica"
+                }
+              }
+              </script>
             </div>
-          @endforeach
+        @endforeach
         </div>
     </div>
 </section>

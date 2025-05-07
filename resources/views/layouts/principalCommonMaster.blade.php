@@ -32,17 +32,6 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
 
 
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-57TG40QS1K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-57TG40QS1K');
-</script>
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="title" content="Enlimonado Eventos - Organización de eventos únicos y a medida en Canarias">
@@ -58,14 +47,14 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   <meta property="og:url" content="https://www.enlimonadoeventos.com/" />
   <meta property="og:title" content="Enlimonado Eventos" />
   <meta property="og:description" content="Enlimonado Eventos organiza eventos únicos y a medida en Canarias: corporativos, networking, lanzamientos, ferias, ruedas de prensa, activaciones de marca y teambuilding. Creamos experiencias originales, impactantes y alineadas con tu estrategia, sean bizarras, divertidas o serias." />
-  <meta property="og:image" content="https://www.enlimonadoeventos.com/public/assets/img/enlimonado/logo/preview.webp" />
+  <meta property="og:image" content="https://www.enlimonadoeventos.com/public/assets/img/enlimonado/logo/previewimage.webp" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://www.enlimonadoeventos.com/" />
   <meta property="twitter:title" content="Enlimonado Eventos" />
   <meta property="twitter:description" content="Enlimonado Eventos organiza eventos únicos y a medida en Canarias: corporativos, networking, lanzamientos, ferias, ruedas de prensa, activaciones de marca y teambuilding. Creamos experiencias originales, impactantes y alineadas con tu estrategia, sean bizarras, divertidas o serias." />
-  <meta property="twitter:image" content="https://www.enlimonadoeventos.com/public/assets/img/enlimonado/logo/preview.webp" />
+  <meta property="twitter:image" content="https://www.enlimonadoeventos.com/public/assets/img/enlimonado/logo/previewimage.webp" />
 
   <!-- Estilo de la barra superior para Android Chrome, Firefox OS, Opera -->
   <meta name="theme-color" content="#000000">
@@ -100,6 +89,15 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   @include('layouts/sections/styles' . $isFront)
 
   <!-- Include Scripts for customizer, helper, analytics, config -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-57TG40QS1K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-57TG40QS1K');
+  </script>
   <!-- $isFront is used to append the front layout scriptsIncludes only on the front layout otherwise the variable will be blank -->
   @include('layouts/sections/scriptsIncludesFront' . $isFront)
 

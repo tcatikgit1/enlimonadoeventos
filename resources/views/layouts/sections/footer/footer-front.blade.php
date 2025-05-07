@@ -55,6 +55,16 @@ $containerFooter = (isset($configData['contentLayout']) && $configData['contentL
       max-width: 120px;
       height: auto;
     }
+
+    .footer-bottom {
+      flex-direction: column !important;
+      text-align: center;
+    }
+
+    .footer-bottom .footer-links {
+      justify-content: center !important;
+      margin-top: 0.5rem;
+    }
   }
 </style>
 
@@ -73,9 +83,9 @@ $containerFooter = (isset($configData['contentLayout']) && $configData['contentL
           <div class="mt-3">
             <a href="https://www.instagram.com/enlimonadoproducciones/" target="_blank" aria-label="Enlace a Instagram"><i class="ti ti-brand-instagram footer-social-icon"></i></a>
             <a href="//wa.me/{{ config('app.tel_whatsapp') }}" target="_blank" aria-label="Enlace a WhatsApp"><i class="ti ti-brand-whatsapp footer-social-icon"></i></a>
-            <a href="tel:+34828701918" target="_blank" aria-label="Enlace a WhatsApp"><i class="ti ti-phone footer-social-icon"></i></a>
-            <a href="mailto:{{ env('APP_MAIL') }}" target="_blank" aria-label="Enlace a WhatsApp"><i class="ti ti-mail footer-social-icon"></i></a>
-            <a href="https://www.tiktok.com/@enlimonadoproducciones?lang=es" target="_blank" aria-label="Enlace a WhatsApp"><i class="ti ti-brand-tiktok footer-social-icon"></i></a>
+            <a href="tel:+34828701918" target="_blank" aria-label="Enlace a Teléfono"><i class="ti ti-phone footer-social-icon"></i></a>
+            <a href="mailto:{{ env('APP_MAIL') }}" target="_blank" aria-label="Enlace a Correo"><i class="ti ti-mail footer-social-icon"></i></a>
+            <a href="https://www.tiktok.com/@enlimonadoproducciones?lang=es" target="_blank" aria-label="Enlace a TikTok"><i class="ti ti-brand-tiktok footer-social-icon"></i></a>
           </div>
         </div>
 
@@ -124,11 +134,11 @@ $containerFooter = (isset($configData['contentLayout']) && $configData['contentL
     <hr class="hrFooter container-fluid container my-4"/>
 
     <!-- Footer Bottom -->
-    <div class="container-fluid container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 py-4">
-      <div class="d-flex flex-wrap align-items-center text-body footer-link">
+    <div class="container-fluid container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 py-4 footer-bottom">
+      <div class="d-flex flex-wrap align-items-center text-body footer-link text-center">
         <span>© <script>document.write(new Date().getFullYear())</script> Enlimonado Eventos. Todos los derechos reservados.</span>
       </div>
-      <div class="d-flex flex-wrap justify-content-start justify-content-md-end">
+      <div class="d-flex flex-wrap justify-content-start justify-content-md-end footer-links">
         <a href="{{ route('privacidad') }}" class="footer-link me-4">Política de privacidad</a>
         <a href="{{ route('cookies') }}" class="footer-link">Política de cookies</a>
       </div>
