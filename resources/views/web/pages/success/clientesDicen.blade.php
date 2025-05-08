@@ -26,7 +26,7 @@
         ],
         [
             'mensaje' => 'Su visión para nuestro lanzamiento fue brillante. Mezclaron tecnología, creatividad y un toque bizarro que generó exactamente el impacto que buscábamos.',
-            'avatar' => '/assets/img/enlimonado/exitos/exitos2.webp',
+            'avatar' => '/assets/img/enlimonado/exitos/LauraSanchez.webp',
             'nombre' => 'Laura Sánchez',
             'cargo' => 'CEO, Startup Tech',
             'indicadores' => [
@@ -38,7 +38,7 @@
         ],
         [
             'mensaje' => 'El team building que organizaron cambió completamente la dinámica de nuestro equipo. Combinar diversión con objetivos estratégicos fue un acierto total.',
-            'avatar' => '/assets/img/enlimonado/exitos/exitos2.webp',
+            'avatar' => '/assets/img/enlimonado/exitos/MiguelTorres.webp',
             'nombre' => 'Miguel Torres',
             'cargo' => 'Director de RRHH, Corporación Global',
             'indicadores' => [
