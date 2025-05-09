@@ -16,7 +16,7 @@
 }
 </script>
 
-<script src="https://consent.cookiefirst.com/sites/enlimonadoeventos.com-6efaf787-1307-48bb-b07a-32f92105178a/consent.js"></script>
+
 
 <section class="legal-section py-3" style="background: linear-gradient(to bottom, #000000 30%, #160b24 100%);">
     <div class="container text-white">
