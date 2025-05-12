@@ -167,7 +167,6 @@ use App\Http\Controllers\ContactController;
 Use App\Http\Controllers\InscriptController;
 
 
-
 // Main Page Route
 Route::get('/', [WebController::class, 'index'])->name('app');
 Route::get('/nosotros', [WebController::class, 'aboutus'])->name('nosotros');
@@ -178,6 +177,7 @@ Route::get('/proyectos', [WebController::class, 'proyectos'])->name('proyectos')
 Route::get('/proyectos/{slug}', [WebController::class, 'proyectoDetalle'])->name('proyects.detalles');
 Route::get('/cookies', [WebController::class, 'cookies'])->name('cookies');
 Route::get('/privacidad', [WebController::class, 'politica'])->name('privacidad');
+
 
 //Mandar Mail
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');

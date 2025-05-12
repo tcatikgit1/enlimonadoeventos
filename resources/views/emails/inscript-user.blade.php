@@ -1,7 +1,7 @@
 <div style="background-color:#ffffff; color:#000000; font-family:Arial, sans-serif; padding:30px; border-radius:10px;">
   <div style="text-align:center; font-size:28px; font-weight:bold; margin-bottom:30px;">
 <img src="{{ $message->embed(public_path('assets/img/enlimonado/logo/Logcorreo.png')) }}" alt="Logo Enlimonado"
-  style="height: auto; width: 180px;">
+width="240" style="max-width:100%; height:auto;">
   </div>
 
   <h2 style="color:#000000; text-align:center;">¡Gracias por Inscribirte, {{ $data['name'] }}!</h2>

@@ -25,13 +25,13 @@ class SendInscriptionEmails implements ShouldQueue
     // Email al administrador
     Mail::send('emails.inscript-admin', ['data' => $this->data], function ($m) {
       $m->to(env('APP_MAIL'))->subject("Nuevo usuario Inscrito");
-      $m->embed(public_path('assets/img/enlimonado/logo/Log2.png'));
+      $m->embed(public_path('assets/img/enlimonado/logo/Logcorreo.png'));
     });
 
     // Email al usuario
     Mail::send('emails.inscript-user', ['data' => $this->data], function ($m) {
       $m->to($this->data['email'])->subject('Inscripción exitosa');
-      $m->embed(public_path('assets/img/enlimonado/logo/Log2.png'));
+      $m->embed(public_path('assets/img/enlimonado/logo/Logcorreo.png'));
     });
   }
 }

@@ -5,23 +5,8 @@ $configData = Helper::appClasses();
 
 @extends('layouts/errorLayout')
 
-@section('title', 'Error - Pages')
+@section('code', '500')
+@section('title', 'Error de servidor')
+@section('message', 'Hubo algun problema...')
+@section('boton', 'Volver al inicio')
 
-@section('page-style')
-<!-- Page -->
-@vite(['resources/assets/vendor/scss/pages/page-misc.scss', 'resources/scss/styles/errors/500error.scss'])
-@endsection
-
-
-@section('content')
-<!-- Error -->
-<div class="container-xxl container-p-y">
-  <div class="misc-wrapper">
-    <h1 class="mb-2 mx-2 fs-xxlarge title-error" style="line-height: 6rem;font-size: 6rem;">500</h1>
-    <h4 class="mb-2 mx-2 text-white">Error de servidor</h4>
-    <p class="mb-6 mx-2  text-white">Hubo algun problema...</p>
-    <a href="{{url('/')}}" class="btn btn-inicio mb-10">Volver al inicio</a>
-  </div>
-</div>
-<!-- /Error -->
-@endsection
