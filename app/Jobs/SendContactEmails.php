@@ -25,13 +25,13 @@ class SendContactEmails implements ShouldQueue
     // Email al admin
     Mail::send('emails.contact-admin', ['data' => $this->data], function ($m) {
       $m->to(env('APP_MAIL'))->subject($this->data['subject']);
-      $m->embed(public_path('assets/img/enlimonado/logo/Logcorreo.png'));
+      $m->embed(public_path('assets/img/enlimonado/logo/LogoCorreo.png'));
     });
 
     // Email al usuario
     Mail::send('emails.contact-user', ['data' => $this->data], function ($m) {
       $m->to($this->data['email'])->subject('Hemos recibido tu mensaje');
-      $m->embed(public_path('assets/img/enlimonado/logo/Logcorreo.png'));
+      $m->embed(public_path('assets/img/enlimonado/logo/LogoCorreo.png'));
     });
   }
 }
