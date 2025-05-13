@@ -5,7 +5,7 @@
 @section('vendor-style')
     @vite([
     'resources/scss/styles/success/success.scss',
-    'resources/scss/styles/components/btnContact.scss'
+    'resources/scss/styles/components/btncontact.scss'
   ])
 @endsection
 
@@ -26,6 +26,141 @@
   "@type": "WebPage",
   "name": "Éxitos",
   "url": "https://www.enlimonadoeventos.com/exitos"
+}
+</script>
+
+
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "author": {
+    "@type": "Person",
+    "name": "María López"
+  },
+  "datePublished": "2024-09-15",
+  "reviewBody": "Nuestra convención pasó de aburrida a icónica en 24h. El equipo de Enlimonado creó una experiencia que nuestros empleados siguen comentando.",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "itemReviewed": {
+    "@type": "Service",
+    "name": "Organización de eventos corporativos"
+  }
+},
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "author": {
+    "@type": "Person",
+    "name": "Carlos Rodríguez"
+  },
+  "datePublished": "2024-08-07",
+  "reviewBody": "Nunca imaginé que un stand en un centro comercial generara tanto hype. La activación que diseñaron triplicó nuestras expectativas de visibilidad y conversión.",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "itemReviewed": {
+    "@type": "Service",
+    "name": "Organización de eventos corporativos"
+  }
+},
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "author": {
+    "@type": "Person",
+    "name": "Laura Sánchez"
+  },
+  "datePublished": "2024-08-13",
+  "reviewBody": "Su visión para nuestro lanzamiento fue brillante. Mezclaron tecnología, creatividad y un toque bizarro que generó exactamente el impacto que buscábamos.",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "itemReviewed": {
+    "@type": "Service",
+    "name": "Organización de eventos corporativos"
+  }
+},
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "author": {
+    "@type": "Person",
+    "name": "Miguel Torres"
+  },
+  "datePublished": "2024-09-5",
+  "reviewBody": "El team building que organizaron cambió completamente la dinámica de nuestro equipo. Combinar diversión con objetivos estratégicos fue un acierto total.",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "itemReviewed": {
+    "@type": "Service",
+    "name": "Organización de eventos corporativos"
+  }
+},
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "author": {
+    "@type": "Person",
+    "name": "Elena Martín"
+  },
+  "datePublished": "2024-09-20",
+  "reviewBody": "El festival que organizaron fue simplemente increíble. La combinación de música, arte y tecnología creó una atmósfera única que nos posicionó como referentes culturales.",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "itemReviewed": {
+    "@type": "Service",
+    "name": "Organización de eventos corporativos"
+  }
+},
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Caso de éxito: Transformación de convención corporativa",
+  "description": "Convertimos una convención anual estándar en una experiencia inmersiva que aumentó el engagement y la retención de mensajes clave.",
+  "url": "https://www.enlimonadoeventos.com/exitos/",
+  "author": {
+    "@type": "Organization",
+    "name": "enlimonadoEventos"
+  },
+  "datePublished": "2024-11-10"
+},
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Caso de éxito: Activación en centro comercial",
+  "description": "Diseñamos una experiencia interactiva que transformó un espacio comercial en una instalación artística participativa.",
+  "url": "https://www.enlimonadoeventos.com/exitos/",
+  "author": {
+    "@type": "Organization",
+    "name": "enlimonadoEventos"
+  },
+  "datePublished": "2024-08-23"
+},
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Caso de éxito: Festival musical inmersivo",
+  "description": "Creamos un concepto de festival que fusionaba música electrónica con experiencias sensoriales y arte digital interactivo.",
+  "url": "https://www.enlimonadoeventos.com/exitos/",
+  "author": {
+    "@type": "Organization",
+    "name": "enlimonadoEventos"
+  },
+  "datePublished": "2024-12-04"
 }
 </script>
 
