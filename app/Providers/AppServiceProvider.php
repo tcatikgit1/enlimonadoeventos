@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Vite;
+use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\Request;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -29,5 +31,16 @@ class AppServiceProvider extends ServiceProvider
       }
       return [];
     });
+
+    Vite::useScriptTagAttributes(function () {
+      $nonce = session('csp_nonce');
+      return ['nonce' => $nonce];
+    });
+
+    View::composer('*', function ($view) {
+        $nonce = session('csp_nonce');
+        $view->with('nonce', $nonce);
+    });
+
   }
 }

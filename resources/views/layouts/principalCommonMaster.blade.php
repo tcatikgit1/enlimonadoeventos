@@ -31,6 +31,12 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
 </script>
 
 <head>
+  
+  <!-- NONCE DEBUG: {{ $nonce ?? 'NO LLEGA' }} -->
+  <script nonce="{{ $nonce }}">
+    alert("¡Este sí!");
+  </script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="title" content="Enlimonado Eventos - Organización de eventos únicos y a medida en Canarias">
