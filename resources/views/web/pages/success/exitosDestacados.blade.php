@@ -71,15 +71,19 @@
 
                 <!-- Insertar el JSON-LD para cada caso de éxito -->
                 <script type="application/ld+json">
-                {
-                  "@context": "https://schema.org",
-                  "@type": "CreativeWork",
-                  "name": "{{ $caso['nombre'] }}",
-                  "description": "{{ $caso['descripcion'] }}",
-                  "url": "{{ $caso['url'] }}",
-                  "datePublished": "{{ $caso['fecha'] }}"
-                }
-                </script>
+                    {!! json_encode([
+                        '@context' => 'https://schema.org',
+                        '@graph' => array_map(function($caso) {
+                            return [
+                                '@type' => 'CreativeWork',
+                                'name' => $caso['nombre'],
+                                'description' => $caso['descripcion'],
+                                'url' => $caso['url'],
+                                'datePublished' => $caso['fecha'],
+                            ];
+                        }, $casos_de_exito)
+                    ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
+                    </script>
             </div>
         @endforeach
     </div>
