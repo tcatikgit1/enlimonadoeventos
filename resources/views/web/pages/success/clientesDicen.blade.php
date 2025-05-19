@@ -108,26 +108,31 @@
 
               <!-- Insertar el JSON-LD para cada testimonio -->
               <script type="application/ld+json">
-              {
-                "@context": "https://schema.org",
-                "@type": "Review",
-                "author": {
-                  "@type": "Person",
-                  "name": "{{ $testimonial['nombre'] }}"
-                },
-                "datePublished": "{{ $testimonial['fecha'] }}",
-                "reviewBody": "{{ $testimonial['mensaje'] }}",
-                "reviewRating": {
-                  "@type": "Rating",
-                  "ratingValue": "{{ $testimonial['calificacion'] }}",
-                  "bestRating": "5"
-                },
-                "itemReviewed": {
-                  "@type": "Service",
-                  "name": "Consultoría estratégica"
-                }
-              }
-              </script>
+                {!! json_encode([
+                    '@context' => 'https://schema.org',
+                    '@graph' => array_map(function($testimonial) {
+                        return [
+                            '@type' => 'Review',
+                            'author' => [
+                                '@type' => 'Person',
+                                'name' => $testimonial['nombre'],
+                            ],
+                            'datePublished' => $testimonial['fecha'],
+                            'reviewBody' => $testimonial['mensaje'],
+                            'reviewRating' => [
+                                '@type' => 'Rating',
+                                'ratingValue' => $testimonial['calificacion'],
+                                'bestRating' => '5',
+                            ],
+                            'itemReviewed' => [
+                                '@type' => 'Service',
+                                'name' => 'Consultoría estratégica',
+                            ],
+                        ];
+                    }, $testimonios)
+                ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
+                </script>
+                
             </div>
         @endforeach
         </div>
