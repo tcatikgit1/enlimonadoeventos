@@ -48,8 +48,8 @@
 </div>
 
 
-<script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}"></script>
-<script>
+<script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}" nonce="{{ $nonce }}"></script>
+<script nonce="{{ $nonce }}">
     const modal = document.getElementById('modalSolicitud');
 
     modal.addEventListener('show.bs.modal', function (event) {

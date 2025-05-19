@@ -42,7 +42,7 @@
     </div>
 </section>
 
-<script>
+<script nonce="{{ $nonce }}">
     document.querySelectorAll('.event-card').forEach(card => {
         const bgUrl = card.getAttribute('data-bg');
         const titleAlt = card.getAttribute('data-titleImage');

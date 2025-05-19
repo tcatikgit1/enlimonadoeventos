@@ -21,8 +21,5 @@
     @include('web.pages.home.experiencias')
     @include('web.pages.home.proyectos')
     @include('web.pages.home.nosotros')
-
-    {{-- <!-- Add Role Modal -->
-    @include('_partials/_modals/modal-add-role')
-    <!-- / Add Role Modal --> --}}
+    
 @endsection

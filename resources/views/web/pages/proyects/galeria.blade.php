@@ -44,7 +44,7 @@
     </div>
 </section>
 
-<script>
+<script nonce="{{ $nonce }}">
     // Carga imágenes de fondo
     document.querySelectorAll('.event-card').forEach(card => {
         const bgUrl = card.getAttribute('data-bg');

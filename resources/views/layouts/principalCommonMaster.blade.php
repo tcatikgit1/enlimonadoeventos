@@ -31,11 +31,12 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
 </script>
 
 <head>
-  
-  <!-- NONCE DEBUG: {{ $nonce ?? 'NO LLEGA' }} -->
-  <script nonce="{{ $nonce }}">
-    alert("¡Este sí!");
-  </script>
+
+
+
+
+
+
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -101,7 +102,7 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   <!-- Include Scripts for customizer, helper, analytics, config -->
   <!-- Google Consent Mode + gtag.js, pero solo cargado si el usuario acepta -->
   <!-- Google Analytics con CookieFirst y Consent Mode V2 -->
-  <script type="text/plain" data-cookieconsent="analytics" data-cfasync="false">
+  <script type="text/plain" data-cookieconsent="analytics" data-cfasync="false" nonce="{{ $nonce }}">
     (function(w,d,s,l,i){
       w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
       var f=d.getElementsByTagName(s)[0],
@@ -111,7 +112,7 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
     })(window,document,'script','dataLayer','G-57TG40QS1K');
   </script>
 
-  <script type="text/plain" data-cookieconsent="analytics" data-cfasync="false">
+  <script type="text/plain" data-cookieconsent="analytics" data-cfasync="false" nonce="{{ $nonce }}">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());

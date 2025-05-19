@@ -89,7 +89,7 @@
     @include('web.pages.upcoming.solicitud')
 </section>
 
-<script>
+<script nonce="{{ $nonce }}">
   function parseDateToLocal(dateStr) {
       const [year, month, day] = dateStr.split('-').map(Number);
       return new Date(year, month - 1, day); // Mes en base 0

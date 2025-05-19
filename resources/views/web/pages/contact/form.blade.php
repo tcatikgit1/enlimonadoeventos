@@ -124,8 +124,8 @@
 </section>
 
 <!-- Script de reCAPTCHA v3 -->
-<script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}"></script>
-<script>
+<script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}" nonce="{{ $nonce }}"></script>
+<script nonce="{{ $nonce }}">
     grecaptcha.ready(function () {
         grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}', { action: 'contact' }).then(function (token) {
             document.getElementById('recaptcha_token').value = token;
