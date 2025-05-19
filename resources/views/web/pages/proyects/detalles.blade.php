@@ -61,7 +61,5 @@
 </section>
 
     @include('web.pages.proyects.contacto2')
-    <!-- Add Role Modal -->
-    @include('_partials/_modals/modal-add-role')
-    <!-- / Add Role Modal -->
+
 @endsection
